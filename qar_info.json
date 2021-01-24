@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/vic/Projects/7SegController/Example/",
+	"acds_version" : "Version 20.1.1",
+	"platform" : "linux",
+	"os" : "Ubuntu 20.04.1",
+	"qpf" : "7SegController.qpf"
+}
