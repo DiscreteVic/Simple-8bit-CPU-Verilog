@@ -18,10 +18,10 @@
 `define ENABLE_HEX3
 `define ENABLE_HEX4
 `define ENABLE_HEX5
-/*`define ENABLE_KEY
-`define ENABLE_LED
+`define ENABLE_KEY
+//`define ENABLE_LED
 `define ENABLE_SW
-`define ENABLE_VGA
+/*`define ENABLE_VGA
 `define ENABLE_ACCELEROMETER
 `define ENABLE_ARDUINO*/
 `define ENABLE_GPIO
@@ -135,6 +135,9 @@ reg [3:0]dig3;
 reg [3:0]dig4;
 reg [3:0]dig5;
 
+wire sel;
+wire [7:0] dataA;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -148,6 +151,17 @@ SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
 SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
 SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
 
+Register regA(.clk(ADC_CLK_10), .data(dataA), .sel(sel));
+
+assign sel = KEY[0];
+assign data = SW[7:0];
+
+
+
+always @(posedge(clk)) begin
+ dig5 = dataA[7:4];
+ dig4 = dataA[3:0];
+end
 
 
 endmodule
