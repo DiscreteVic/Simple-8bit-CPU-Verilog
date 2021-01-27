@@ -49,6 +49,28 @@ HEX5[4] << SevSegController:ssc5.leds
 HEX5[5] << SevSegController:ssc5.leds
 HEX5[6] << SevSegController:ssc5.leds
 HEX5[7] << SevSegController:ssc5.leds
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
 GPIO[0] <> <UNC>
 GPIO[1] <> <UNC>
 GPIO[2] <> <UNC>
@@ -89,29 +111,7 @@ GPIO[35] <> <UNC>
 
 |DE10_LITE_Golden_Top|Prescaler:pres
 clk_in => count[0].CLK
-clk_in => count[1].CLK
-clk_in => count[2].CLK
-clk_in => count[3].CLK
-clk_in => count[4].CLK
-clk_in => count[5].CLK
-clk_in => count[6].CLK
-clk_in => count[7].CLK
-clk_in => count[8].CLK
-clk_in => count[9].CLK
-clk_in => count[10].CLK
-clk_in => count[11].CLK
-clk_in => count[12].CLK
-clk_in => count[13].CLK
-clk_in => count[14].CLK
-clk_in => count[15].CLK
-clk_in => count[16].CLK
-clk_in => count[17].CLK
-clk_in => count[18].CLK
-clk_in => count[19].CLK
-clk_in => count[20].CLK
-clk_in => count[21].CLK
-clk_in => count[22].CLK
-clk_out <= count[22].DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE10_LITE_Golden_Top|SevSegController:ssc0
@@ -544,5 +544,25 @@ leds[4] <= reg_leds.DB_MAX_OUTPUT_PORT_TYPE
 leds[5] <= reg_leds.DB_MAX_OUTPUT_PORT_TYPE
 leds[6] <= reg_leds.DB_MAX_OUTPUT_PORT_TYPE
 leds[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE10_LITE_Golden_Top|ROMemory:romA
+clk => ~NO_FANOUT~
+data[0] <= memory.DATAOUT
+data[1] <= memory.DATAOUT1
+data[2] <= memory.DATAOUT2
+data[3] <= memory.DATAOUT3
+data[4] <= memory.DATAOUT4
+data[5] <= memory.DATAOUT5
+data[6] <= memory.DATAOUT6
+data[7] <= memory.DATAOUT7
+addr[0] => memory.RADDR
+addr[1] => memory.RADDR1
+addr[2] => memory.RADDR2
+addr[3] => memory.RADDR3
+addr[4] => memory.RADDR4
+addr[5] => memory.RADDR5
+addr[6] => memory.RADDR6
+addr[7] => memory.RADDR7
 
 
