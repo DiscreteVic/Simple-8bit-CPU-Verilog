@@ -3,39 +3,75 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
-Slack : -1.737
-TNS   : -26.948
+Slack : -1.394
+TNS   : -1.394
+
+Type  : Slow 1200mV 85C Model Setup 'Prescaler:pres|count[0]'
+Slack : -1.107
+TNS   : -8.832
 
 Type  : Slow 1200mV 85C Model Hold 'ADC_CLK_10'
-Slack : 0.363
+Slack : 1.269
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Prescaler:pres|count[0]'
+Slack : 1.556
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -35.269
+TNS   : -15.627
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
+Slack : -1.403
+TNS   : -22.448
 
 Type  : Slow 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -1.462
-TNS   : -22.136
+Slack : -1.240
+TNS   : -1.240
+
+Type  : Slow 1200mV 0C Model Setup 'Prescaler:pres|count[0]'
+Slack : -0.951
+TNS   : -7.590
 
 Type  : Slow 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.328
+Slack : 1.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Prescaler:pres|count[0]'
+Slack : 1.434
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -35.269
+TNS   : -15.627
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
+Slack : -1.403
+TNS   : -22.448
 
 Type  : Fast 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -0.082
-TNS   : -0.140
+Slack : -0.284
+TNS   : -0.284
+
+Type  : Fast 1200mV 0C Model Setup 'Prescaler:pres|count[0]'
+Slack : 0.110
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.156
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Prescaler:pres|count[0]'
+Slack : 0.594
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -29.988
+TNS   : -13.499
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
+Slack : -1.000
+TNS   : -16.000
 
 ------------------------------------------------------------

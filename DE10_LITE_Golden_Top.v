@@ -19,7 +19,7 @@
 `define ENABLE_HEX4
 `define ENABLE_HEX5
 `define ENABLE_KEY
-//`define ENABLE_LED
+`define ENABLE_LED
 `define ENABLE_SW
 /*`define ENABLE_VGA
 `define ENABLE_ACCELEROMETER
@@ -137,30 +137,37 @@ reg [3:0]dig5;
 
 wire sel;
 wire [7:0] dataA;
+wire [7:0] dataB;
 
 //=======================================================
 //  Structural coding
 //=======================================================
+//N=23
+Prescaler #(.N(1)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
 
-Prescaler #(.N(23)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
+SevSegController ssc0(.dig(dig0),.dot(0),.leds(HEX0));
+SevSegController ssc1(.dig(dig1),.dot(0),.leds(HEX1));
+SevSegController ssc2(.dig(dig2),.dot(0),.leds(HEX2));
+SevSegController ssc3(.dig(dig3),.dot(0),.leds(HEX3));
+SevSegController ssc4(.dig(dig4),.dot(0),.leds(HEX4));
+SevSegController ssc5(.dig(dig5),.dot(0),.leds(HEX5));
 
-SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
-SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
-SevSegController ssc2(.dig(dig2),.dot(clk),.leds(HEX2));
-SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
-SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
-SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
-
-Register regA(.clk(ADC_CLK_10), .data(dataA), .sel(sel));
+Register regA(.clk(ADC_CLK_10), .dataIN(dataA), .dataOUT(dataB), .sel(sel));
 
 assign sel = KEY[0];
-assign data = SW[7:0];
+assign dataA = SW[7:0];
+
 
 
 
 always @(posedge(clk)) begin
- dig5 = dataA[7:4];
- dig4 = dataA[3:0];
+ dig1 = SW[7:4];
+ dig0 = SW[3:0];
+ 
+ 
+ dig5 = dataB[7:4];
+ dig4 = dataB[3:0];
+
 end
 
 

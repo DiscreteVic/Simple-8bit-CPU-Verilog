@@ -51,14 +51,24 @@ HEX5[6] <= SevSegController:ssc5.leds
 HEX5[7] <= SevSegController:ssc5.leds
 KEY[0] => sel.IN1
 KEY[1] => ~NO_FANOUT~
-SW[0] => ~NO_FANOUT~
-SW[1] => ~NO_FANOUT~
-SW[2] => ~NO_FANOUT~
-SW[3] => ~NO_FANOUT~
-SW[4] => ~NO_FANOUT~
-SW[5] => ~NO_FANOUT~
-SW[6] => ~NO_FANOUT~
-SW[7] => ~NO_FANOUT~
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+SW[0] => dataA[0].IN1
+SW[1] => dataA[1].IN1
+SW[2] => dataA[2].IN1
+SW[3] => dataA[3].IN1
+SW[4] => dataA[4].IN1
+SW[5] => dataA[5].IN1
+SW[6] => dataA[6].IN1
+SW[7] => dataA[7].IN1
 SW[8] => ~NO_FANOUT~
 SW[9] => ~NO_FANOUT~
 GPIO[0] <> <UNC>
@@ -101,29 +111,7 @@ GPIO[35] <> <UNC>
 
 |DE10_LITE_Golden_Top|Prescaler:pres
 clk_in => count[0].CLK
-clk_in => count[1].CLK
-clk_in => count[2].CLK
-clk_in => count[3].CLK
-clk_in => count[4].CLK
-clk_in => count[5].CLK
-clk_in => count[6].CLK
-clk_in => count[7].CLK
-clk_in => count[8].CLK
-clk_in => count[9].CLK
-clk_in => count[10].CLK
-clk_in => count[11].CLK
-clk_in => count[12].CLK
-clk_in => count[13].CLK
-clk_in => count[14].CLK
-clk_in => count[15].CLK
-clk_in => count[16].CLK
-clk_in => count[17].CLK
-clk_in => count[18].CLK
-clk_in => count[19].CLK
-clk_in => count[20].CLK
-clk_in => count[21].CLK
-clk_in => count[22].CLK
-clk_out <= count[22].DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE10_LITE_Golden_Top|SevSegController:ssc0
@@ -559,14 +547,6 @@ leds[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE10_LITE_Golden_Top|Register:regA
-clk => data[0]~reg0.CLK
-clk => data[1]~reg0.CLK
-clk => data[2]~reg0.CLK
-clk => data[3]~reg0.CLK
-clk => data[4]~reg0.CLK
-clk => data[5]~reg0.CLK
-clk => data[6]~reg0.CLK
-clk => data[7]~reg0.CLK
 clk => register[0].CLK
 clk => register[1].CLK
 clk => register[2].CLK
@@ -575,21 +555,29 @@ clk => register[4].CLK
 clk => register[5].CLK
 clk => register[6].CLK
 clk => register[7].CLK
-data[0] <> data[0]~reg0
-data[1] <> data[1]~reg0
-data[2] <> data[2]~reg0
-data[3] <> data[3]~reg0
-data[4] <> data[4]~reg0
-data[5] <> data[5]~reg0
-data[6] <> data[6]~reg0
-data[7] <> data[7]~reg0
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
-sel => data.OUTPUTSELECT
+dataIN[0] => register[0].DATAIN
+dataIN[1] => register[1].DATAIN
+dataIN[2] => register[2].DATAIN
+dataIN[3] => register[3].DATAIN
+dataIN[4] => register[4].DATAIN
+dataIN[5] => register[5].DATAIN
+dataIN[6] => register[6].DATAIN
+dataIN[7] => register[7].DATAIN
+dataOUT[0] <= register[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[1] <= register[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[2] <= register[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[3] <= register[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[4] <= register[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[5] <= register[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[6] <= register[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOUT[7] <= register[7].DB_MAX_OUTPUT_PORT_TYPE
+sel => register[2].ENA
+sel => register[1].ENA
+sel => register[0].ENA
+sel => register[3].ENA
+sel => register[4].ENA
+sel => register[5].ENA
+sel => register[6].ENA
+sel => register[7].ENA
 
 
