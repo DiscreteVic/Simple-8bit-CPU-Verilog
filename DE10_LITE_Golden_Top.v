@@ -18,10 +18,10 @@
 `define ENABLE_HEX3
 `define ENABLE_HEX4
 `define ENABLE_HEX5
-/*`define ENABLE_KEY
+`define ENABLE_KEY
 `define ENABLE_LED
 `define ENABLE_SW
-`define ENABLE_VGA
+/*`define ENABLE_VGA
 `define ENABLE_ACCELEROMETER
 `define ENABLE_ARDUINO*/
 `define ENABLE_GPIO
@@ -127,27 +127,49 @@ module DE10_LITE_Golden_Top(
 //  REG/WIRE declarations
 //=======================================================
 
-wire clk;
-reg [3:0]dig0;
-reg [3:0]dig1;
-reg [3:0]dig2;
-reg [3:0]dig3;
-reg [3:0]dig4;
-reg [3:0]dig5;
+	wire clk;
+	reg [3:0]dig0;
+	reg [3:0]dig1;
+	reg [3:0]dig2;
+	reg [3:0]dig3;
+	reg [3:0]dig4;
+	reg [3:0]dig5;
 
 //=======================================================
 //  Structural coding
 //=======================================================
+	//N=23
+	Prescaler #(.N(1)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
 
-Prescaler #(.N(23)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
-
-SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
-SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
-SevSegController ssc2(.dig(dig2),.dot(clk),.leds(HEX2));
-SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
-SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
-SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
+	SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
+	SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
+	SevSegController ssc2(.dig(dig2),.dot(clk),.leds(HEX2));
+	SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
+	SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
+	SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
 
 
+	wire [7:0] opA;
+	wire [7:0] opB;
+	wire [7:0] res;
+	wire sel;
+	
+	
+	ALU aluA(.clk(clk), .opA(opA), .opB(opB), .sel(sel), .res(res));
+
+	assign sel = KEY[0];
+	
+	assign opA[4:0] = SW[9:5];
+	assign opB[4:0] = SW[4:0];
+	
+	always @(posedge(clk)) begin
+		dig5 = opA[7:4];
+		dig4 = opA[3:0];
+		dig3 = opB[7:4];
+		dig2 = opB[3:0];
+	
+		dig1 = res[7:4];
+		dig0 = res[3:0];
+	end
 
 endmodule
