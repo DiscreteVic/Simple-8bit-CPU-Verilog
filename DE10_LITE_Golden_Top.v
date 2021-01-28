@@ -139,7 +139,7 @@ reg [3:0]dig5;
 //  Structural coding
 //=======================================================
 
-Prescaler #(.N(23)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
+Prescaler #(.N(21)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
 
 SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
 SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
@@ -147,6 +147,14 @@ SevSegController ssc2(.dig(dig2),.dot(clk),.leds(HEX2));
 SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
 SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
 SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
+
+wire [7:0] counterA;
+
+Counter countA(.clk(clk), .cnt(counterA));
+
+assign counterA[3:0] = dig0;
+assign counterA[7:4] = dig1;
+
 
 
 
