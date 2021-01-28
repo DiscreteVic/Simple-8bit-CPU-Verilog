@@ -1,6 +1,7 @@
 |DE10_LITE_Golden_Top
 ADC_CLK_10 => ADC_CLK_10.IN2
 MAX10_CLK1_50 => ~NO_FANOUT~
+<<<<<<< HEAD
 HEX0[0] <= SevSegController:ssc0.leds
 HEX0[1] <= SevSegController:ssc0.leds
 HEX0[2] <= SevSegController:ssc0.leds
@@ -90,6 +91,78 @@ SW[7] => SW[7].IN1
 SW[8] => SW[8].IN1
 SW[9] => SW[9].IN1
 >>>>>>> feature/RAM
+=======
+HEX0[0] << SevSegController:ssc0.leds
+HEX0[1] << SevSegController:ssc0.leds
+HEX0[2] << SevSegController:ssc0.leds
+HEX0[3] << SevSegController:ssc0.leds
+HEX0[4] << SevSegController:ssc0.leds
+HEX0[5] << SevSegController:ssc0.leds
+HEX0[6] << SevSegController:ssc0.leds
+HEX0[7] << SevSegController:ssc0.leds
+HEX1[0] << SevSegController:ssc1.leds
+HEX1[1] << SevSegController:ssc1.leds
+HEX1[2] << SevSegController:ssc1.leds
+HEX1[3] << SevSegController:ssc1.leds
+HEX1[4] << SevSegController:ssc1.leds
+HEX1[5] << SevSegController:ssc1.leds
+HEX1[6] << SevSegController:ssc1.leds
+HEX1[7] << SevSegController:ssc1.leds
+HEX2[0] << SevSegController:ssc2.leds
+HEX2[1] << SevSegController:ssc2.leds
+HEX2[2] << SevSegController:ssc2.leds
+HEX2[3] << SevSegController:ssc2.leds
+HEX2[4] << SevSegController:ssc2.leds
+HEX2[5] << SevSegController:ssc2.leds
+HEX2[6] << SevSegController:ssc2.leds
+HEX2[7] << SevSegController:ssc2.leds
+HEX3[0] << SevSegController:ssc3.leds
+HEX3[1] << SevSegController:ssc3.leds
+HEX3[2] << SevSegController:ssc3.leds
+HEX3[3] << SevSegController:ssc3.leds
+HEX3[4] << SevSegController:ssc3.leds
+HEX3[5] << SevSegController:ssc3.leds
+HEX3[6] << SevSegController:ssc3.leds
+HEX3[7] << SevSegController:ssc3.leds
+HEX4[0] << SevSegController:ssc4.leds
+HEX4[1] << SevSegController:ssc4.leds
+HEX4[2] << SevSegController:ssc4.leds
+HEX4[3] << SevSegController:ssc4.leds
+HEX4[4] << SevSegController:ssc4.leds
+HEX4[5] << SevSegController:ssc4.leds
+HEX4[6] << SevSegController:ssc4.leds
+HEX4[7] << SevSegController:ssc4.leds
+HEX5[0] << SevSegController:ssc5.leds
+HEX5[1] << SevSegController:ssc5.leds
+HEX5[2] << SevSegController:ssc5.leds
+HEX5[3] << SevSegController:ssc5.leds
+HEX5[4] << SevSegController:ssc5.leds
+HEX5[5] << SevSegController:ssc5.leds
+HEX5[6] << SevSegController:ssc5.leds
+HEX5[7] << SevSegController:ssc5.leds
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+>>>>>>> feature/ROM
 GPIO[0] <> <UNC>
 GPIO[1] <> <UNC>
 GPIO[2] <> <UNC>
@@ -132,6 +205,7 @@ GPIO[35] <> <UNC>
 clk_in => count[0].CLK
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 clk_in => count[1].CLK
 clk_in => count[2].CLK
 clk_in => count[3].CLK
@@ -159,6 +233,9 @@ clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 =======
 clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 >>>>>>> feature/RAM
+=======
+clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> feature/ROM
 
 
 |DE10_LITE_Golden_Top|SevSegController:ssc0
@@ -595,6 +672,7 @@ leds[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 |DE10_LITE_Golden_Top|Counter:countA
 clk => register[0].CLK
 clk => register[1].CLK
@@ -727,5 +805,25 @@ addr[3] => register.RADDR3
 sel => register.we_a.DATAIN
 sel => register.WE
 >>>>>>> feature/RAM
+=======
+|DE10_LITE_Golden_Top|ROMemory:romA
+clk => ~NO_FANOUT~
+data[0] <= memory.DATAOUT
+data[1] <= memory.DATAOUT1
+data[2] <= memory.DATAOUT2
+data[3] <= memory.DATAOUT3
+data[4] <= memory.DATAOUT4
+data[5] <= memory.DATAOUT5
+data[6] <= memory.DATAOUT6
+data[7] <= memory.DATAOUT7
+addr[0] => memory.RADDR
+addr[1] => memory.RADDR1
+addr[2] => memory.RADDR2
+addr[3] => memory.RADDR3
+addr[4] => memory.RADDR4
+addr[5] => memory.RADDR5
+addr[6] => memory.RADDR6
+addr[7] => memory.RADDR7
+>>>>>>> feature/ROM
 
 

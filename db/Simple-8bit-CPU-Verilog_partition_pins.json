@@ -130,6 +130,7 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
 					"name" : "SW[8]",
 					"strict" : false
 				},
@@ -191,6 +192,41 @@
 				},
 				{
 					"name" : "SW[4]",
+=======
+					"name" : "HEX4[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CLK_10",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+>>>>>>> feature/ROM
 					"strict" : false
 				},
 				{
@@ -198,7 +234,11 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
 					"name" : "KEY[0]",
+=======
+					"name" : "SW[4]",
+>>>>>>> feature/ROM
 					"strict" : false
 				}
 			]
