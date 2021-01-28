@@ -138,41 +138,12 @@ module DE10_LITE_Golden_Top(
 //=======================================================
 //  Structural coding
 //=======================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-Prescaler #(.N(21)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
-=======
-//N = 23
-Prescaler #(.N(1)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
->>>>>>> feature/RAM
-=======
-//N = 23
-Prescaler #(.N(1)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
->>>>>>> feature/ROM
-
-SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
-SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
-SevSegController ssc2(.dig(dig2),.dot(clk),.leds(HEX2));
-SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
-SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
-SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-wire [7:0] counterA;
-
-Counter countA(.clk(clk), .cnt(counterA));
-
-assign counterA[3:0] = dig0;
-assign counterA[7:4] = dig1;
 
 
 
-=======
+
 	//N=23
-	Prescaler #(.N(1)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
+	Prescaler #(.N(22)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
 
 	SevSegController ssc0(.dig(dig0),.dot(clk),.leds(HEX0));
 	SevSegController ssc1(.dig(dig1),.dot(clk),.leds(HEX1));
@@ -182,71 +153,21 @@ assign counterA[7:4] = dig1;
 	SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
 
 
-	wire [7:0] opA;
-	wire [7:0] opB;
-	wire [7:0] res;
-	wire sel;
+	wire [7:0] counterA;
+	wire [7:0] romData;
+
+	Counter countA(.clk(KEY[0]), .cnt(counterA));
+	ROMemory romA(.clk(clk), .data(romData), .addr(counterA));
+
+	assign counterA[3:0] = dig0;
+	assign counterA[7:4] = dig1;
+	
+	assign romData[3:0] = dig4;
+	assign romData[7:4] = dig5;
+
 	
 	
-	ALU aluA(.clk(clk), .opA(opA), .opB(opB), .sel(sel), .res(res));
-
-	assign sel = KEY[0];
 	
-	assign opA[4:0] = SW[9:5];
-	assign opB[4:0] = SW[4:0];
-	
-	always @(posedge(clk)) begin
-		dig5 = opA[7:4];
-		dig4 = opA[3:0];
-		dig3 = opB[7:4];
-		dig2 = opB[3:0];
-	
-		dig1 = res[7:4];
-		dig0 = res[3:0];
-	end
->>>>>>> feature/ALU
-=======
-wire sel;
-wire [7:0] dataA;
-wire [7:0] dataB;
 
-
-RAMemory ramA(.clk(ADC_CLK_10), .dataIN(dataA), .dataOUT(dataB), .addr(SW[9:6]),.sel(sel));
-
-assign sel = KEY[0];
-assign dataA = SW[5:0];
-
-
-always @(posedge(clk)) begin
- dig0 = SW[9:6];
- 
- dig3 = dataA[7:4];
- dig2 = dataA[3:0];
- 
- dig5 = dataB[7:4];
- dig4 = dataB[3:0];
-
-end
-
-
->>>>>>> feature/RAM
-=======
-wire [7:0] dataA;
-wire [7:0] dataB;
-
-
-ROMemory romA(.clk(clk), .data(dataA), .addr(SW[7:0]));
-
-
-always @(posedge(clk)) begin
- dig1 = SW[7:4];
- dig0 = SW[3:0];
- 
- dig3 = dataA[7:4];
- dig2 = dataA[3:0];
- 
-
-end
->>>>>>> feature/ROM
 
 endmodule

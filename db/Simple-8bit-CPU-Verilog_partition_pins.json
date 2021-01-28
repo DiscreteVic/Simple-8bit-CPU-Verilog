@@ -36,6 +36,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[6]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX1[7]",
 					"strict" : false
 				},
@@ -44,33 +72,35 @@
 					"strict" : false
 				},
 				{
-<<<<<<< HEAD
-=======
-					"name" : "HEX3[0]",
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-=======
-					"name" : "HEX3[2]",
-					"strict" : false
-				},
-				{
->>>>>>> feature/RAM
-					"name" : "HEX3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[5]",
-					"strict" : false
-				},
-				{
->>>>>>> feature/ALU
 					"name" : "HEX3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[6]",
 					"strict" : false
 				},
 				{
@@ -78,10 +108,15 @@
 					"strict" : false
 				},
 				{
-<<<<<<< HEAD
-					"name" : "HEX5[7]",
-=======
 					"name" : "HEX5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[2]",
 					"strict" : false
 				},
 				{
@@ -97,103 +132,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "HEX5[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ADC_CLK_10",
-					"strict" : false
-				},
-				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
->>>>>>> feature/ALU
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[4]",
-=======
-					"name" : "HEX5[2]",
->>>>>>> feature/RAM
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-					"name" : "SW[8]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[9]",
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-					"name" : "KEY[0]",
-=======
-					"name" : "SW[9]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[8]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ADC_CLK_10",
->>>>>>> feature/RAM
-					"strict" : false
-				},
-				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[4]",
-=======
-					"name" : "HEX4[7]",
+					"name" : "HEX5[6]",
 					"strict" : false
 				},
 				{
@@ -201,44 +140,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[0]",
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
 					"name" : "ADC_CLK_10",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
->>>>>>> feature/ROM
-					"strict" : false
-				},
-				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-					"name" : "KEY[0]",
-=======
-					"name" : "SW[4]",
->>>>>>> feature/ROM
 					"strict" : false
 				}
 			]

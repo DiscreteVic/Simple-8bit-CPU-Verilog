@@ -1,17 +1,5 @@
 Assembler report for Simple-8bit-CPU-Verilog
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Thu Jan 28 18:54:00 2021
-=======
-Wed Jan 27 21:41:41 2021
->>>>>>> feature/ALU
-=======
-Wed Jan 27 22:21:11 2021
->>>>>>> feature/RAM
-=======
-Thu Jan 28 00:32:59 2021
->>>>>>> feature/ROM
+Thu Jan 28 21:13:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -50,19 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; Assembler Status      ; Successful - Thu Jan 28 18:54:00 2021 ;
-=======
-; Assembler Status      ; Successful - Wed Jan 27 21:41:41 2021 ;
->>>>>>> feature/ALU
-=======
-; Assembler Status      ; Successful - Wed Jan 27 22:21:11 2021 ;
->>>>>>> feature/RAM
-=======
-; Assembler Status      ; Successful - Thu Jan 28 00:32:59 2021 ;
->>>>>>> feature/ROM
+; Assembler Status      ; Successful - Thu Jan 28 21:13:47 2021 ;
 ; Revision Name         ; Simple-8bit-CPU-Verilog               ;
 ; Top-level Entity Name ; DE10_LITE_Golden_Top                  ;
 ; Family                ; MAX 10                                ;
@@ -91,23 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+--------------------------------------+
 ; Option         ; Setting                              ;
 +----------------+--------------------------------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; JTAG usercode  ; 0x0027ABF2                           ;
-; Checksum       ; 0x0027ABF2                           ;
-=======
-; JTAG usercode  ; 0x00280163                           ;
-; Checksum       ; 0x00280163                           ;
->>>>>>> feature/ALU
-=======
-; JTAG usercode  ; 0x00290E3B                           ;
-; Checksum       ; 0x00290E3B                           ;
->>>>>>> feature/RAM
-=======
-; JTAG usercode  ; 0x0027B464                           ;
-; Checksum       ; 0x0027B464                           ;
->>>>>>> feature/ROM
+; JTAG usercode  ; 0x0029BA57                           ;
+; Checksum       ; 0x0029BA57                           ;
 +----------------+--------------------------------------+
 
 
@@ -117,43 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Info: Processing started: Thu Jan 28 18:53:58 2021
-=======
-    Info: Processing started: Wed Jan 27 21:41:39 2021
->>>>>>> feature/ALU
-=======
-    Info: Processing started: Wed Jan 27 22:21:10 2021
->>>>>>> feature/RAM
-=======
-    Info: Processing started: Thu Jan 28 00:32:57 2021
->>>>>>> feature/ROM
+    Info: Processing started: Thu Jan 28 21:13:46 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Info: Peak virtual memory: 357 megabytes
-    Info: Processing ended: Thu Jan 28 18:54:00 2021
-=======
-    Info: Peak virtual memory: 362 megabytes
-    Info: Processing ended: Wed Jan 27 21:41:41 2021
->>>>>>> feature/ALU
-=======
-    Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Thu Jan 28 00:32:59 2021
->>>>>>> feature/ROM
-    Info: Elapsed time: 00:00:02
-=======
     Info: Peak virtual memory: 360 megabytes
-    Info: Processing ended: Wed Jan 27 22:21:11 2021
+    Info: Processing ended: Thu Jan 28 21:13:47 2021
     Info: Elapsed time: 00:00:01
->>>>>>> feature/RAM
     Info: Total CPU time (on all processors): 00:00:02
 
 

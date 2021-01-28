@@ -1,17 +1,5 @@
 Flow report for Simple-8bit-CPU-Verilog
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Thu Jan 28 18:54:01 2021
-=======
-Wed Jan 27 21:41:43 2021
->>>>>>> feature/ALU
-=======
-Wed Jan 27 22:21:13 2021
->>>>>>> feature/RAM
-=======
-Thu Jan 28 00:33:00 2021
->>>>>>> feature/ROM
+Thu Jan 28 21:13:49 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -53,54 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; Flow Status                        ; Successful - Thu Jan 28 18:54:00 2021       ;
-=======
-; Flow Status                        ; Successful - Wed Jan 27 21:41:41 2021       ;
->>>>>>> feature/ALU
-=======
-; Flow Status                        ; Successful - Wed Jan 27 22:21:11 2021       ;
->>>>>>> feature/RAM
-=======
-; Flow Status                        ; Successful - Thu Jan 28 00:32:59 2021       ;
->>>>>>> feature/ROM
+; Flow Status                        ; Successful - Thu Jan 28 21:13:47 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; Total logic elements               ; 44 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 44 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 29 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 29                                          ;
-; Total pins                         ; 86 / 360 ( 24 % )                           ;
-=======
-; Total logic elements               ; 66 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 44 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 25 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 25                                          ;
+; Total logic elements               ; 273 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 273 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 30 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 30                                          ;
 ; Total pins                         ; 108 / 360 ( 30 % )                          ;
->>>>>>> feature/ALU
-=======
-; Total logic elements               ; 187 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 121 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 113 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 113                                         ;
-; Total pins                         ; 108 / 360 ( 30 % )                          ;
->>>>>>> feature/RAM
-=======
-; Total logic elements               ; 37 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 30 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 12 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 12                                          ;
-; Total pins                         ; 108 / 360 ( 30 % )                          ;
->>>>>>> feature/ROM
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -115,19 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; Start date & time ; 01/28/2021 18:53:47     ;
-=======
-; Start date & time ; 01/27/2021 21:41:29     ;
->>>>>>> feature/ALU
-=======
-; Start date & time ; 01/27/2021 22:20:59     ;
->>>>>>> feature/RAM
-=======
-; Start date & time ; 01/28/2021 00:32:47     ;
->>>>>>> feature/ROM
+; Start date & time ; 01/28/2021 21:13:34     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Simple-8bit-CPU-Verilog ;
 +-------------------+-------------------------+
@@ -138,19 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name          ; Section Id ;
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161185642709221         ; --                      ; --                   ; --         ;
-=======
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161178008917655         ; --                      ; --                   ; --         ;
->>>>>>> feature/ALU
-=======
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161178245929335         ; --                      ; --                   ; --         ;
->>>>>>> feature/RAM
-=======
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161179036747364         ; --                      ; --                   ; --         ;
->>>>>>> feature/ROM
+; COMPILER_SIGNATURE_ID               ; 13718493745980.161186481430208         ; --                      ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                      ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                      ; --                   ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                      ; DE10_LITE_Golden_Top ; Top        ;
@@ -168,34 +96,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 488 MB              ; 00:00:14                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 2046 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 357 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 662 MB              ; 00:00:01                           ;
-=======
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 488 MB              ; 00:00:14                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 2054 MB             ; 00:00:09                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 362 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 656 MB              ; 00:00:01                           ;
->>>>>>> feature/ALU
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:26                           ;
-=======
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 489 MB              ; 00:00:14                           ;
-; Fitter               ; 00:00:05     ; 1.1                     ; 2069 MB             ; 00:00:11                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 489 MB              ; 00:00:15                           ;
+; Fitter               ; 00:00:05     ; 1.2                     ; 2062 MB             ; 00:00:10                           ;
 ; Assembler            ; 00:00:01     ; 1.0                     ; 360 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 664 MB              ; 00:00:02                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:29                           ;
->>>>>>> feature/RAM
-=======
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 487 MB              ; 00:00:14                           ;
-; Fitter               ; 00:00:04     ; 1.1                     ; 2047 MB             ; 00:00:07                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 364 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 665 MB              ; 00:00:02                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:25                           ;
->>>>>>> feature/ROM
+; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 666 MB              ; 00:00:02                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
