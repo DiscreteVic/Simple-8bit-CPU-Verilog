@@ -1,5 +1,9 @@
 Assembler report for Simple-8bit-CPU-Verilog
+<<<<<<< HEAD
 Thu Jan 28 18:54:00 2021
+=======
+Wed Jan 27 21:41:41 2021
+>>>>>>> feature/ALU
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +42,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Thu Jan 28 18:54:00 2021 ;
+=======
+; Assembler Status      ; Successful - Wed Jan 27 21:41:41 2021 ;
+>>>>>>> feature/ALU
 ; Revision Name         ; Simple-8bit-CPU-Verilog               ;
 ; Top-level Entity Name ; DE10_LITE_Golden_Top                  ;
 ; Family                ; MAX 10                                ;
@@ -67,8 +75,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------+--------------------------------------+
 ; Option         ; Setting                              ;
 +----------------+--------------------------------------+
+<<<<<<< HEAD
 ; JTAG usercode  ; 0x0027ABF2                           ;
 ; Checksum       ; 0x0027ABF2                           ;
+=======
+; JTAG usercode  ; 0x00280163                           ;
+; Checksum       ; 0x00280163                           ;
+>>>>>>> feature/ALU
 +----------------+--------------------------------------+
 
 
@@ -78,14 +91,23 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Jan 28 18:53:58 2021
+=======
+    Info: Processing started: Wed Jan 27 21:41:39 2021
+>>>>>>> feature/ALU
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< HEAD
     Info: Peak virtual memory: 357 megabytes
     Info: Processing ended: Thu Jan 28 18:54:00 2021
+=======
+    Info: Peak virtual memory: 362 megabytes
+    Info: Processing ended: Wed Jan 27 21:41:41 2021
+>>>>>>> feature/ALU
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
