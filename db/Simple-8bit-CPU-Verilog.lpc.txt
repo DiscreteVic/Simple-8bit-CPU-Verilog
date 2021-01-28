@@ -4,10 +4,14 @@
 ; Hierarchy ; Input ; Constant Input ; Unused Input ; Floating Input ; Output ; Constant Output ; Unused Output ; Floating Output ; Bidir ; Constant Bidir ; Unused Bidir ; Input only Bidir ; Output only Bidir ;
 +-----------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; countA    ; 1     ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 =======
 ; aluA      ; 18    ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 >>>>>>> feature/ALU
+=======
+; ramA      ; 14    ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+>>>>>>> feature/RAM
 ; ssc5      ; 5     ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; ssc4      ; 5     ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; ssc3      ; 5     ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;

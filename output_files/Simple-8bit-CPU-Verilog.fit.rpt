@@ -1,9 +1,13 @@
 Fitter report for Simple-8bit-CPU-Verilog
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Jan 28 18:53:57 2021
 =======
 Wed Jan 27 21:41:39 2021
 >>>>>>> feature/ALU
+=======
+Wed Jan 27 22:21:09 2021
+>>>>>>> feature/RAM
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -75,16 +79,21 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Fitter Status                      ; Successful - Thu Jan 28 18:53:57 2021       ;
 =======
 ; Fitter Status                      ; Successful - Wed Jan 27 21:41:39 2021       ;
 >>>>>>> feature/ALU
+=======
+; Fitter Status                      ; Successful - Wed Jan 27 22:21:09 2021       ;
+>>>>>>> feature/RAM
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ; Total logic elements               ; 44 / 49,760 ( < 1 % )                       ;
 ;     Total combinational functions  ; 44 / 49,760 ( < 1 % )                       ;
@@ -98,6 +107,13 @@ https://fpgasoftware.intel.com/eula.
 ; Total registers                    ; 25                                          ;
 ; Total pins                         ; 108 / 360 ( 30 % )                          ;
 >>>>>>> feature/ALU
+=======
+; Total logic elements               ; 187 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 121 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 113 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 113                                         ;
+; Total pins                         ; 108 / 360 ( 30 % )                          ;
+>>>>>>> feature/RAM
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -172,13 +188,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
+<<<<<<< HEAD
 ; Average used               ; 1.08        ;
+=======
+; Average used               ; 1.13        ;
+>>>>>>> feature/RAM
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 ;     Processor 2            ;   0.6%      ;
 ;     Processors 3-16        ;   0.5%      ;
+=======
+;     Processor 2            ;   0.9%      ;
+;     Processors 3-16        ;   0.8%      ;
+>>>>>>> feature/RAM
 +----------------------------+-------------+
 
 
@@ -351,12 +376,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;     -- Requested    ; 0.00 % ( 0 / 302 ) ; 0.00 % ( 0 / 302 )         ; 0.00 % ( 0 / 302 )       ;
 ;     -- Achieved     ; 0.00 % ( 0 / 302 ) ; 0.00 % ( 0 / 302 )         ; 0.00 % ( 0 / 302 )       ;
 =======
 ;     -- Requested    ; 0.00 % ( 0 / 341 ) ; 0.00 % ( 0 / 341 )         ; 0.00 % ( 0 / 341 )       ;
 ;     -- Achieved     ; 0.00 % ( 0 / 341 ) ; 0.00 % ( 0 / 341 )         ; 0.00 % ( 0 / 341 )       ;
 >>>>>>> feature/ALU
+=======
+;     -- Requested    ; 0.00 % ( 0 / 507 ) ; 0.00 % ( 0 / 507 )         ; 0.00 % ( 0 / 507 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 507 ) ; 0.00 % ( 0 / 507 )         ; 0.00 % ( 0 / 507 )       ;
+>>>>>>> feature/RAM
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -380,10 +410,14 @@ https://fpgasoftware.intel.com/eula.
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Top                            ; 0.00 % ( 0 / 286 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 =======
 ; Top                            ; 0.00 % ( 0 / 325 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 >>>>>>> feature/ALU
+=======
+; Top                            ; 0.00 % ( 0 / 491 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+>>>>>>> feature/RAM
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -394,6 +428,7 @@ https://fpgasoftware.intel.com/eula.
 The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.pin.
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------+
 ; Fitter Resource Usage Summary                                       ;
 +---------------------------------------------+-----------------------+
@@ -477,10 +512,64 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ; Average fan-out                             ; 1.16                  ;
 >>>>>>> feature/ALU
 +---------------------------------------------+-----------------------+
+=======
++----------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                        ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Total logic elements                        ; 187 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 74                     ;
+;     -- Register only                        ; 66                     ;
+;     -- Combinational with a register        ; 47                     ;
+;                                             ;                        ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 97                     ;
+;     -- 3 input functions                    ; 0                      ;
+;     -- <=2 input functions                  ; 24                     ;
+;     -- Register only                        ; 66                     ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 121                    ;
+;     -- arithmetic mode                      ; 0                      ;
+;                                             ;                        ;
+; Total registers*                            ; 113 / 51,509 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 113 / 49,760 ( < 1 % ) ;
+;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
+;                                             ;                        ;
+; Total LABs:  partially or completely used   ; 21 / 3,110 ( < 1 % )   ;
+; Virtual pins                                ; 0                      ;
+; I/O pins                                    ; 108 / 360 ( 30 % )     ;
+;     -- Clock pins                           ; 3 / 8 ( 38 % )         ;
+;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )        ;
+;                                             ;                        ;
+; M9Ks                                        ; 0 / 182 ( 0 % )        ;
+; UFM blocks                                  ; 0 / 1 ( 0 % )          ;
+; ADC blocks                                  ; 0 / 2 ( 0 % )          ;
+; Total block memory bits                     ; 0 / 1,677,312 ( 0 % )  ;
+; Total block memory implementation bits      ; 0 / 1,677,312 ( 0 % )  ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )        ;
+; PLLs                                        ; 0 / 4 ( 0 % )          ;
+; Global signals                              ; 2                      ;
+;     -- Global clocks                        ; 2 / 20 ( 10 % )        ;
+; JTAGs                                       ; 0 / 1 ( 0 % )          ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
+; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
+; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.2% / 0.1%     ;
+; Peak interconnect usage (total/H/V)         ; 2.9% / 3.8% / 1.7%     ;
+; Maximum fan-out                             ; 97                     ;
+; Highest non-global fan-out                  ; 40                     ;
+; Total fan-out                               ; 986                    ;
+; Average fan-out                             ; 1.82                   ;
++---------------------------------------------+------------------------+
+>>>>>>> feature/RAM
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------+
 ; Fitter Partition Statistics                                                                         ;
 +---------------------------------------------+----------------------+--------------------------------+
@@ -591,11 +680,86 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ; MAX10_CLK1_50 ; P11   ; 3        ; 34           ; 0            ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; 0         ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 =======
+=======
++------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                          ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                   ; Low                            ;
+;                                             ;                       ;                                ;
+; Total logic elements                        ; 187 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 74                    ; 0                              ;
+;     -- Register only                        ; 66                    ; 0                              ;
+;     -- Combinational with a register        ; 47                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic element usage by number of LUT inputs ;                       ;                                ;
+;     -- 4 input functions                    ; 97                    ; 0                              ;
+;     -- 3 input functions                    ; 0                     ; 0                              ;
+;     -- <=2 input functions                  ; 24                    ; 0                              ;
+;     -- Register only                        ; 66                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic elements by mode                      ;                       ;                                ;
+;     -- normal mode                          ; 121                   ; 0                              ;
+;     -- arithmetic mode                      ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Total registers                             ; 113                   ; 0                              ;
+;     -- Dedicated logic registers            ; 113 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- I/O registers                        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Total LABs:  partially or completely used   ; 21 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+;                                             ;                       ;                                ;
+; Virtual pins                                ; 0                     ; 0                              ;
+; I/O pins                                    ; 108                   ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )       ; 0 / 288 ( 0 % )                ;
+; Total memory bits                           ; 0                     ; 0                              ;
+; Total RAM block bits                        ; 0                     ; 0                              ;
+; Clock control block                         ; 2 / 24 ( 8 % )        ; 0 / 24 ( 0 % )                 ;
+; User Flash Memory                           ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )                  ;
+; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )       ; 0 / 2 ( 0 % )                  ;
+;                                             ;                       ;                                ;
+; Connections                                 ;                       ;                                ;
+;     -- Input Connections                    ; 36                    ; 0                              ;
+;     -- Registered Input Connections         ; 0                     ; 0                              ;
+;     -- Output Connections                   ; 36                    ; 0                              ;
+;     -- Registered Output Connections        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Internal Connections                        ;                       ;                                ;
+;     -- Total Connections                    ; 992                   ; 8                              ;
+;     -- Registered Connections               ; 204                   ; 0                              ;
+;                                             ;                       ;                                ;
+; External Connections                        ;                       ;                                ;
+;     -- Top                                  ; 72                    ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Partition Interface                         ;                       ;                                ;
+;     -- Input Ports                          ; 14                    ; 0                              ;
+;     -- Output Ports                         ; 58                    ; 0                              ;
+;     -- Bidir Ports                          ; 36                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Registered Ports                            ;                       ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Port Connectivity                           ;                       ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
++---------------------------------------------+-----------------------+--------------------------------+
+
+
+>>>>>>> feature/RAM
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Input Pins                                                                                                                                                                                                                                                                                              ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard          ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
+<<<<<<< HEAD
 ; ADC_CLK_10    ; N5    ; 2        ; 0            ; 23           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; KEY[0]        ; B8    ; 7        ; 46           ; 54           ; 28           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 ; KEY[1]        ; A7    ; 7        ; 49           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
@@ -612,6 +776,23 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ; SW[9]         ; F15   ; 7        ; 69           ; 54           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10    ; N5    ; 2        ; 0            ; 23           ; 21           ; 97                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; KEY[0]        ; B8    ; 7        ; 46           ; 54           ; 28           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; KEY[1]        ; A7    ; 7        ; 49           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; MAX10_CLK1_50 ; P11   ; 3        ; 34           ; 0            ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[0]         ; C10   ; 7        ; 51           ; 54           ; 28           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[1]         ; C11   ; 7        ; 51           ; 54           ; 21           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[2]         ; D12   ; 7        ; 51           ; 54           ; 0            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[3]         ; C12   ; 7        ; 54           ; 54           ; 28           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[4]         ; A12   ; 7        ; 54           ; 54           ; 21           ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[5]         ; B12   ; 7        ; 49           ; 54           ; 0            ; 17                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[6]         ; A13   ; 7        ; 54           ; 54           ; 14           ; 39                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[7]         ; A14   ; 7        ; 58           ; 54           ; 28           ; 40                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[8]         ; B14   ; 7        ; 56           ; 54           ; 0            ; 39                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[9]         ; F15   ; 7        ; 69           ; 54           ; 0            ; 40                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
++---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
+>>>>>>> feature/RAM
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1358,6 +1539,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; |DE10_LITE_Golden_Top      ; 44 (1)      ; 29 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 86   ; 0            ; 15 (1)       ; 0 (0)             ; 29 (0)           ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
 ;    |Counter:countA|        ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Counter:countA        ; Counter              ; work         ;
 ;    |Prescaler:pres|        ; 21 (21)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
@@ -1372,6 +1554,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |SevSegController:ssc2| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc4| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc4 ; SevSegController     ; work         ;
 >>>>>>> feature/ALU
+=======
+; |DE10_LITE_Golden_Top      ; 187 (17)    ; 113 (16)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 108  ; 0            ; 74 (1)       ; 66 (4)            ; 47 (0)           ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+;    |Prescaler:pres|        ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
+;    |RAMemory:ramA|         ; 153 (153)   ; 96 (96)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 50 (50)      ; 61 (61)           ; 42 (42)          ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ramA         ; RAMemory             ; work         ;
+;    |SevSegController:ssc0| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 2 (2)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
+;    |SevSegController:ssc2| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
+;    |SevSegController:ssc3| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
+;    |SevSegController:ssc4| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc4 ; SevSegController     ; work         ;
+;    |SevSegController:ssc5| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc5 ; SevSegController     ; work         ;
+>>>>>>> feature/RAM
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1477,21 +1669,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[33]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[34]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[35]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[9]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[8]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[7]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[6]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; ADC_CLK_10    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; SW[3]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[2]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[1]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[0]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+<<<<<<< HEAD
 ; SW[4]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[8]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[7]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[6]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[5]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[9]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+=======
+; SW[4]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[5]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+>>>>>>> feature/RAM
 ; KEY[0]        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 +---------------------------------------------------+
 ; Pad To Core Delay Chain Fanout                    ;
@@ -1662,6 +1864,366 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; KEY[0]                  ; PIN_B8        ; 7       ; Sync. load ; no     ; --                   ; --               ; --                        ;
 ; Prescaler:pres|count[0] ; FF_X1_Y38_N17 ; 24      ; Clock      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 +-------------------------+---------------+---------+------------+--------+----------------------+------------------+---------------------------+
+=======
++----------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                       ;
++----------------------------------------+-------------------+---------+
+; Source Pin / Fanout                    ; Pad To Core Index ; Setting ;
++----------------------------------------+-------------------+---------+
+; MAX10_CLK1_50                          ;                   ;         ;
+; KEY[1]                                 ;                   ;         ;
+; GPIO[0]                                ;                   ;         ;
+; GPIO[1]                                ;                   ;         ;
+; GPIO[2]                                ;                   ;         ;
+; GPIO[3]                                ;                   ;         ;
+; GPIO[4]                                ;                   ;         ;
+; GPIO[5]                                ;                   ;         ;
+; GPIO[6]                                ;                   ;         ;
+; GPIO[7]                                ;                   ;         ;
+; GPIO[8]                                ;                   ;         ;
+; GPIO[9]                                ;                   ;         ;
+; GPIO[10]                               ;                   ;         ;
+; GPIO[11]                               ;                   ;         ;
+; GPIO[12]                               ;                   ;         ;
+; GPIO[13]                               ;                   ;         ;
+; GPIO[14]                               ;                   ;         ;
+; GPIO[15]                               ;                   ;         ;
+; GPIO[16]                               ;                   ;         ;
+; GPIO[17]                               ;                   ;         ;
+; GPIO[18]                               ;                   ;         ;
+; GPIO[19]                               ;                   ;         ;
+; GPIO[20]                               ;                   ;         ;
+; GPIO[21]                               ;                   ;         ;
+; GPIO[22]                               ;                   ;         ;
+; GPIO[23]                               ;                   ;         ;
+; GPIO[24]                               ;                   ;         ;
+; GPIO[25]                               ;                   ;         ;
+; GPIO[26]                               ;                   ;         ;
+; GPIO[27]                               ;                   ;         ;
+; GPIO[28]                               ;                   ;         ;
+; GPIO[29]                               ;                   ;         ;
+; GPIO[30]                               ;                   ;         ;
+; GPIO[31]                               ;                   ;         ;
+; GPIO[32]                               ;                   ;         ;
+; GPIO[33]                               ;                   ;         ;
+; GPIO[34]                               ;                   ;         ;
+; GPIO[35]                               ;                   ;         ;
+; SW[9]                                  ;                   ;         ;
+;      - dig0[3]                         ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~102      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~105      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~106      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~108      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~109      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~110      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~113      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~114      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~122      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~126      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~128      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~129      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~130      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~131      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~133      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~142      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~145      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~146      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~148      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~149      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~150      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~153      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~154      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~156      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~158      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~160      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~162      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~164      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~166      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~168      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~170      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~172      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~174      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~176      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~178      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~180      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~182      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~184      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~186      ; 0                 ; 6       ;
+; SW[8]                                  ;                   ;         ;
+;      - dig0[2]                         ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~102      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~106      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~107      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~108      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~110      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~111      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~113      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~122      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~125      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~126      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~127      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~128      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~130      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~133      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~134      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~142      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~146      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~147      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~148      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~150      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~151      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~153      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~156      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~158      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~160      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~162      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~164      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~166      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~168      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~170      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~172      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~174      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~176      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~178      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~180      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~182      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~184      ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~186      ; 0                 ; 6       ;
+; SW[7]                                  ;                   ;         ;
+;      - dig0[1]                         ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~96       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~97       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~98       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~100      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~101      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~103      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~112      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~115      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~116      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~117      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~118      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~120      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~123      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~124      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~132      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~136      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~137      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~138      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~140      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~141      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~143      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~152      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~155      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~156      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~158      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~160      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~162      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~164      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~166      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~168      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~170      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~172      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~174      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~176      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~178      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~180      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~182      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~184      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~186      ; 1                 ; 6       ;
+; SW[6]                                  ;                   ;         ;
+;      - dig0[0]                         ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~96       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~98       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~99       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~100      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~103      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~104      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~112      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~116      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~118      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~119      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~120      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~121      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~123      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~132      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~135      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~136      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~138      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~139      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~140      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~143      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~144      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~152      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~156      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~158      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~160      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~162      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~164      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~166      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~168      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~170      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~172      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~174      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~176      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~178      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~180      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~182      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~184      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~186      ; 1                 ; 6       ;
+; ADC_CLK_10                             ;                   ;         ;
+; SW[3]                                  ;                   ;         ;
+;      - dig2[3]                         ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~63       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~51       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~69       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~33       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~27       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~45       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~15       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~9        ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~3        ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~21       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~81       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~87       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~75       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~57feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~93feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~39feeder ; 1                 ; 6       ;
+; SW[2]                                  ;                   ;         ;
+;      - dig2[2]                         ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~38       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~14       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~56       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~8        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~80       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~26       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~50       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~2        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~74       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~68       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~44       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~20       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~62feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~86feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~92feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~32feeder ; 0                 ; 6       ;
+; SW[1]                                  ;                   ;         ;
+;      - dig2[1]                         ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~37       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~31       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~25       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~55       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~49       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~67       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~13       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~1        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~19       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~73       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~91       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~43feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~61feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~85feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~79feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~7feeder  ; 0                 ; 6       ;
+; SW[0]                                  ;                   ;         ;
+;      - dig2[0]                         ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~30       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~6        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~78       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~12       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~0        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~72       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~66       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~18       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~90       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~60feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~84feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~48feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~54feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~36feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~24feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~42feeder ; 0                 ; 6       ;
+; SW[4]                                  ;                   ;         ;
+;      - RAMemory:ramA|register~52       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~70       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~28       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~46       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~16       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~4        ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~22       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~88       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~76       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~94       ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~64feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~58feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~82feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~10feeder ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~40feeder ; 1                 ; 6       ;
+;      - dig3[0]~feeder                  ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~34feeder ; 1                 ; 6       ;
+; SW[5]                                  ;                   ;         ;
+;      - RAMemory:ramA|register~65       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~17       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~11       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~83       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~29       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~5        ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~77       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~23       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~95       ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~53feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~89feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~47feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~71feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~59feeder ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~41feeder ; 0                 ; 6       ;
+;      - dig3[1]~feeder                  ; 0                 ; 6       ;
+;      - RAMemory:ramA|register~35feeder ; 0                 ; 6       ;
+; KEY[0]                                 ;                   ;         ;
+;      - RAMemory:ramA|register~157      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~159      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~161      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~163      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~165      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~167      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~169      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~171      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~173      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~175      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~177      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~179      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~181      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~183      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~185      ; 1                 ; 6       ;
+;      - RAMemory:ramA|register~187      ; 1                 ; 6       ;
++----------------------------------------+-------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                         ;
++----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                       ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; ADC_CLK_10                 ; PIN_N5             ; 97      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; Prescaler:pres|count[0]    ; FF_X77_Y39_N3      ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; RAMemory:ramA|register~157 ; LCCOMB_X55_Y50_N28 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~159 ; LCCOMB_X58_Y50_N22 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~161 ; LCCOMB_X58_Y50_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~163 ; LCCOMB_X58_Y50_N20 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~165 ; LCCOMB_X58_Y50_N10 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~167 ; LCCOMB_X58_Y50_N8  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~169 ; LCCOMB_X64_Y50_N2  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~171 ; LCCOMB_X64_Y50_N12 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~173 ; LCCOMB_X59_Y50_N0  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~175 ; LCCOMB_X58_Y50_N18 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~177 ; LCCOMB_X59_Y50_N18 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~179 ; LCCOMB_X56_Y50_N16 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~181 ; LCCOMB_X56_Y50_N24 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~183 ; LCCOMB_X55_Y50_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~185 ; LCCOMB_X56_Y50_N10 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ramA|register~187 ; LCCOMB_X56_Y50_N2  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+>>>>>>> feature/RAM
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1669,6 +2231,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                    ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+<<<<<<< HEAD
 ; Prescaler:pres|count[0] ; FF_X1_Y38_N17 ; 24      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +-------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 >>>>>>> feature/ALU
@@ -1853,6 +2416,166 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 1                           ;
 >>>>>>> feature/ALU
 +---------------------------------------------+-----------------------------+
+=======
+; ADC_CLK_10              ; PIN_N5        ; 97      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; Prescaler:pres|count[0] ; FF_X77_Y39_N3 ; 16      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
++-------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+
+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 274 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 18 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 109 / 106,704 ( < 1 % ) ;
+; Direct links          ; 43 / 148,641 ( < 1 % )  ;
+; Global clocks         ; 2 / 20 ( 10 % )         ;
+; Local interconnects   ; 51 / 49,760 ( < 1 % )   ;
+; NSLEEPs               ; 0 / 500 ( 0 % )         ;
+; R24 interconnects     ; 18 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 186 / 147,764 ( < 1 % ) ;
++-----------------------+-------------------------+
+
+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++--------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 8.90) ; Number of LABs  (Total = 21) ;
++--------------------------------------------+------------------------------+
+; 1                                          ; 2                            ;
+; 2                                          ; 3                            ;
+; 3                                          ; 3                            ;
+; 4                                          ; 0                            ;
+; 5                                          ; 0                            ;
+; 6                                          ; 1                            ;
+; 7                                          ; 1                            ;
+; 8                                          ; 0                            ;
+; 9                                          ; 0                            ;
+; 10                                         ; 1                            ;
+; 11                                         ; 0                            ;
+; 12                                         ; 2                            ;
+; 13                                         ; 1                            ;
+; 14                                         ; 1                            ;
+; 15                                         ; 0                            ;
+; 16                                         ; 6                            ;
++--------------------------------------------+------------------------------+
+
+
++-------------------------------------------------------------------+
+; LAB-wide Signals                                                  ;
++------------------------------------+------------------------------+
+; LAB-wide Signals  (Average = 1.24) ; Number of LABs  (Total = 21) ;
++------------------------------------+------------------------------+
+; 1 Clock                            ; 11                           ;
+; 1 Clock enable                     ; 5                            ;
+; 2 Clock enables                    ; 5                            ;
+; 2 Clocks                           ; 5                            ;
++------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 12.81) ; Number of LABs  (Total = 21) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 2                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 3                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 2                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 6.81) ; Number of LABs  (Total = 21) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 3                            ;
+; 2                                               ; 2                            ;
+; 3                                               ; 3                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 0                            ;
+; 10                                              ; 4                            ;
+; 11                                              ; 2                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 2                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 11.33) ; Number of LABs  (Total = 21) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 3                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 3                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 0                            ;
+; 33                                           ; 0                            ;
+; 34                                           ; 0                            ;
+; 35                                           ; 0                            ;
+; 36                                           ; 1                            ;
++----------------------------------------------+------------------------------+
+>>>>>>> feature/RAM
 
 
 +------------------------------------------+
@@ -2011,17 +2734,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[33]           ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO[34]           ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; GPIO[35]           ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[6]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; ADC_CLK_10         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[3]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[2]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[0]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[4]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+<<<<<<< HEAD
 ; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[5]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+=======
+; SW[5]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+>>>>>>> feature/RAM
 ; KEY[0]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
@@ -2069,15 +2800,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; ADC_CLK_10      ; ADC_CLK_10           ; 5.6               ;
 =======
 ; ADC_CLK_10      ; ADC_CLK_10           ; 2.3               ;
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10      ; ADC_CLK_10           ; 4.4               ;
+>>>>>>> feature/RAM
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 +-------------------------------------------------------------------------+
 ; Estimated Delay Added for Hold Timing Details                           ;
@@ -2087,14 +2823,21 @@ This will disable optimization of problematic paths and expose them for further 
 ; Prescaler:pres|count[20] ; Prescaler:pres|count[20] ; 5.636             ;
 +--------------------------+--------------------------+-------------------+
 =======
+=======
+>>>>>>> feature/RAM
 +-----------------------------------------------------------------------+
 ; Estimated Delay Added for Hold Timing Details                         ;
 +-------------------------+-------------------------+-------------------+
 ; Source Register         ; Destination Register    ; Delay Added in ns ;
 +-------------------------+-------------------------+-------------------+
+<<<<<<< HEAD
 ; Prescaler:pres|count[0] ; Prescaler:pres|count[0] ; 2.337             ;
 +-------------------------+-------------------------+-------------------+
 >>>>>>> feature/ALU
+=======
+; Prescaler:pres|count[0] ; Prescaler:pres|count[0] ; 4.419             ;
++-------------------------+-------------------------+-------------------+
+>>>>>>> feature/RAM
 Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
 
 
@@ -2144,16 +2887,22 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 <<<<<<< HEAD
 Info (176353): Automatically promoted node ADC_CLK_10~input (placed in PIN N5 (CLK0p, DIFFIO_RX_L28p, DIFFOUT_L28p, High_Speed)) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 33
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+<<<<<<< HEAD
 Info (176353): Automatically promoted node Prescaler:pres|count[20]  File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node Prescaler:pres|count[20]~58 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
 =======
+=======
+>>>>>>> feature/RAM
 Info (176353): Automatically promoted node Prescaler:pres|count[0]  File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node Prescaler:pres|count[0]~0 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
+<<<<<<< HEAD
 >>>>>>> feature/ALU
+=======
+>>>>>>> feature/RAM
         Info (176357): Destination node HEX5[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 76
         Info (176357): Destination node HEX4[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 73
         Info (176357): Destination node HEX3[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
@@ -2250,7 +2999,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+<<<<<<< HEAD
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X67_Y44 to location X78_Y54
+=======
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X56_Y44 to location X66_Y54
+>>>>>>> feature/RAM
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
@@ -2304,17 +3057,25 @@ Warning (169177): 50 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at Y3 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
     Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AB2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
     Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AA2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 33
     Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+<<<<<<< HEAD
     Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
     Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+=======
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
+>>>>>>> feature/RAM
     Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 81
 Warning (169064): Following 36 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin GPIO[0] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
@@ -2355,6 +3116,7 @@ Warning (169064): Following 36 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
 Info (144001): Generated suppressed messages file /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.fit.smsg
 <<<<<<< HEAD
+<<<<<<< HEAD
 Info: Quartus Prime Fitter was successful. 0 errors, 107 warnings
     Info: Peak virtual memory: 2046 megabytes
     Info: Processing ended: Thu Jan 28 18:53:58 2021
@@ -2367,6 +3129,13 @@ Info: Quartus Prime Fitter was successful. 0 errors, 85 warnings
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:09
 >>>>>>> feature/ALU
+=======
+Info: Quartus Prime Fitter was successful. 0 errors, 85 warnings
+    Info: Peak virtual memory: 2069 megabytes
+    Info: Processing ended: Wed Jan 27 22:21:10 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
+>>>>>>> feature/RAM
 
 
 +----------------------------+

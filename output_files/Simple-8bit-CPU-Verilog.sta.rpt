@@ -1,9 +1,13 @@
 Timing Analyzer report for Simple-8bit-CPU-Verilog
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Jan 28 18:54:01 2021
 =======
 Wed Jan 27 21:41:43 2021
 >>>>>>> feature/ALU
+=======
+Wed Jan 27 22:21:13 2021
+>>>>>>> feature/RAM
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -97,14 +101,19 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Average used               ; 1.11        ;
 =======
 ; Average used               ; 1.12        ;
 >>>>>>> feature/ALU
+=======
+; Average used               ; 1.20        ;
+>>>>>>> feature/RAM
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ;     Processor 2            ;   0.7%      ;
 ;     Processors 3-16        ;   0.7%      ;
@@ -186,15 +195,54 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------+--------+---------------+
 
 
+=======
+;     Processor 2            ;   1.4%      ;
+;     Processors 3-16        ;   1.4%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                           ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+; Clock Name              ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                     ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+; ADC_CLK_10              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ADC_CLK_10 }              ;
+; Prescaler:pres|count[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Prescaler:pres|count[0] } ;
++-------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------+
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary              ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; Prescaler:pres|count[0] ; -3.087 ; -17.427       ;
+; ADC_CLK_10              ; -1.391 ; -1.391        ;
++-------------------------+--------+---------------+
+
+
+>>>>>>> feature/RAM
 +-------------------------------------------------+
 ; Slow 1200mV 85C Model Hold Summary              ;
 +-------------------------+-------+---------------+
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
+<<<<<<< HEAD
 ; Prescaler:pres|count[0] ; 0.432 ; 0.000         ;
 ; ADC_CLK_10              ; 0.449 ; 0.000         ;
 +-------------------------+-------+---------------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; 1.235 ; 0.000         ;
+; Prescaler:pres|count[0] ; 1.970 ; 0.000         ;
++-------------------------+-------+---------------+
+>>>>>>> feature/RAM
 
 
 ------------------------------------------
@@ -212,6 +260,7 @@ No paths to report.
 +---------------------------------------------------+
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
 <<<<<<< HEAD
+<<<<<<< HEAD
 +--------------------------+--------+---------------+
 ; Clock                    ; Slack  ; End Point TNS ;
 +--------------------------+--------+---------------+
@@ -226,6 +275,14 @@ No paths to report.
 ; Prescaler:pres|count[0] ; -1.403 ; -33.672        ;
 +-------------------------+--------+----------------+
 >>>>>>> feature/ALU
+=======
++-------------------------+--------+----------------+
+; Clock                   ; Slack  ; End Point TNS  ;
++-------------------------+--------+----------------+
+; ADC_CLK_10              ; -3.000 ; -139.091       ;
+; Prescaler:pres|count[0] ; -1.403 ; -22.448        ;
++-------------------------+--------+----------------+
+>>>>>>> feature/RAM
 
 
 -----------------------------------------------
@@ -238,6 +295,7 @@ Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
 Worst Case Available Settling Time: 0.176 ns
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Slow 1200mV 0C Model Fmax Summary                                                                                       ;
@@ -291,15 +349,39 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------+--------+---------------+
 
 
+=======
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary               ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; Prescaler:pres|count[0] ; -2.808 ; -15.832       ;
+; ADC_CLK_10              ; -1.238 ; -1.238        ;
++-------------------------+--------+---------------+
+
+
+>>>>>>> feature/RAM
 +-------------------------------------------------+
 ; Slow 1200mV 0C Model Hold Summary               ;
 +-------------------------+-------+---------------+
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
+<<<<<<< HEAD
 ; ADC_CLK_10              ; 0.381 ; 0.000         ;
 ; Prescaler:pres|count[0] ; 0.396 ; 0.000         ;
 +-------------------------+-------+---------------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; 1.125 ; 0.000         ;
+; Prescaler:pres|count[0] ; 1.808 ; 0.000         ;
++-------------------------+-------+---------------+
+>>>>>>> feature/RAM
 
 
 -----------------------------------------
@@ -315,6 +397,7 @@ No paths to report.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +---------------------------------------------------+
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary  ;
 +--------------------------+--------+---------------+
@@ -324,15 +407,23 @@ No paths to report.
 ; Prescaler:pres|count[20] ; -1.403 ; -11.224       ;
 +--------------------------+--------+---------------+
 =======
+=======
+>>>>>>> feature/RAM
 +--------------------------------------------------+
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
 +-------------------------+--------+---------------+
 ; Clock                   ; Slack  ; End Point TNS ;
 +-------------------------+--------+---------------+
+<<<<<<< HEAD
 ; ADC_CLK_10              ; -3.000 ; -4.403        ;
 ; Prescaler:pres|count[0] ; -1.403 ; -33.672       ;
 +-------------------------+--------+---------------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; -3.000 ; -139.091      ;
+; Prescaler:pres|count[0] ; -1.403 ; -22.448       ;
++-------------------------+--------+---------------+
+>>>>>>> feature/RAM
 
 
 ----------------------------------------------
@@ -345,6 +436,7 @@ Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
 Worst Case Available Settling Time: 0.248 ns
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 +---------------------------------------------------+
 ; Fast 1200mV 0C Model Setup Summary                ;
@@ -377,15 +469,33 @@ Worst Case Available Settling Time: 0.248 ns
 +-------------------------+-------+---------------+
 
 
+=======
++--------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary               ;
++-------------------------+--------+---------------+
+; Clock                   ; Slack  ; End Point TNS ;
++-------------------------+--------+---------------+
+; Prescaler:pres|count[0] ; -0.769 ; -4.046        ;
+; ADC_CLK_10              ; -0.305 ; -0.305        ;
++-------------------------+--------+---------------+
+
+
+>>>>>>> feature/RAM
 +-------------------------------------------------+
 ; Fast 1200mV 0C Model Hold Summary               ;
 +-------------------------+-------+---------------+
 ; Clock                   ; Slack ; End Point TNS ;
 +-------------------------+-------+---------------+
+<<<<<<< HEAD
 ; Prescaler:pres|count[0] ; 0.163 ; 0.000         ;
 ; ADC_CLK_10              ; 0.204 ; 0.000         ;
 +-------------------------+-------+---------------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; 0.485 ; 0.000         ;
+; Prescaler:pres|count[0] ; 0.756 ; 0.000         ;
++-------------------------+-------+---------------+
+>>>>>>> feature/RAM
 
 
 -----------------------------------------
@@ -401,6 +511,7 @@ No paths to report.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +---------------------------------------------------+
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary  ;
 +--------------------------+--------+---------------+
@@ -410,15 +521,23 @@ No paths to report.
 ; Prescaler:pres|count[20] ; -1.000 ; -8.000        ;
 +--------------------------+--------+---------------+
 =======
+=======
+>>>>>>> feature/RAM
 +--------------------------------------------------+
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
 +-------------------------+--------+---------------+
 ; Clock                   ; Slack  ; End Point TNS ;
 +-------------------------+--------+---------------+
+<<<<<<< HEAD
 ; ADC_CLK_10              ; -3.000 ; -4.169        ;
 ; Prescaler:pres|count[0] ; -1.000 ; -24.000       ;
 +-------------------------+--------+---------------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; -3.000 ; -116.219      ;
+; Prescaler:pres|count[0] ; -1.000 ; -16.000       ;
++-------------------------+--------+---------------+
+>>>>>>> feature/RAM
 
 
 ----------------------------------------------
@@ -431,6 +550,7 @@ Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
 Worst Case Available Settling Time: 0.639 ns
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 +----------------------------------------------------------------------------------------+
 ; Multicorner Timing Analysis Summary                                                    ;
@@ -460,6 +580,20 @@ Worst Case Available Settling Time: 0.639 ns
 ;  Prescaler:pres|count[0] ; 0.000  ; 0.000 ; N/A      ; N/A     ; -33.672             ;
 +--------------------------+--------+-------+----------+---------+---------------------+
 >>>>>>> feature/ALU
+=======
++---------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                   ;
++--------------------------+---------+-------+----------+---------+---------------------+
+; Clock                    ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack         ; -3.087  ; 0.485 ; N/A      ; N/A     ; -3.000              ;
+;  ADC_CLK_10              ; -1.391  ; 0.485 ; N/A      ; N/A     ; -3.000              ;
+;  Prescaler:pres|count[0] ; -3.087  ; 0.756 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS          ; -18.818 ; 0.0   ; 0.0      ; 0.0     ; -161.539            ;
+;  ADC_CLK_10              ; -1.391  ; 0.000 ; N/A      ; N/A     ; -139.091            ;
+;  Prescaler:pres|count[0] ; -17.427 ; 0.000 ; N/A      ; N/A     ; -22.448             ;
++--------------------------+---------+-------+----------+---------+---------------------+
+>>>>>>> feature/RAM
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -608,17 +742,25 @@ Worst Case Available Settling Time: 0.639 ns
 ; GPIO[33]            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; GPIO[34]            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; GPIO[35]            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[9]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[8]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[7]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[6]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; ADC_CLK_10          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[3]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[2]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[1]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[0]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[4]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+<<<<<<< HEAD
 ; SW[8]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[7]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[6]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[5]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[9]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+=======
+; SW[5]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+>>>>>>> feature/RAM
 ; KEY[0]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -940,6 +1082,7 @@ Worst Case Available Settling Time: 0.639 ns
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------+
 ; Setup Transfers                                                                                 ;
 +--------------------------+--------------------------+----------+----------+----------+----------+
@@ -973,15 +1116,33 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
+=======
++-----------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                               ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; From Clock              ; To Clock                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+; Prescaler:pres|count[0] ; ADC_CLK_10              ; 1        ; 1        ; 0        ; 0        ;
+; ADC_CLK_10              ; Prescaler:pres|count[0] ; 96       ; 0        ; 0        ; 0        ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+>>>>>>> feature/RAM
 +-----------------------------------------------------------------------------------------------+
 ; Hold Transfers                                                                                ;
 +-------------------------+-------------------------+----------+----------+----------+----------+
 ; From Clock              ; To Clock                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------+-------------------------+----------+----------+----------+----------+
 ; Prescaler:pres|count[0] ; ADC_CLK_10              ; 1        ; 1        ; 0        ; 0        ;
+<<<<<<< HEAD
 ; Prescaler:pres|count[0] ; Prescaler:pres|count[0] ; 7        ; 0        ; 0        ; 0        ;
 +-------------------------+-------------------------+----------+----------+----------+----------+
 >>>>>>> feature/ALU
+=======
+; ADC_CLK_10              ; Prescaler:pres|count[0] ; 96       ; 0        ; 0        ; 0        ;
++-------------------------+-------------------------+----------+----------+----------+----------+
+>>>>>>> feature/RAM
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -1004,6 +1165,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ; Unconstrained Input Ports       ; 0     ; 0    ;
 ; Unconstrained Input Port Paths  ; 0     ; 0    ;
@@ -1028,6 +1190,15 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
+=======
+; Unconstrained Input Ports       ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 610   ; 610  ;
+; Unconstrained Output Ports      ; 39    ; 39   ;
+; Unconstrained Output Port Paths ; 110   ; 110  ;
++---------------------------------+-------+------+
+
+
+>>>>>>> feature/RAM
 +------------------------------------------------------------------------+
 ; Clock Status Summary                                                   ;
 +-------------------------+-------------------------+------+-------------+
@@ -1055,7 +1226,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
+<<<<<<< HEAD
 >>>>>>> feature/ALU
+=======
+>>>>>>> feature/RAM
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -1071,18 +1245,15 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX0[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX1[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 <<<<<<< HEAD
 =======
 ; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> feature/RAM
 ; HEX3[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1092,6 +1263,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 <<<<<<< HEAD
 =======
 ; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> feature/RAM
 ; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1132,18 +1307,15 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX0[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX1[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX2[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 <<<<<<< HEAD
 =======
 ; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> feature/RAM
 ; HEX3[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1153,6 +1325,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 <<<<<<< HEAD
 =======
 ; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> feature/RAM
 ; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1168,10 +1344,14 @@ Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 <<<<<<< HEAD
+<<<<<<< HEAD
     Info: Processing started: Thu Jan 28 18:54:00 2021
 =======
     Info: Processing started: Wed Jan 27 21:41:41 2021
 >>>>>>> feature/ALU
+=======
+    Info: Processing started: Wed Jan 27 22:21:12 2021
+>>>>>>> feature/RAM
 Info: Command: quartus_sta Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1182,17 +1362,23 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'Sim
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
 <<<<<<< HEAD
+<<<<<<< HEAD
     Info (332105): create_clock -period 1.000 -name Prescaler:pres|count[20] Prescaler:pres|count[20]
 =======
     Info (332105): create_clock -period 1.000 -name Prescaler:pres|count[0] Prescaler:pres|count[0]
 >>>>>>> feature/ALU
+=======
+    Info (332105): create_clock -period 1.000 -name Prescaler:pres|count[0] Prescaler:pres|count[0]
+>>>>>>> feature/RAM
     Info (332105): create_clock -period 1.000 -name ADC_CLK_10 ADC_CLK_10
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
+<<<<<<< HEAD
 <<<<<<< HEAD
 Info (332146): Worst-case setup slack is -1.856
     Info (332119):     Slack       End Point TNS Clock 
@@ -1216,11 +1402,24 @@ Info (332146): Worst-case hold slack is 0.432
     Info (332119):     0.432               0.000 Prescaler:pres|count[0] 
     Info (332119):     0.449               0.000 ADC_CLK_10 
 >>>>>>> feature/ALU
+=======
+Info (332146): Worst-case setup slack is -3.087
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.087             -17.427 Prescaler:pres|count[0] 
+    Info (332119):    -1.391              -1.391 ADC_CLK_10 
+Info (332146): Worst-case hold slack is 1.235
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.235               0.000 ADC_CLK_10 
+    Info (332119):     1.970               0.000 Prescaler:pres|count[0] 
+>>>>>>> feature/RAM
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+<<<<<<< HEAD
 <<<<<<< HEAD
     Info (332119):    -3.000             -32.463 ADC_CLK_10 
     Info (332119):    -1.403             -11.224 Prescaler:pres|count[20] 
@@ -1235,11 +1434,17 @@ Info (332114): Report Metastability: Found 7 synchronizer chains.
     Info (332114): Worst Case Available Settling Time: 0.176 ns
     Info (332114): 
 >>>>>>> feature/ALU
+=======
+    Info (332119):    -3.000            -139.091 ADC_CLK_10 
+    Info (332119):    -1.403             -22.448 Prescaler:pres|count[0] 
+>>>>>>> feature/RAM
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332140): No fmax paths to report
 Critical Warning (332148): Timing requirements not met
+<<<<<<< HEAD
 <<<<<<< HEAD
 Info (332146): Worst-case setup slack is -1.569
     Info (332119):     Slack       End Point TNS Clock 
@@ -1263,11 +1468,24 @@ Info (332146): Worst-case hold slack is 0.381
     Info (332119):     0.381               0.000 ADC_CLK_10 
     Info (332119):     0.396               0.000 Prescaler:pres|count[0] 
 >>>>>>> feature/ALU
+=======
+Info (332146): Worst-case setup slack is -2.808
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.808             -15.832 Prescaler:pres|count[0] 
+    Info (332119):    -1.238              -1.238 ADC_CLK_10 
+Info (332146): Worst-case hold slack is 1.125
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.125               0.000 ADC_CLK_10 
+    Info (332119):     1.808               0.000 Prescaler:pres|count[0] 
+>>>>>>> feature/RAM
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+<<<<<<< HEAD
 <<<<<<< HEAD
     Info (332119):    -3.000             -32.463 ADC_CLK_10 
     Info (332119):    -1.403             -11.224 Prescaler:pres|count[20] 
@@ -1307,12 +1525,30 @@ Info (332146): Worst-case hold slack is 0.163
     Info (332119):     0.163               0.000 Prescaler:pres|count[0] 
     Info (332119):     0.204               0.000 ADC_CLK_10 
 >>>>>>> feature/ALU
+=======
+    Info (332119):    -3.000            -139.091 ADC_CLK_10 
+    Info (332119):    -1.403             -22.448 Prescaler:pres|count[0] 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.769
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.769              -4.046 Prescaler:pres|count[0] 
+    Info (332119):    -0.305              -0.305 ADC_CLK_10 
+Info (332146): Worst-case hold slack is 0.485
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.485               0.000 ADC_CLK_10 
+    Info (332119):     0.756               0.000 Prescaler:pres|count[0] 
+>>>>>>> feature/RAM
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
+<<<<<<< HEAD
 <<<<<<< HEAD
     Info (332119):    -3.000             -27.571 ADC_CLK_10 
     Info (332119):    -1.000              -8.000 Prescaler:pres|count[20] 
@@ -1341,5 +1577,16 @@ Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 >>>>>>> feature/ALU
+=======
+    Info (332119):    -3.000            -116.219 ADC_CLK_10 
+    Info (332119):    -1.000             -16.000 Prescaler:pres|count[0] 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 664 megabytes
+    Info: Processing ended: Wed Jan 27 22:21:13 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+>>>>>>> feature/RAM
 
 

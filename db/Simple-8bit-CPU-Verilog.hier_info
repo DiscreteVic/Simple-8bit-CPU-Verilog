@@ -1,5 +1,5 @@
 |DE10_LITE_Golden_Top
-ADC_CLK_10 => ADC_CLK_10.IN1
+ADC_CLK_10 => ADC_CLK_10.IN2
 MAX10_CLK1_50 => ~NO_FANOUT~
 HEX0[0] <= SevSegController:ssc0.leds
 HEX0[1] <= SevSegController:ssc0.leds
@@ -50,7 +50,10 @@ HEX5[5] <= SevSegController:ssc5.leds
 HEX5[6] <= SevSegController:ssc5.leds
 HEX5[7] <= SevSegController:ssc5.leds
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> feature/RAM
 KEY[0] => sel.IN1
 KEY[1] => ~NO_FANOUT~
 LEDR[0] <= <GND>
@@ -63,6 +66,7 @@ LEDR[6] <= <GND>
 LEDR[7] <= <GND>
 LEDR[8] <= <GND>
 LEDR[9] <= <GND>
+<<<<<<< HEAD
 SW[0] => opB[0].IN1
 SW[1] => opB[1].IN1
 SW[2] => opB[2].IN1
@@ -74,6 +78,18 @@ SW[7] => opA[2].IN1
 SW[8] => opA[3].IN1
 SW[9] => opA[4].IN1
 >>>>>>> feature/ALU
+=======
+SW[0] => dataA[0].IN1
+SW[1] => dataA[1].IN1
+SW[2] => dataA[2].IN1
+SW[3] => dataA[3].IN1
+SW[4] => dataA[4].IN1
+SW[5] => dataA[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+>>>>>>> feature/RAM
 GPIO[0] <> <UNC>
 GPIO[1] <> <UNC>
 GPIO[2] <> <UNC>
@@ -115,6 +131,7 @@ GPIO[35] <> <UNC>
 |DE10_LITE_Golden_Top|Prescaler:pres
 clk_in => count[0].CLK
 <<<<<<< HEAD
+<<<<<<< HEAD
 clk_in => count[1].CLK
 clk_in => count[2].CLK
 clk_in => count[3].CLK
@@ -139,6 +156,9 @@ clk_out <= count[20].DB_MAX_OUTPUT_PORT_TYPE
 =======
 clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 >>>>>>> feature/ALU
+=======
+clk_out <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> feature/RAM
 
 
 |DE10_LITE_Golden_Top|SevSegController:ssc0
@@ -574,6 +594,7 @@ leds[7] <= dot.DB_MAX_OUTPUT_PORT_TYPE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 |DE10_LITE_Golden_Top|Counter:countA
 clk => register[0].CLK
 clk => register[1].CLK
@@ -650,5 +671,61 @@ res[5] <= regTmp[5].DB_MAX_OUTPUT_PORT_TYPE
 res[6] <= regTmp[6].DB_MAX_OUTPUT_PORT_TYPE
 res[7] <= regTmp[7].DB_MAX_OUTPUT_PORT_TYPE
 >>>>>>> feature/ALU
+=======
+|DE10_LITE_Golden_Top|RAMemory:ramA
+clk => register.we_a.CLK
+clk => register.waddr_a[4].CLK
+clk => register.waddr_a[3].CLK
+clk => register.waddr_a[2].CLK
+clk => register.waddr_a[1].CLK
+clk => register.waddr_a[0].CLK
+clk => register.data_a[7].CLK
+clk => register.data_a[6].CLK
+clk => register.data_a[5].CLK
+clk => register.data_a[4].CLK
+clk => register.data_a[3].CLK
+clk => register.data_a[2].CLK
+clk => register.data_a[1].CLK
+clk => register.data_a[0].CLK
+clk => register.CLK0
+dataIN[0] => register.data_a[0].DATAIN
+dataIN[0] => register.DATAIN
+dataIN[1] => register.data_a[1].DATAIN
+dataIN[1] => register.DATAIN1
+dataIN[2] => register.data_a[2].DATAIN
+dataIN[2] => register.DATAIN2
+dataIN[3] => register.data_a[3].DATAIN
+dataIN[3] => register.DATAIN3
+dataIN[4] => register.data_a[4].DATAIN
+dataIN[4] => register.DATAIN4
+dataIN[5] => register.data_a[5].DATAIN
+dataIN[5] => register.DATAIN5
+dataIN[6] => register.data_a[6].DATAIN
+dataIN[6] => register.DATAIN6
+dataIN[7] => register.data_a[7].DATAIN
+dataIN[7] => register.DATAIN7
+dataOUT[0] <= register.DATAOUT
+dataOUT[1] <= register.DATAOUT1
+dataOUT[2] <= register.DATAOUT2
+dataOUT[3] <= register.DATAOUT3
+dataOUT[4] <= register.DATAOUT4
+dataOUT[5] <= register.DATAOUT5
+dataOUT[6] <= register.DATAOUT6
+dataOUT[7] <= register.DATAOUT7
+addr[0] => register.waddr_a[0].DATAIN
+addr[0] => register.WADDR
+addr[0] => register.RADDR
+addr[1] => register.waddr_a[1].DATAIN
+addr[1] => register.WADDR1
+addr[1] => register.RADDR1
+addr[2] => register.waddr_a[2].DATAIN
+addr[2] => register.WADDR2
+addr[2] => register.RADDR2
+addr[3] => register.waddr_a[3].DATAIN
+addr[3] => register.WADDR3
+addr[3] => register.RADDR3
+sel => register.we_a.DATAIN
+sel => register.WE
+>>>>>>> feature/RAM
 
 
