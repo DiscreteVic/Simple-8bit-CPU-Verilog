@@ -173,138 +173,150 @@ module DE10_LITE_Golden_Top(
 	wire selShf;
 	
 	
-	wire [7:0] debugALU;
-	
-	
-	
-	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(selA));
-	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(selB));
-	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(debugALU), .sel(selR));
-	Register regZ(.clk(clk), .dataIN(RZ), .dataOUT(ABZ), .sel(selZ));
-	
-	Shifter shft(.dataIN(data), .dataOUT(RZ), .sel(selShf));
-	
-	Counter cont(.clk(KEY[0]), .cnt(cnt));
-	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
-	
-	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(selALU), .res(aluR));
-
-	
-	// Control Unit
-	always cmd = romO[7:4];
-	always dataRaw = romO[3:0];
+	wire [7:0] debugFlagA;
+	wire [7:0] debugFlagB;
 	
 	reg ucA;
 	reg ucB;
 	reg ucZ;
 	reg ucR;
 	reg ucALU;
-	reg ucShf;
+	reg ucShfU;
+	reg ucShfD;
 	
-	assign selA = ucA;
-	assign selB = ucB;
-	assign selZ = ucZ;
-	assign selR = ucR;
-	assign selALU = ucALU;
-	assign selShf = ucShf;
 	
+	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(ucA));
+	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(ucB));
+	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(debugFlagA), .sel(ucR));
+	Register regZ(.clk(clk), .dataIN(RZ), .dataOUT(ABZ), .sel(ucZ));// poner OUT ABZ
+	
+	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(RZ), .up(ucShfU), .down(ucShfD));
+	
+	Counter cont(.clk(KEY[0]), .cnt(cnt));
+	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
+	
+	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(ucALU), .res(aluR));
 
 	
+	// Control Unit
+	always cmd = romO[7:4];
+	always dataRaw = romO[3:0];
 	
-	// DEBUG	
 	
-	assign debugALU[3:0] = dig4;
-	assign debugALU[7:4] = dig5;
 	
-	assign LEDR[0] = selA;
-	assign LEDR[1] = selB;
-	assign LEDR[2] = selZ;
-	assign LEDR[3] = selR;
-	assign LEDR[4] = selALU;	
-	assign LEDR[5] = selShf;
+	// DEBUG		
+	assign debugFlagA[3:0] = dig2;
+	assign debugFlagA[7:4] = dig3;
 	
-	assign romO[7:4] = dig3;
-	assign romO[3:0] = dig2;
 	
-	always dig0 = cnt;
+	assign debugFlagB[3:0] = dig4;
+	assign debugFlagB[7:4] = dig5;
+	
+	
+	assign LEDR[0] = ucA;
+	assign LEDR[1] = ucB;
+	assign LEDR[2] = ucZ;
+	assign LEDR[3] = ucR;
+	assign LEDR[4] = ucALU;	
+	assign LEDR[5] = ucShfD;
+	assign LEDR[6] = ucShfU;
+	
+	always cmd = dig1;
+	always dataRaw = dig0;
 	//
+	
+	initial begin
+		ucA <= 0;
+		ucB <= 0;
+		ucZ <= 0;
+		ucR <= 0;
+	end
+	
 	
 	always @(posedge(clk)) begin
 		
 		case (cmd)
 		4'b0000 : begin //ADD
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 0;
 						ucZ <= 0;
 						ucR <= 1;
-						ucALU <= 0;
-						ucShf <= 0;
 					 end
 			
 		4'b0001 : begin // SUB
+						ucALU <= 1;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 0;
 						ucZ <= 0;
 						ucR <= 1;
-						ucALU <= 1;
-						ucShf <= 0;
 					 end
 					 
 		4'b0010 : begin // LOAD A
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 1;
 						ucB <= 0;
 						ucZ <= 0;
 						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 0;
 					 end
 					 
 		4'b0011 : begin // LOAD B
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 1;
 						ucZ <= 0;
 						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 0;
 					 end
 					 
-		4'b0100 : begin // LOAD Z DOWN
+		4'b0100 : begin // LOAD Z 
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 0;
 						ucZ <= 1;
 						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 0;
 					 end
 					 
-		4'b0101 : begin // LOAD Z UP
+		4'b0101 : begin // LOAD Shift Down
+						ucALU <= 0;
+						ucShfD <= 1;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 0;
-						ucZ <= 1;
-						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 1;		
+						ucZ <= 0;
+						ucR <= 0;	
 					 end
 					 
-		4'b0110 : begin // SET Z
+		4'b0110 : begin // LOAD Shift Up
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 1;
 						ucA <= 0;
 						ucB <= 0;
-						ucZ <= 1;
+						ucZ <= 0;
 						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 0;		
 					 end
 					 
 		4'b0111 : begin		
 					 end
 					 
 		default: begin 
+						ucALU <= 0;
+						ucShfD <= 0;
+						ucShfU <= 0;
 						ucA <= 0;
 						ucB <= 0;
 						ucZ <= 0;
 						ucR <= 0;
-						ucALU <= 0;
-						ucShf <= 0;		
 					 end
 					 
 		endcase

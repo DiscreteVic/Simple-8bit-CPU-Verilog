@@ -10,7 +10,7 @@ module ALU (input clk, input wire [7:0] opA, input wire [7:0] opB, input wire se
 	assign res = regTmp;
 	
 	always @(posedge(clk)) begin
-		if(sel) begin
+		if(sel == 1'b1) begin
 			regTmp = opA - opB;		
 		end
 		else begin
