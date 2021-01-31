@@ -1,5 +1,5 @@
 Flow report for Simple-8bit-CPU-Verilog
-Thu Jan 28 21:13:49 2021
+Sun Jan 31 03:22:30 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jan 28 21:13:47 2021       ;
+; Flow Status                        ; Successful - Sun Jan 31 03:22:29 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 273 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 273 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 30 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 30                                          ;
+; Total logic elements               ; 81 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 64 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 52 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 52                                          ;
 ; Total pins                         ; 108 / 360 ( 30 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 01/28/2021 21:13:34     ;
+; Start date & time ; 01/31/2021 03:22:16     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Simple-8bit-CPU-Verilog ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name          ; Section Id ;
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161186481430208         ; --                      ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 13718493745980.161205973654086         ; --                      ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                      ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                      ; --                   ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                      ; DE10_LITE_Golden_Top ; Top        ;
@@ -96,11 +96,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 489 MB              ; 00:00:15                           ;
-; Fitter               ; 00:00:05     ; 1.2                     ; 2062 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 360 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 666 MB              ; 00:00:02                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 488 MB              ; 00:00:14                           ;
+; Fitter               ; 00:00:06     ; 1.1                     ; 2064 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 360 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 662 MB              ; 00:00:02                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

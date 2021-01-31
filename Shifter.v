@@ -1,16 +1,13 @@
 // ============================================================================
 //   Ver  :| Author					:| Mod. Date :| Changes Made:
-//   V1.0 :| viCppDev			   :| 28/01/2021:| 8bit Counter
+//   V1.0 :| viCppDev			   :| 26/06/2020:| Shifter
 // ============================================================================
 
-module Counter (input clk, output wire [3:0] cnt);
+module Shifter (input wire [3:0] dataIN, output wire [7:0] dataOUT, input wire sel);
 
-	reg [3:0] register;
 	
-	assign cnt = register;
+	assign dataOUT = ((dataIN << 4)*(sel)) | ((dataIN)*(!sel));
 	
-	always @(posedge(clk)) begin
-		register = register + 1;
-	end
+	
 
 endmodule

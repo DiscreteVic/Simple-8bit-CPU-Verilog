@@ -139,9 +139,6 @@ module DE10_LITE_Golden_Top(
 //  Structural coding
 //=======================================================
 
-
-
-
 	//N=23
 	Prescaler #(.N(22)) pres(.clk_in(ADC_CLK_10), .clk_out(clk));
 
@@ -151,21 +148,173 @@ module DE10_LITE_Golden_Top(
 	SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
 	SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
 	SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
-
-
-	wire [7:0] counterA;
-	wire [7:0] romData;
-
-	Counter countA(.clk(KEY[0]), .cnt(counterA));
-	ROMemory romA(.clk(clk), .data(romData), .addr(counterA));
-
-	assign counterA[3:0] = dig0;
-	assign counterA[7:4] = dig1;
 	
-	assign romData[3:0] = dig4;
-	assign romData[7:4] = dig5;
+	
+	wire [7:0] aluA;
+	wire [7:0] aluB;
+	wire [7:0] aluR;
+	
+	wire [7:0] RZ;
+	wire [7:0] ABZ;
+	
+	wire [7:0] romO;	
+	
+	reg [4:0] dataRaw;
+	reg [4:0] data;
+	reg [4:0] cmd;
+	
+	wire [3:0] cnt;
+	
+	wire selA;
+	wire selB;
+	wire selZ;
+	wire selR;
+	wire selALU;
+	wire selShf;
+	
+	
+	wire [7:0] debugALU;
+	
+	
+	
+	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(selA));
+	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(selB));
+	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(debugALU), .sel(selR));
+	Register regZ(.clk(clk), .dataIN(RZ), .dataOUT(ABZ), .sel(selZ));
+	
+	Shifter shft(.dataIN(data), .dataOUT(RZ), .sel(selShf));
+	
+	Counter cont(.clk(KEY[0]), .cnt(cnt));
+	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
+	
+	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(selALU), .res(aluR));
 
 	
+	// Control Unit
+	always cmd = romO[7:4];
+	always dataRaw = romO[3:0];
+	
+	reg ucA;
+	reg ucB;
+	reg ucZ;
+	reg ucR;
+	reg ucALU;
+	reg ucShf;
+	
+	assign selA = ucA;
+	assign selB = ucB;
+	assign selZ = ucZ;
+	assign selR = ucR;
+	assign selALU = ucALU;
+	assign selShf = ucShf;
+	
+
+	
+	
+	// DEBUG	
+	
+	assign debugALU[3:0] = dig4;
+	assign debugALU[7:4] = dig5;
+	
+	assign LEDR[0] = selA;
+	assign LEDR[1] = selB;
+	assign LEDR[2] = selZ;
+	assign LEDR[3] = selR;
+	assign LEDR[4] = selALU;	
+	assign LEDR[5] = selShf;
+	
+	assign romO[7:4] = dig3;
+	assign romO[3:0] = dig2;
+	
+	always dig0 = cnt;
+	//
+	
+	always @(posedge(clk)) begin
+		
+		case (cmd)
+		4'b0000 : begin //ADD
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 0;
+						ucR <= 1;
+						ucALU <= 0;
+						ucShf <= 0;
+					 end
+			
+		4'b0001 : begin // SUB
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 0;
+						ucR <= 1;
+						ucALU <= 1;
+						ucShf <= 0;
+					 end
+					 
+		4'b0010 : begin // LOAD A
+						ucA <= 1;
+						ucB <= 0;
+						ucZ <= 0;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 0;
+					 end
+					 
+		4'b0011 : begin // LOAD B
+						ucA <= 0;
+						ucB <= 1;
+						ucZ <= 0;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 0;
+					 end
+					 
+		4'b0100 : begin // LOAD Z DOWN
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 1;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 0;
+					 end
+					 
+		4'b0101 : begin // LOAD Z UP
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 1;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 1;		
+					 end
+					 
+		4'b0110 : begin // SET Z
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 1;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 0;		
+					 end
+					 
+		4'b0111 : begin		
+					 end
+					 
+		default: begin 
+						ucA <= 0;
+						ucB <= 0;
+						ucZ <= 0;
+						ucR <= 0;
+						ucALU <= 0;
+						ucShf <= 0;		
+					 end
+					 
+		endcase
+	   data <= dataRaw;
+		
+		
+	
+	end
+
+
 	
 	
 

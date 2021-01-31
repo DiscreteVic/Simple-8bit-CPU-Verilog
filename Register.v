@@ -9,7 +9,7 @@ module Register (input clk, input wire [7:0] dataIN, output wire [7:0] dataOUT, 
 	assign dataOUT = register;
 	
 	always @(posedge(clk)) begin
-		if(!sel)
+		if(sel)
 			register = dataIN;
 	end
 
