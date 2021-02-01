@@ -148,29 +148,40 @@ module DE10_LITE_Golden_Top(
 	SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
 	SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
 	SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
-	/*
+	
 	
 	wire [7:0] aluA;
 	wire [7:0] aluB;
 	wire [7:0] aluR;
 	
-	wire [7:0] RZ;
+	wire [7:0] ShiftO;
+	
+	wire [7:0] Rout;
+	wire [7:0] Zin;
 	wire [7:0] ABZ;
 	
 	wire [7:0] romO;	
+	wire [7:0] ramO;
+	wire [7:0] ramAddr;	
+	wire [7:0] ramI;		
 	
 	reg [4:0] dataRaw;
 	reg [4:0] data;
 	reg [4:0] cmd;
 	
-	wire [3:0] cnt;
+	wire [3:0] cnt;	
 	
-	wire selA;
-	wire selB;
-	wire selZ;
-	wire selR;
-	wire selALU;
-	wire selShf;
+	wire [7:0] muxAO;
+	wire [7:0] muxAIA;
+	wire [7:0] muxAIB;
+	
+	wire [7:0] muxBO;
+	wire [7:0] muxBIA;
+	wire [7:0] muxBIB;
+	
+	wire [7:0] dexI;
+	wire [7:0] dexOA;
+	wire [7:0] dexOB;
 	
 	
 	wire [7:0] debugFlagA;
@@ -183,20 +194,45 @@ module DE10_LITE_Golden_Top(
 	reg ucALU;
 	reg ucShfU;
 	reg ucShfD;
+	reg ucRam;
+	reg ucMuxA;
+	reg ucMuxB;
+	reg ucDex;
 	
 	
 	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(ucA));
 	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(ucB));
-	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(debugFlagA), .sel(ucR));
-	Register regZ(.clk(clk), .dataIN(RZ), .dataOUT(ABZ), .sel(ucZ));// poner OUT ABZ
+	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(Rout), .sel(ucR));
+	Register regZ(.clk(clk), .dataIN(Zin), .dataOUT(ABZ), .sel(ucZ));// poner OUT ABZ
 	
-	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(RZ), .up(ucShfU), .down(ucShfD));
+	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(ShiftO), .up(ucShfU), .down(ucShfD));
 	
 	Counter cont(.clk(KEY[0]), .cnt(cnt));
 	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
+	RAMemory ram(.clk(clk), .dataIN(ramI), .dataOUT(ramO), .addr(ramAddr));
 	
 	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(ucALU), .res(aluR));
+	
+	Multiplexor muxA(.dataINA(muxAIA), .dataINB(muxAIB), .dataOUT(muxAO), .sel(ucMuxA));
+	Multiplexor muxB(.dataINA(muxBIA), .dataINB(muxBIB), .dataOUT(muxBO), .sel(ucMuxB));
+	
+	Demultiplexor Demux(.dataIN(dexI), .dataOUTA(dexOA), .dataOUTB(dexOB), .sel(ucDex));
 
+	//MUX A
+	assign Zin = muxAO;	
+	assign muxAIA = ramO;
+	assign muxAIB = ShiftO;
+	//MUX B
+	assign ramI = muxBO;
+	assign muxBIA = Rout;
+	//DEMUX
+	assign dexI = ShiftO;	
+	assign ramAddr = dexOA;
+	assign muxBIB = dexOB;
+	
+	
+	
+	
 	
 	// Control Unit
 	always cmd = romO[7:4];
@@ -327,13 +363,10 @@ module DE10_LITE_Golden_Top(
 		
 		
 	
-	end*/
-	wire [7:0] outA;
+	end
 	
-		Multiplexor muxA(.dataINA(SW[4:0]), .dataINB(SW[9:5]), .dataOUT(outA), .sel(KEY[0]));
 	
-	assign outA[3:0]= dig0;
-	assign outA[7:4] = dig1;	
+
 	
 	
 	
