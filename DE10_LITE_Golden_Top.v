@@ -148,7 +148,7 @@ module DE10_LITE_Golden_Top(
 	SevSegController ssc3(.dig(dig3),.dot(clk),.leds(HEX3));
 	SevSegController ssc4(.dig(dig4),.dot(clk),.leds(HEX4));
 	SevSegController ssc5(.dig(dig5),.dot(clk),.leds(HEX5));
-	
+	/*
 	
 	wire [7:0] aluA;
 	wire [7:0] aluB;
@@ -323,10 +323,21 @@ module DE10_LITE_Golden_Top(
 	   data <= dataRaw;
 		
 		
+		
+		
+		
 	
-	end
-
-
+	end*/
+	wire [7:0] outA;
+	wire [7:0] outB;
+	
+		Demultiplexor demuxA(.dataIN(SW[7:0]), .dataOUTA(outA), .dataOUTB(outB), .sel(KEY[0]));
+	
+	assign outA[3:0]= dig0;
+	assign outA[7:4] = dig1;	
+	
+	assign outB[3:0] = dig2;
+	assign outB[7:4] = dig3;
 	
 	
 

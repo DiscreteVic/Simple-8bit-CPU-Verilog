@@ -458,6 +458,7 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 
 # end ENTITY(DE10_LITE_Golden_Top)
 # --------------------------------
+set_global_assignment -name VERILOG_FILE Multiplexor.v
 set_global_assignment -name VERILOG_FILE ROMemory.v
 set_global_assignment -name VERILOG_FILE Register.v
 set_global_assignment -name VERILOG_FILE RAMemory.v

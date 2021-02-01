@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Jan 31 21:40:57 2021
+Fitter Status : Successful - Mon Feb  1 20:05:38 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Simple-8bit-CPU-Verilog
 Top-level Entity Name : DE10_LITE_Golden_Top
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 114 / 49,760 ( < 1 % )
-    Total combinational functions : 81 / 49,760 ( < 1 % )
-    Dedicated logic registers : 84 / 49,760 ( < 1 % )
-Total registers : 84
+Total logic elements : 65 / 49,760 ( < 1 % )
+    Total combinational functions : 65 / 49,760 ( < 1 % )
+    Dedicated logic registers : 22 / 49,760 ( < 1 % )
+Total registers : 22
 Total pins : 108 / 360 ( 30 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
