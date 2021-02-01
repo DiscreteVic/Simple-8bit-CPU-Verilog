@@ -5,7 +5,7 @@
 
 module Demultiplexor (input wire [8:0] dataIN, output wire [8:0] dataOUTA, output wire [8:0] dataOUTB, input wire sel);
 
-	assign dataOUTA = (dataIN)*(!sel);
-	assign dataOUTB = (dataIN)*sel;	
+	assign dataOUTA = (dataIN)*sel;
+	assign dataOUTB = (dataIN)*(!sel);	
 
 endmodule

@@ -329,15 +329,12 @@ module DE10_LITE_Golden_Top(
 	
 	end*/
 	wire [7:0] outA;
-	wire [7:0] outB;
 	
-		Demultiplexor demuxA(.dataIN(SW[7:0]), .dataOUTA(outA), .dataOUTB(outB), .sel(KEY[0]));
+		Multiplexor muxA(.dataINA(SW[4:0]), .dataINB(SW[9:5]), .dataOUT(outA), .sel(KEY[0]));
 	
 	assign outA[3:0]= dig0;
 	assign outA[7:4] = dig1;	
 	
-	assign outB[3:0] = dig2;
-	assign outB[7:4] = dig3;
 	
 	
 

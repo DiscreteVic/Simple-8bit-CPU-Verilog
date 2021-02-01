@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Simple-8bit-CPU-Verilog
-Mon Feb  1 20:05:32 2021
+Mon Feb  1 20:30:09 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,13 +45,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb  1 20:05:32 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb  1 20:30:09 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 64                                          ;
-;     Total combinational functions  ; 64                                          ;
+; Total logic elements               ; 37                                          ;
+;     Total combinational functions  ; 37                                          ;
 ;     Dedicated logic registers      ; 22                                          ;
 ; Total registers                    ; 22                                          ;
 ; Total pins                         ; 108                                         ;
@@ -180,36 +180,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 64           ;
-;                                             ;              ;
-; Total combinational functions               ; 64           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 14           ;
-;     -- 3 input functions                    ; 1            ;
-;     -- <=2 input functions                  ; 49           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 44           ;
-;     -- arithmetic mode                      ; 20           ;
-;                                             ;              ;
-; Total registers                             ; 22           ;
-;     -- Dedicated logic registers            ; 22           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 108          ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 28           ;
-; Total fan-out                               ; 377          ;
-; Average fan-out                             ; 1.12         ;
-+---------------------------------------------+--------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 37               ;
+;                                             ;                  ;
+; Total combinational functions               ; 37               ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 8                ;
+;     -- 3 input functions                    ; 6                ;
+;     -- <=2 input functions                  ; 23               ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 17               ;
+;     -- arithmetic mode                      ; 20               ;
+;                                             ;                  ;
+; Total registers                             ; 22               ;
+;     -- Dedicated logic registers            ; 22               ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 108              ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; ADC_CLK_10~input ;
+; Maximum fan-out                             ; 22               ;
+; Total fan-out                               ; 299              ;
+; Average fan-out                             ; 0.96             ;
++---------------------------------------------+------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,12 +217,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 64 (0)              ; 22 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+; |DE10_LITE_Golden_Top      ; 37 (0)              ; 22 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+;    |Multiplexor:muxA|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
 ;    |Prescaler:pres|        ; 22 (22)             ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
-;    |SevSegController:ssc0| ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
-;    |SevSegController:ssc1| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc1 ; SevSegController     ; work         ;
-;    |SevSegController:ssc2| ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
-;    |SevSegController:ssc3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
+;    |SevSegController:ssc0| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
+;    |SevSegController:ssc1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc1 ; SevSegController     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -254,13 +253,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Multiplexor:muxA"                                                                                                                                  ;
-+----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                                                        ;
-+----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
-; dataIN   ; Input  ; Warning  ; Input port expression (8 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "dataIN[8..8]" will be connected to GND. ;
-; dataOUTA ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (8 bits) it drives; bit(s) "dataOUTA[8..8]" have no fanouts                    ;
-; dataOUTB ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (8 bits) it drives; bit(s) "dataOUTB[8..8]" have no fanouts                    ;
-+----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; dataINA ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "dataINA[8..5]" will be connected to GND. ;
+; dataINB ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "dataINB[8..5]" will be connected to GND. ;
+; dataOUT ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (8 bits) it drives; bit(s) "dataOUT[8..8]" have no fanouts                      ;
++---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -272,18 +271,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 22                          ;
 ;     plain             ; 22                          ;
 ; cycloneiii_io_obuf    ; 36                          ;
-; cycloneiii_lcell_comb ; 71                          ;
+; cycloneiii_lcell_comb ; 41                          ;
 ;     arith             ; 20                          ;
 ;         2 data inputs ; 19                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 51                          ;
+;     normal            ; 21                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 28                          ;
-;         4 data inputs ; 14                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.74                        ;
+; Average LUT depth     ; 1.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -302,7 +302,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Feb  1 20:05:27 2021
+    Info: Processing started: Mon Feb  1 20:30:04 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -326,12 +326,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file Counter
     Info (12023): Found entity 1: Counter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Counter.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Shifter.v
     Info (12023): Found entity 1: Shifter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Shifter.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/Demultiplexor.v
+    Info (12023): Found entity 1: Demultiplexor File: /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Demultiplexor.v Line: 6
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
 Warning (10034): Output port "LEDR" at DE10_LITE_Golden_Top.v(86) has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 86
 Info (12128): Elaborating entity "Prescaler" for hierarchy "Prescaler:pres" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 143
 Warning (10230): Verilog HDL assignment warning at Prescaler.v(13): truncated value with size 32 to match size of target (22) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 13
 Info (12128): Elaborating entity "SevSegController" for hierarchy "SevSegController:ssc0" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 145
-Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 334
+Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 333
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[0]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
@@ -371,6 +373,23 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[34]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
     Warning (13040): bidirectional pin "GPIO[35]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 64
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 64
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 64
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
     Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 73
     Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 73
     Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 73
@@ -398,19 +417,17 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 37
     Warning (15610): No output dependent on input pin "KEY[1]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 81
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 58 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 64 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 495 megabytes
-    Info: Processing ended: Mon Feb  1 20:05:32 2021
+    Info (21061): Implemented 37 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 86 warnings
+    Info: Peak virtual memory: 491 megabytes
+    Info: Processing ended: Mon Feb  1 20:30:09 2021
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:14
 

@@ -5,6 +5,6 @@
 
 module Multiplexor (input wire [8:0] dataINA, input wire [8:0] dataINB, output wire [8:0] dataOUT, input wire sel);
 
-	assign dataOUT = ((dataINA)*!sel)|((dataINB)*sel);
+	assign dataOUT = ((dataINA)*(!sel))|((dataINB)*sel);
 
 endmodule
