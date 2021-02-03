@@ -225,7 +225,7 @@ module DE10_LITE_Golden_Top(
 	//MUX A
 	assign Zin = muxAO;	
 	assign muxAIA = ShiftO;
-	//assign muxAIB = ramO; DEBUG
+	assign muxAIB = ramO; 
 	//MUX B
 	assign ramI = muxBO;
 	assign muxBIA = Rout;
@@ -420,7 +420,7 @@ module DE10_LITE_Golden_Top(
 						ucDex = 1;
 					 end
 					 
-		4'b1000 : begin // Store RAM result
+		4'b1001 : begin // Store RAM result
 						ucRam  = 1;
 						ucA = 0;
 						ucB = 0;
@@ -431,6 +431,21 @@ module DE10_LITE_Golden_Top(
 						ucShfD = 0;
 						ucShfU = 0;
 						ucMuxA = 0;
+						ucMuxB = 0;
+						ucDex = 0;	
+					 end
+					 
+		4'b1010 : begin // LOAD Z RAM
+						ucRam  = 0;
+						ucA = 0;
+						ucB = 0;
+						ucZ = 1;
+						ucY = 0;
+						ucR = 0;	
+						ucALU = 0;
+						ucShfD = 0;
+						ucShfU = 0;
+						ucMuxA = 1;
 						ucMuxB = 0;
 						ucDex = 0;	
 					 end
