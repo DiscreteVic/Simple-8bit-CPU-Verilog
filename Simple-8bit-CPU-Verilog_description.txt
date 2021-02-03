@@ -1,2 +1,0 @@
-Created on:domingo, enero 24, 2021
-Based on:7SegController
