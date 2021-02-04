@@ -1,6 +1,6 @@
 // ============================================================================
 //   Ver  :| Author					:| Mod. Date :| Changes Made:
-//   V1.0 :| viCppDev			   :| 27/01/2021:| Register
+//   V1.0 :| viCppDev			   :| 04/02/2021:| Control Unit
 // ============================================================================
 
 module Register (input clk, input wire [7:0] dataIN, output wire [7:0] dataOUT, input wire sel);

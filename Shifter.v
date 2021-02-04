@@ -3,7 +3,7 @@
 //   V1.0 :| viCppDev			   :| 26/06/2020:| Shifter
 // ============================================================================
 
-module Shifter (input wire clk, output wire [3:0] debug, input wire [3:0] dataIN, output wire [7:0] dataOUT, input wire down, input wire up);
+module Shifter (input wire clk, input wire [3:0] dataIN, output wire [7:0] dataOUT, input wire down, input wire up);
 
 	reg [3:0] nibbleUP;
 	reg [3:0] nibbleDown;

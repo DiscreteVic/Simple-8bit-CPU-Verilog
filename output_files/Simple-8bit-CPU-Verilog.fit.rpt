@@ -1,5 +1,5 @@
 Fitter report for Simple-8bit-CPU-Verilog
-Wed Feb  3 22:43:17 2021
+Thu Feb  4 22:12:02 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Feb  3 22:43:17 2021       ;
+; Fitter Status                      ; Successful - Thu Feb  4 22:12:02 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
@@ -156,18 +156,18 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.66        ;
+; Average used               ; 1.65        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.0%      ;
-;     Processor 3            ;   4.6%      ;
-;     Processor 4            ;   4.5%      ;
-;     Processor 5            ;   4.5%      ;
+;     Processor 2            ;   4.9%      ;
+;     Processor 3            ;   4.5%      ;
+;     Processor 4            ;   4.4%      ;
+;     Processor 5            ;   4.4%      ;
 ;     Processor 6            ;   4.4%      ;
-;     Processor 7            ;   4.4%      ;
-;     Processor 8            ;   4.4%      ;
+;     Processor 7            ;   4.3%      ;
+;     Processor 8            ;   4.3%      ;
 ;     Processors 9-16        ;   4.2%      ;
 +----------------------------+-------------+
 
@@ -1267,8 +1267,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 2650 (16)   ; 2121 (12)                 ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 108  ; 0            ; 529 (4)      ; 913 (11)          ; 1208 (1)         ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+; |DE10_LITE_Golden_Top      ; 2650 (5)    ; 2121 (4)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 108  ; 0            ; 529 (1)      ; 913 (3)           ; 1208 (1)         ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
 ;    |ALU:alu|               ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|ALU:alu               ; ALU                  ; work         ;
+;    |ControlUnit:cuA|       ; 11 (11)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 8 (8)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
 ;    |Counter:cont|          ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Golden_Top|Counter:cont          ; Counter              ; work         ;
 ;    |Multiplexor:muxD|      ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxD      ; Multiplexor          ; work         ;
 ;    |Prescaler:pres|        ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
@@ -1490,6 +1491,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; ADC_CLK_10                 ; PIN_N5             ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucA        ; FF_X64_Y48_N25     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucB        ; FF_X65_Y51_N1      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucR        ; FF_X65_Y51_N31     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucY        ; FF_X65_Y47_N5      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucZ        ; FF_X65_Y47_N7      ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; KEY[0]                     ; PIN_B8             ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; Prescaler:pres|count[0]    ; FF_X1_Y38_N17      ; 2116    ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 ; RAMemory:ram|register~3410 ; LCCOMB_X67_Y43_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
@@ -1750,11 +1756,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RAMemory:ram|register~3700 ; LCCOMB_X66_Y42_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; Shifter:shft|always1~0     ; LCCOMB_X64_Y48_N22 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; Shifter:shft|always1~1     ; LCCOMB_X64_Y48_N8  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ucA                        ; FF_X64_Y48_N25     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ucB                        ; FF_X65_Y51_N1      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ucR                        ; FF_X65_Y51_N31     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ucY                        ; FF_X65_Y47_N5      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ucZ                        ; FF_X65_Y47_N7      ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -2302,7 +2303,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2314,8 +2315,8 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
     Info (170196): Router estimated peak interconnect usage is 38% of the available device resources in the region that extends from location X56_Y33 to location X66_Y43
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 0.61 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
+Info (11888): Total time spent on timing analysis during the Fitter is 0.60 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2412,10 +2413,10 @@ Warning (169064): Following 36 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
 Info (144001): Generated suppressed messages file /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 85 warnings
-    Info: Peak virtual memory: 2110 megabytes
-    Info: Processing ended: Wed Feb  3 22:43:18 2021
+    Info: Peak virtual memory: 2114 megabytes
+    Info: Processing ended: Thu Feb  4 22:12:02 2021
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Total CPU time (on all processors): 00:00:42
 
 
 +----------------------------+

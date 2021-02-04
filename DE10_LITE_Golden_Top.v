@@ -166,10 +166,10 @@ module DE10_LITE_Golden_Top(
 	wire [7:0] ramO;
 	wire [7:0] ramAddr;	
 	wire [7:0] ramI;		
-	
-	reg [4:0] dataRaw;
-	reg [4:0] data;
-	reg [4:0] cmd;
+
+	reg [3:0] opCmd;
+	reg [3:0] dataRaw;
+	reg [3:0] data;
 	
 	wire [3:0] cnt;	
 	
@@ -189,6 +189,8 @@ module DE10_LITE_Golden_Top(
 	wire [7:0] debugFlagA;
 	wire [7:0] debugFlagB;
 	
+	wire [11:0] cSignals;
+	
 	reg ucA;
 	reg ucB;
 	reg ucZ;
@@ -201,7 +203,7 @@ module DE10_LITE_Golden_Top(
 	reg ucMuxA;
 	reg ucMuxB;
 	reg ucDex;
-	
+
 	
 	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(ucA));
 	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(ucB));
@@ -221,7 +223,9 @@ module DE10_LITE_Golden_Top(
 	Multiplexor muxB(.dataINA(muxBIA), .dataINB(muxBIB), .dataOUT(muxBO), .sel(ucMuxB));
 	
 	Demultiplexor Demux(.dataIN(dexI), .dataOUTA(dexOA), .dataOUTB(dexOB), .sel(ucDex));
-
+	
+	ControlUnit cuA(.clk(clk), .opCode(opCmd), .ctrlSignals(cSignals));
+	
 	//MUX A
 	assign Zin = muxAO;	
 	assign muxAIA = ShiftO;
@@ -235,13 +239,24 @@ module DE10_LITE_Golden_Top(
 	//assign ramAddr = Yout; DEBUG
 	assign muxBIB = dexOB;
 	
-	
-	
-	
-	
-	// Control Unit
-	always cmd = romO[7:4];
+	assign cSignals[0] = ucA;     
+	assign cSignals[1] = ucB;
+	assign cSignals[2] = ucZ;
+	assign cSignals[3] = ucY;
+	assign cSignals[4] = ucR;
+	assign cSignals[5] = ucALU;  
+	assign cSignals[6] = ucShfU; 
+	assign cSignals[7] = ucShfD; 
+	assign cSignals[8] = ucRam; 
+	assign cSignals[9] = ucMuxA; 
+	assign cSignals[10] = ucMuxB; 
+	assign cSignals[11] = ucDex; 
+
+	always opCmd = romO[7:4];
 	always dataRaw = romO[3:0];
+	
+	
+	
 	
 	
 	
@@ -268,210 +283,11 @@ module DE10_LITE_Golden_Top(
 	assign LEDR[8] = ucMuxB;
 	assign LEDR[9] = ucDex;
 	
-	always cmd = dig1;
+	always opCmd = dig1;
 	always dataRaw = dig0;
 	//
 	
-	initial begin
-		ucA <= 0;
-		ucB <= 0;
-		ucZ <= 0;
-		ucY <= 0;
-		ucR <= 0;
-		ucRam <= 0;
-	end
-	
-	
-	always @(posedge(clk)) begin
-		
-		case (cmd)
-		4'b0000 : begin //ADD
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 1;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-			
-		4'b0001 : begin // SUB
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 1;
-						ucALU = 1;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0010 : begin // LOAD A
-						ucRam  = 0;
-						ucA = 1;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0011 : begin // LOAD B
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 1;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0100 : begin // LOAD Z 
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 1;
-						ucY = 0;
-						ucR = 0;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0101 : begin // LOAD Shift Down
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;	
-						ucALU = 0;
-						ucShfD = 1;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0110 : begin // LOAD Shift Up
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 1;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		4'b0111 : begin // LOAD Y(RAM Addr)
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 1;
-						ucR = 0;	
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;//must be 0	
-					 end
-					 
-		4'b1000 : begin // Store RAM new value
-						ucRam  = 1;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;	
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 1;
-						ucDex = 1;
-					 end
-					 
-		4'b1001 : begin // Store RAM result
-						ucRam  = 1;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;	
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;	
-					 end
-					 
-		4'b1010 : begin // LOAD Z RAM
-						ucRam  = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 1;
-						ucY = 0;
-						ucR = 0;	
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 1;
-						ucMuxB = 0;
-						ucDex = 0;	
-					 end
-					 
-					 
-		default: begin 
-						ucRam = 0;
-						ucA = 0;
-						ucB = 0;
-						ucZ = 0;
-						ucY = 0;
-						ucR = 0;
-						ucALU = 0;
-						ucShfD = 0;
-						ucShfU = 0;
-						ucMuxA = 0;
-						ucMuxB = 0;
-						ucDex = 0;
-					 end
-					 
-		endcase
-	   data <= dataRaw;	
-		
-	
-	end
-	
+	always @(posedge(clk)) data <= dataRaw;
 	
 
 	

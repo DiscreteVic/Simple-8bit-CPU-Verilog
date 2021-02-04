@@ -1,5 +1,5 @@
 Flow report for Simple-8bit-CPU-Verilog
-Wed Feb  3 22:43:22 2021
+Thu Feb  4 22:12:07 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Feb  3 22:43:20 2021       ;
+; Flow Status                        ; Successful - Thu Feb  4 22:12:04 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 02/03/2021 22:42:56     ;
+; Start date & time ; 02/04/2021 22:11:40     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Simple-8bit-CPU-Verilog ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name          ; Section Id ;
 +-------------------------------------+----------------------------------------+-------------------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 13718493745980.161238857627838         ; --                      ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 13718493745980.161247310048329         ; --                      ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                      ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                      ; --                   ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                      ; DE10_LITE_Golden_Top ; Top        ;
@@ -96,10 +96,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 506 MB              ; 00:00:15                           ;
-; Fitter               ; 00:00:15     ; 1.7                     ; 2110 MB             ; 00:00:41                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 368 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 3.1                     ; 684 MB              ; 00:00:06                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 510 MB              ; 00:00:15                           ;
+; Fitter               ; 00:00:16     ; 1.6                     ; 2114 MB             ; 00:00:41                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 370 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 3.0                     ; 679 MB              ; 00:00:06                           ;
 ; Total                ; 00:00:25     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
