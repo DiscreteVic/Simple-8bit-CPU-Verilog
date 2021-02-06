@@ -11,8 +11,8 @@ Verilog implementation of a Simple 8-bit CPU
 | sta  | 0010 xxxx  | Store register A|
 | stb  | 0011 xxxx  | Store register B|
 | stz  | 0100 xxxx  | Store register Z|
-| lsd  | 0101 xxxx  | Load shifter down position|
-| lsu  | 0110 xxxx  | Load shifter up position|
+| lsd A| 0101 aaaa  | Load shifter down position|
+| lsu A| 0110 aaaa  | Load shifter up position|
 | sty  | 0111 xxxx  | Store register Y|
 | srn  | 1000 xxxx  | Store in RAM new value|
 | srr  | 1001 xxxx  | Store in RAM result value|
