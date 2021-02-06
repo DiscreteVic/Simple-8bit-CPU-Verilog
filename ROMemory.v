@@ -5,7 +5,7 @@
 
 module ROMemory (input clk, output wire [7:0] data, input wire [7:0] addr);
 
-	reg [7:0] memory [0:16];
+	reg [7:0] memory [0:255];
 	
 	assign data = memory[addr];	
 	

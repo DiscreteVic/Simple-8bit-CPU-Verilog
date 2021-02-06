@@ -1,13 +1,21 @@
 lsd 12
 lsu 12
 sty
-lsd 1
-lsu 2
+lsd 3
+lsu 4
 stz
 sta
-lsd 3
-lsu 11
+lsd 0
+lsu 0
 stz
+stb
+add
+srr
+lzr
+stb
+add
+srr
+lzr
 stb
 add
 srr

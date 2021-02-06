@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_MEMORY_SIZE 16
+#define MAX_MEMORY_SIZE 256
 
 char* opsCmd[] = {"add", "sub", "sta", "stb", "stz", "lsd", "lsu", "sty", "srn", "srr", "lzr"};
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]){
         fout = fopen("a.mem", "w");
 
     for(i = 0; i < MAX_MEMORY_SIZE; i++){
-        if(fscanf(fin, "%s", buff) == 1){
+        if(fscanf(fin, "%s", buff) == 1){      
             op = getOpCmd(buff);
             if(getOpCmd(buff) != -1){
                 if(op == 0x5 || op == 0x6){
@@ -72,11 +72,11 @@ int main(int argc, char *argv[]){
                 printf("Command error at line %d\n", i+1);
                 return -1;
             }
-            printf( "%02X\n", (op<<4)|(param));
+            //printf( "%02X\n", (op<<4)|(param));
             fprintf(fout, "%02X\n", (op<<4)|(param));
         }
         else{
-            printf("FF\n");
+            //printf("FF\n");
             fprintf(fout, "FF\n");
         }    
         

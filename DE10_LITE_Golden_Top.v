@@ -171,7 +171,7 @@ module DE10_LITE_Golden_Top(
 	reg [3:0] dataRaw;
 	reg [3:0] data;
 	
-	wire [3:0] cnt;	
+	wire [7:0] cnt;	
 	
 	wire [7:0] muxAO;
 	wire [7:0] muxAIA;
@@ -256,7 +256,7 @@ module DE10_LITE_Golden_Top(
 	always dataRaw = romO[3:0];
 	
 	
-	
+	always @(posedge(clk)) data <= dataRaw;
 	
 	
 	
@@ -287,7 +287,6 @@ module DE10_LITE_Golden_Top(
 	always dataRaw = dig0;
 	//
 	
-	always @(posedge(clk)) data <= dataRaw;
 	
 
 	
