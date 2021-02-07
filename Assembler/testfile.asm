@@ -13,9 +13,6 @@ add
 srr
 lzr
 stb
-add
-srr
-lzr
-stb
-add
-srr
+lsd 11
+lsu 0
+jpi

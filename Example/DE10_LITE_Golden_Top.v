@@ -171,7 +171,8 @@ module DE10_LITE_Golden_Top(
 	reg [3:0] dataRaw;
 	reg [3:0] data;
 	
-	wire [7:0] cnt;	
+	wire [7:0] cnt;
+	wire [7:0] jpAddr;	
 	
 	wire [7:0] muxAO;
 	wire [7:0] muxAIA;
@@ -189,7 +190,7 @@ module DE10_LITE_Golden_Top(
 	wire [7:0] debugFlagA;
 	wire [7:0] debugFlagB;
 	
-	wire [11:0] cSignals;
+	wire [12:0] cSignals;
 	
 	reg ucA;
 	reg ucB;
@@ -203,6 +204,7 @@ module DE10_LITE_Golden_Top(
 	reg ucMuxA;
 	reg ucMuxB;
 	reg ucDex;
+	reg ucJp;
 
 	
 	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(ucA));
@@ -213,7 +215,7 @@ module DE10_LITE_Golden_Top(
 	
 	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(ShiftO), .up(ucShfU), .down(ucShfD));
 	
-	Counter cont(.clk(KEY[0]), .cnt(cnt));
+	Counter cont(.clk(KEY[0]), .cnt(cnt), .jpAddr(jpAddr), .jump(ucJp));
 	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
 	RAMemory ram(.clk(clk), .dataIN(ramI), .dataOUT(ramO), .addr(ramAddr), .sel(ucRam));
 	
@@ -238,7 +240,11 @@ module DE10_LITE_Golden_Top(
 	assign Yin = dexOA;	
 	//assign ramAddr = Yout; DEBUG
 	assign muxBIB = dexOB;
+	//COUNTER	
+	assign jpAddr = ShiftO;
 	
+	
+	//CONTROL UNIT SIGNALS
 	assign cSignals[0] = ucA;     
 	assign cSignals[1] = ucB;
 	assign cSignals[2] = ucZ;
@@ -251,7 +257,9 @@ module DE10_LITE_Golden_Top(
 	assign cSignals[9] = ucMuxA; 
 	assign cSignals[10] = ucMuxB; 
 	assign cSignals[11] = ucDex; 
+	assign cSignals[12] = ucJp; 
 
+	//CODE SPLITING
 	always opCmd = romO[7:4];
 	always dataRaw = romO[3:0];
 	

@@ -1,5 +1,5 @@
 Fitter report for Simple-8bit-CPU-Verilog
-Sat Feb  6 03:02:21 2021
+Sun Feb  7 20:01:45 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -70,17 +70,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Feb  6 03:02:21 2021       ;
+; Fitter Status                      ; Successful - Sun Feb  7 20:01:45 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,765 / 49,760 ( 6 % )                      ;
-;     Total combinational functions  ; 1,794 / 49,760 ( 4 % )                      ;
-;     Dedicated logic registers      ; 2,123 / 49,760 ( 4 % )                      ;
-; Total registers                    ; 2123                                        ;
+; Total logic elements               ; 2,752 / 49,760 ( 6 % )                      ;
+;     Total combinational functions  ; 1,799 / 49,760 ( 4 % )                      ;
+;     Dedicated logic registers      ; 2,124 / 49,760 ( 4 % )                      ;
+; Total registers                    ; 2124                                        ;
 ; Total pins                         ; 108 / 360 ( 30 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -156,19 +156,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.60        ;
+; Average used               ; 1.43        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.1%      ;
-;     Processor 3            ;   4.2%      ;
-;     Processor 4            ;   4.2%      ;
-;     Processor 5            ;   4.1%      ;
-;     Processor 6            ;   4.1%      ;
-;     Processor 7            ;   4.1%      ;
-;     Processor 8            ;   4.1%      ;
-;     Processors 9-16        ;   3.8%      ;
+;     Processor 2            ;   3.4%      ;
+;     Processor 3            ;   3.0%      ;
+;     Processor 4            ;   2.9%      ;
+;     Processor 5            ;   2.9%      ;
+;     Processor 6            ;   2.9%      ;
+;     Processor 7            ;   2.9%      ;
+;     Processor 8            ;   2.9%      ;
+;     Processors 9-16        ;   2.7%      ;
 +----------------------------+-------------+
 
 
@@ -340,8 +340,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 4189 ) ; 0.00 % ( 0 / 4189 )        ; 0.00 % ( 0 / 4189 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 4189 ) ; 0.00 % ( 0 / 4189 )        ; 0.00 % ( 0 / 4189 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 4195 ) ; 0.00 % ( 0 / 4195 )        ; 0.00 % ( 0 / 4195 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 4195 ) ; 0.00 % ( 0 / 4195 )        ; 0.00 % ( 0 / 4195 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -364,7 +364,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4173 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 4179 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -372,7 +372,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.pin.
+The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/Simple-8bit-CPU-Verilog.pin.
 
 
 +----------------------------------------------------------------------+
@@ -380,26 +380,26 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 2,765 / 49,760 ( 6 % ) ;
-;     -- Combinational with no register       ; 642                    ;
-;     -- Register only                        ; 971                    ;
-;     -- Combinational with a register        ; 1152                   ;
+; Total logic elements                        ; 2,752 / 49,760 ( 6 % ) ;
+;     -- Combinational with no register       ; 628                    ;
+;     -- Register only                        ; 953                    ;
+;     -- Combinational with a register        ; 1171                   ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 1462                   ;
+;     -- 4 input functions                    ; 1466                   ;
 ;     -- 3 input functions                    ; 299                    ;
-;     -- <=2 input functions                  ; 33                     ;
-;     -- Register only                        ; 971                    ;
+;     -- <=2 input functions                  ; 34                     ;
+;     -- Register only                        ; 953                    ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 1780                   ;
-;     -- arithmetic mode                      ; 14                     ;
+;     -- normal mode                          ; 1784                   ;
+;     -- arithmetic mode                      ; 15                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 2,123 / 51,509 ( 4 % ) ;
-;     -- Dedicated logic registers            ; 2,123 / 49,760 ( 4 % ) ;
+; Total registers*                            ; 2,124 / 51,509 ( 4 % ) ;
+;     -- Dedicated logic registers            ; 2,124 / 49,760 ( 4 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 244 / 3,110 ( 8 % )    ;
+; Total LABs:  partially or completely used   ; 239 / 3,110 ( 8 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 108 / 360 ( 30 % )     ;
 ;     -- Clock pins                           ; 3 / 8 ( 38 % )         ;
@@ -419,12 +419,12 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 2.5% / 2.4% / 2.8%     ;
-; Peak interconnect usage (total/H/V)         ; 35.0% / 31.1% / 40.6%  ;
-; Maximum fan-out                             ; 2114                   ;
-; Highest non-global fan-out                  ; 288                    ;
-; Total fan-out                               ; 14329                  ;
-; Average fan-out                             ; 2.78                   ;
+; Average interconnect usage (total/H/V)      ; 2.6% / 2.5% / 2.8%     ;
+; Peak interconnect usage (total/H/V)         ; 35.7% / 32.6% / 40.2%  ;
+; Maximum fan-out                             ; 2115                   ;
+; Highest non-global fan-out                  ; 290                    ;
+; Total fan-out                               ; 14348                  ;
+; Average fan-out                             ; 2.79                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -437,26 +437,26 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 2765 / 49760 ( 6 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 642                  ; 0                              ;
-;     -- Register only                        ; 971                  ; 0                              ;
-;     -- Combinational with a register        ; 1152                 ; 0                              ;
+; Total logic elements                        ; 2752 / 49760 ( 6 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 628                  ; 0                              ;
+;     -- Register only                        ; 953                  ; 0                              ;
+;     -- Combinational with a register        ; 1171                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1462                 ; 0                              ;
+;     -- 4 input functions                    ; 1466                 ; 0                              ;
 ;     -- 3 input functions                    ; 299                  ; 0                              ;
-;     -- <=2 input functions                  ; 33                   ; 0                              ;
-;     -- Register only                        ; 971                  ; 0                              ;
+;     -- <=2 input functions                  ; 34                   ; 0                              ;
+;     -- Register only                        ; 953                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 1780                 ; 0                              ;
-;     -- arithmetic mode                      ; 14                   ; 0                              ;
+;     -- normal mode                          ; 1784                 ; 0                              ;
+;     -- arithmetic mode                      ; 15                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 2123                 ; 0                              ;
-;     -- Dedicated logic registers            ; 2123 / 49760 ( 4 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 2124                 ; 0                              ;
+;     -- Dedicated logic registers            ; 2124 / 49760 ( 4 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 244 / 3110 ( 8 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 239 / 3110 ( 8 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 108                  ; 0                              ;
@@ -474,8 +474,8 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 14335                ; 8                              ;
-;     -- Registered Connections               ; 2549                 ; 0                              ;
+;     -- Total Connections                    ; 14354                ; 8                              ;
+;     -- Registered Connections               ; 2571                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 72                   ; 0                              ;
@@ -511,16 +511,16 @@ The pin-out file can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/outp
 ; KEY[0]        ; B8    ; 7        ; 46           ; 54           ; 28           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 ; KEY[1]        ; A7    ; 7        ; 49           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 ; MAX10_CLK1_50 ; P11   ; 3        ; 34           ; 0            ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[0]         ; C10   ; 7        ; 51           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[1]         ; C11   ; 7        ; 51           ; 54           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[0]         ; C10   ; 7        ; 51           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[1]         ; C11   ; 7        ; 51           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[2]         ; D12   ; 7        ; 51           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[3]         ; C12   ; 7        ; 54           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[4]         ; A12   ; 7        ; 54           ; 54           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[5]         ; B12   ; 7        ; 49           ; 54           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[4]         ; A12   ; 7        ; 54           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[5]         ; B12   ; 7        ; 49           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[6]         ; A13   ; 7        ; 54           ; 54           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[7]         ; A14   ; 7        ; 58           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[8]         ; B14   ; 7        ; 56           ; 54           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[9]         ; F15   ; 7        ; 69           ; 54           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[9]         ; F15   ; 7        ; 69           ; 54           ; 0            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 
 
@@ -1267,29 +1267,29 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 2765 (4)    ; 2123 (3)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 108  ; 0            ; 642 (1)      ; 971 (3)           ; 1152 (0)         ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+; |DE10_LITE_Golden_Top      ; 2752 (4)    ; 2124 (3)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 108  ; 0            ; 628 (1)      ; 953 (2)           ; 1171 (0)         ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
 ;    |ALU:alu|               ; 17 (17)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 16 (16)          ; 0          ; |DE10_LITE_Golden_Top|ALU:alu               ; ALU                  ; work         ;
-;    |ControlUnit:cuA|       ; 11 (11)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (11)          ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
+;    |ControlUnit:cuA|       ; 14 (14)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 1 (1)             ; 11 (11)          ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
 ;    |Counter:cont|          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Counter:cont          ; Counter              ; work         ;
-;    |Demultiplexor:Demux|   ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; 0          ; |DE10_LITE_Golden_Top|Demultiplexor:Demux   ; Demultiplexor        ; work         ;
-;    |Multiplexor:muxA|      ; 12 (12)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
+;    |Demultiplexor:Demux|   ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 3 (3)            ; 0          ; |DE10_LITE_Golden_Top|Demultiplexor:Demux   ; Demultiplexor        ; work         ;
+;    |Multiplexor:muxA|      ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxB|      ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxB      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxD|      ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxD      ; Multiplexor          ; work         ;
 ;    |Prescaler:pres|        ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
-;    |RAMemory:ram|          ; 2607 (2607) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 559 (559)    ; 956 (956)         ; 1092 (1092)      ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
-;    |ROMemory:rom|          ; 18 (18)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|ROMemory:rom          ; ROMemory             ; work         ;
+;    |RAMemory:ram|          ; 2587 (2587) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 539 (539)    ; 935 (935)         ; 1113 (1113)      ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
+;    |ROMemory:rom|          ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 2 (2)            ; 0          ; |DE10_LITE_Golden_Top|ROMemory:rom          ; ROMemory             ; work         ;
 ;    |Register:regA|         ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|Register:regA         ; Register             ; work         ;
 ;    |Register:regB|         ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Register:regB         ; Register             ; work         ;
-;    |Register:regR|         ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Register:regR         ; Register             ; work         ;
+;    |Register:regR|         ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; 0          ; |DE10_LITE_Golden_Top|Register:regR         ; Register             ; work         ;
 ;    |Register:regY|         ; 6 (6)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; 0          ; |DE10_LITE_Golden_Top|Register:regY         ; Register             ; work         ;
 ;    |Register:regZ|         ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 0          ; |DE10_LITE_Golden_Top|Register:regZ         ; Register             ; work         ;
-;    |SevSegController:ssc0| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
+;    |SevSegController:ssc0| ; 9 (9)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 1 (1)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc1| ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc1 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc2| ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
-;    |SevSegController:ssc3| ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
+;    |SevSegController:ssc3| ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 1 (1)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc4| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc4 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc5| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc5 ; SevSegController     ; work         ;
-;    |Shifter:shft|          ; 8 (8)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 3 (3)             ; 3 (3)            ; 0          ; |DE10_LITE_Golden_Top|Shifter:shft          ; Shifter              ; work         ;
+;    |Shifter:shft|          ; 8 (8)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 4 (4)             ; 2 (2)            ; 0          ; |DE10_LITE_Golden_Top|Shifter:shft          ; Shifter              ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1396,15 +1396,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[33]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[34]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[35]      ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[3]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[9]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[2]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[1]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[3]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[9]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[2]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[1]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[0]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[7]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[6]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[5]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[4]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[6]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[5]         ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[4]         ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; KEY[0]        ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; ADC_CLK_10    ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
@@ -1455,39 +1455,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[34]                             ;                   ;         ;
 ; GPIO[35]                             ;                   ;         ;
 ; SW[3]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[3]~0 ; 1                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[3]~0 ; 0                 ; 6       ;
 ; SW[9]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[3]~0 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[2]~1 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[1]~2 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[0]~3 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[7]~4 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[6]~5 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[5]~6 ; 1                 ; 6       ;
-;      - Multiplexor:muxD|dataOUT[4]~7 ; 1                 ; 6       ;
-;      - RAMemory:ram|register~2103    ; 1                 ; 6       ;
-;      - RAMemory:ram|register~2116    ; 1                 ; 6       ;
-;      - RAMemory:ram|register~3167    ; 1                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[3]~0 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[2]~1 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[1]~2 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[0]~3 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[7]~4 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[6]~5 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[5]~6 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[4]~7 ; 0                 ; 6       ;
 ; SW[2]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[2]~1 ; 1                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[2]~1 ; 0                 ; 6       ;
 ; SW[1]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[1]~2 ; 1                 ; 6       ;
-;      - RAMemory:ram|register~3166    ; 1                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[1]~2 ; 0                 ; 6       ;
 ; SW[0]                                ;                   ;         ;
 ;      - Multiplexor:muxD|dataOUT[0]~3 ; 1                 ; 6       ;
-;      - RAMemory:ram|register~3166    ; 1                 ; 6       ;
 ; SW[7]                                ;                   ;         ;
 ;      - Multiplexor:muxD|dataOUT[7]~4 ; 0                 ; 6       ;
 ; SW[6]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[6]~5 ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[6]~5 ; 1                 ; 6       ;
 ; SW[5]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[5]~6 ; 0                 ; 6       ;
-;      - RAMemory:ram|register~2102    ; 0                 ; 6       ;
-;      - RAMemory:ram|register~2115    ; 0                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[5]~6 ; 1                 ; 6       ;
 ; SW[4]                                ;                   ;         ;
-;      - Multiplexor:muxD|dataOUT[4]~7 ; 1                 ; 6       ;
-;      - RAMemory:ram|register~2102    ; 1                 ; 6       ;
-;      - RAMemory:ram|register~2115    ; 1                 ; 6       ;
+;      - Multiplexor:muxD|dataOUT[4]~7 ; 0                 ; 6       ;
 ; KEY[0]                               ;                   ;         ;
 ;      - Counter:cont|register[0]      ; 1                 ; 0       ;
 ;      - Counter:cont|register[1]      ; 1                 ; 0       ;
@@ -1508,271 +1499,272 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; ADC_CLK_10                 ; PIN_N5             ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; ControlUnit:cuA|ucA        ; FF_X52_Y51_N23     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ControlUnit:cuA|ucB        ; FF_X52_Y51_N1      ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ControlUnit:cuA|ucR        ; FF_X52_Y51_N21     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ControlUnit:cuA|ucY        ; FF_X52_Y51_N7      ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; ControlUnit:cuA|ucZ        ; FF_X52_Y51_N31     ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucA        ; FF_X54_Y47_N21     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucB        ; FF_X54_Y47_N23     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucJp       ; FF_X54_Y47_N31     ; 9       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucR        ; FF_X54_Y47_N27     ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucY        ; FF_X54_Y47_N17     ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ControlUnit:cuA|ucZ        ; FF_X54_Y47_N3      ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; KEY[0]                     ; PIN_B8             ; 8       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Prescaler:pres|count[0]    ; FF_X1_Y23_N1       ; 2114    ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; RAMemory:ram|register~3413 ; LCCOMB_X60_Y32_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3415 ; LCCOMB_X59_Y31_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3417 ; LCCOMB_X60_Y30_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3419 ; LCCOMB_X60_Y30_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3421 ; LCCOMB_X55_Y39_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3422 ; LCCOMB_X49_Y37_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3423 ; LCCOMB_X50_Y40_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3424 ; LCCOMB_X52_Y40_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3426 ; LCCOMB_X46_Y37_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3427 ; LCCOMB_X60_Y38_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3428 ; LCCOMB_X60_Y38_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3429 ; LCCOMB_X52_Y38_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3431 ; LCCOMB_X59_Y37_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3432 ; LCCOMB_X49_Y37_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3433 ; LCCOMB_X49_Y37_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3434 ; LCCOMB_X52_Y37_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3436 ; LCCOMB_X59_Y29_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3438 ; LCCOMB_X59_Y31_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3440 ; LCCOMB_X58_Y29_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3442 ; LCCOMB_X54_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3443 ; LCCOMB_X49_Y31_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3444 ; LCCOMB_X47_Y31_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3445 ; LCCOMB_X46_Y31_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3446 ; LCCOMB_X46_Y31_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3447 ; LCCOMB_X51_Y29_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3448 ; LCCOMB_X50_Y30_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3449 ; LCCOMB_X52_Y30_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3450 ; LCCOMB_X51_Y29_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3451 ; LCCOMB_X50_Y30_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3452 ; LCCOMB_X59_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3453 ; LCCOMB_X58_Y29_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3454 ; LCCOMB_X54_Y29_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3456 ; LCCOMB_X49_Y37_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3457 ; LCCOMB_X59_Y40_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3458 ; LCCOMB_X54_Y40_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3459 ; LCCOMB_X49_Y40_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3461 ; LCCOMB_X59_Y35_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3462 ; LCCOMB_X47_Y33_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3463 ; LCCOMB_X54_Y30_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3464 ; LCCOMB_X55_Y30_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3466 ; LCCOMB_X61_Y37_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3467 ; LCCOMB_X46_Y34_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3468 ; LCCOMB_X56_Y34_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3469 ; LCCOMB_X52_Y38_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3471 ; LCCOMB_X47_Y33_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3472 ; LCCOMB_X58_Y34_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3473 ; LCCOMB_X56_Y33_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3474 ; LCCOMB_X54_Y33_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3476 ; LCCOMB_X47_Y31_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3478 ; LCCOMB_X49_Y37_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3480 ; LCCOMB_X45_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3482 ; LCCOMB_X45_Y33_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3483 ; LCCOMB_X52_Y32_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3484 ; LCCOMB_X59_Y35_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3485 ; LCCOMB_X61_Y32_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3486 ; LCCOMB_X52_Y32_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3487 ; LCCOMB_X54_Y40_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3488 ; LCCOMB_X54_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3489 ; LCCOMB_X51_Y33_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3490 ; LCCOMB_X51_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3491 ; LCCOMB_X52_Y28_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3492 ; LCCOMB_X52_Y40_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3493 ; LCCOMB_X49_Y32_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3494 ; LCCOMB_X52_Y36_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3496 ; LCCOMB_X60_Y32_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3498 ; LCCOMB_X51_Y30_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3500 ; LCCOMB_X56_Y30_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3502 ; LCCOMB_X56_Y30_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3503 ; LCCOMB_X57_Y28_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3504 ; LCCOMB_X62_Y31_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3505 ; LCCOMB_X56_Y31_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3506 ; LCCOMB_X57_Y28_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3507 ; LCCOMB_X63_Y31_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3508 ; LCCOMB_X51_Y31_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3509 ; LCCOMB_X59_Y32_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3510 ; LCCOMB_X59_Y32_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3511 ; LCCOMB_X51_Y31_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3512 ; LCCOMB_X58_Y35_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3513 ; LCCOMB_X58_Y32_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3514 ; LCCOMB_X58_Y32_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3515 ; LCCOMB_X46_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3516 ; LCCOMB_X60_Y31_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3517 ; LCCOMB_X54_Y31_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3518 ; LCCOMB_X54_Y31_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3519 ; LCCOMB_X58_Y37_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3520 ; LCCOMB_X55_Y39_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3521 ; LCCOMB_X47_Y36_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3522 ; LCCOMB_X56_Y39_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3523 ; LCCOMB_X61_Y37_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3524 ; LCCOMB_X47_Y39_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3525 ; LCCOMB_X55_Y41_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3526 ; LCCOMB_X55_Y41_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3527 ; LCCOMB_X47_Y39_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3528 ; LCCOMB_X61_Y37_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3529 ; LCCOMB_X54_Y39_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3530 ; LCCOMB_X54_Y39_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3531 ; LCCOMB_X44_Y34_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3532 ; LCCOMB_X47_Y32_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3533 ; LCCOMB_X49_Y34_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3534 ; LCCOMB_X49_Y34_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3535 ; LCCOMB_X47_Y32_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3536 ; LCCOMB_X60_Y31_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3537 ; LCCOMB_X55_Y31_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3538 ; LCCOMB_X55_Y31_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3539 ; LCCOMB_X61_Y31_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3540 ; LCCOMB_X52_Y35_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3541 ; LCCOMB_X52_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3542 ; LCCOMB_X55_Y35_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3543 ; LCCOMB_X47_Y32_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3544 ; LCCOMB_X61_Y31_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3545 ; LCCOMB_X50_Y35_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3546 ; LCCOMB_X54_Y32_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3547 ; LCCOMB_X55_Y29_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3548 ; LCCOMB_X61_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3549 ; LCCOMB_X56_Y31_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3550 ; LCCOMB_X57_Y28_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3551 ; LCCOMB_X63_Y36_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3552 ; LCCOMB_X51_Y30_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3553 ; LCCOMB_X60_Y36_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3554 ; LCCOMB_X60_Y36_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3555 ; LCCOMB_X62_Y35_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3556 ; LCCOMB_X44_Y35_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3557 ; LCCOMB_X59_Y35_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3558 ; LCCOMB_X59_Y35_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3559 ; LCCOMB_X47_Y36_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3560 ; LCCOMB_X60_Y37_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3561 ; LCCOMB_X55_Y39_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3562 ; LCCOMB_X58_Y36_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3564 ; LCCOMB_X61_Y33_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3565 ; LCCOMB_X63_Y33_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3566 ; LCCOMB_X62_Y33_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3567 ; LCCOMB_X62_Y33_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3568 ; LCCOMB_X58_Y39_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3569 ; LCCOMB_X58_Y31_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3570 ; LCCOMB_X61_Y38_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3571 ; LCCOMB_X61_Y38_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3572 ; LCCOMB_X57_Y31_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3573 ; LCCOMB_X58_Y38_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3574 ; LCCOMB_X61_Y34_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3575 ; LCCOMB_X54_Y33_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3576 ; LCCOMB_X63_Y38_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3577 ; LCCOMB_X60_Y33_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3578 ; LCCOMB_X60_Y33_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3579 ; LCCOMB_X61_Y33_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3581 ; LCCOMB_X47_Y38_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3582 ; LCCOMB_X47_Y39_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3583 ; LCCOMB_X46_Y38_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3584 ; LCCOMB_X47_Y37_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3585 ; LCCOMB_X46_Y33_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3586 ; LCCOMB_X46_Y32_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3587 ; LCCOMB_X45_Y36_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3588 ; LCCOMB_X46_Y32_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3589 ; LCCOMB_X47_Y33_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3590 ; LCCOMB_X45_Y39_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3591 ; LCCOMB_X45_Y35_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3592 ; LCCOMB_X50_Y35_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3593 ; LCCOMB_X47_Y39_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3594 ; LCCOMB_X47_Y34_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3595 ; LCCOMB_X45_Y35_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3596 ; LCCOMB_X46_Y36_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3598 ; LCCOMB_X50_Y31_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3599 ; LCCOMB_X51_Y39_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3600 ; LCCOMB_X51_Y38_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3601 ; LCCOMB_X50_Y39_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3602 ; LCCOMB_X59_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3603 ; LCCOMB_X57_Y30_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3604 ; LCCOMB_X59_Y33_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3605 ; LCCOMB_X59_Y33_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3606 ; LCCOMB_X52_Y38_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3607 ; LCCOMB_X52_Y34_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3608 ; LCCOMB_X56_Y36_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3609 ; LCCOMB_X52_Y34_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3610 ; LCCOMB_X58_Y35_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3611 ; LCCOMB_X55_Y36_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3612 ; LCCOMB_X56_Y36_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3613 ; LCCOMB_X56_Y37_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3615 ; LCCOMB_X57_Y30_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3616 ; LCCOMB_X50_Y31_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3617 ; LCCOMB_X55_Y29_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3618 ; LCCOMB_X55_Y29_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3619 ; LCCOMB_X58_Y39_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3620 ; LCCOMB_X59_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3621 ; LCCOMB_X58_Y38_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3622 ; LCCOMB_X58_Y40_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3623 ; LCCOMB_X55_Y40_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3624 ; LCCOMB_X55_Y30_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3625 ; LCCOMB_X50_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3626 ; LCCOMB_X58_Y34_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3627 ; LCCOMB_X57_Y29_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3628 ; LCCOMB_X51_Y38_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3629 ; LCCOMB_X50_Y32_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3630 ; LCCOMB_X58_Y34_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3632 ; LCCOMB_X52_Y33_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3633 ; LCCOMB_X45_Y30_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3634 ; LCCOMB_X46_Y30_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3635 ; LCCOMB_X46_Y30_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3636 ; LCCOMB_X45_Y36_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3637 ; LCCOMB_X46_Y39_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3638 ; LCCOMB_X46_Y38_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3639 ; LCCOMB_X49_Y37_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3640 ; LCCOMB_X46_Y38_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3641 ; LCCOMB_X45_Y34_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3642 ; LCCOMB_X46_Y34_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3643 ; LCCOMB_X46_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3644 ; LCCOMB_X47_Y35_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3645 ; LCCOMB_X47_Y37_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3646 ; LCCOMB_X44_Y35_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3647 ; LCCOMB_X47_Y35_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3649 ; LCCOMB_X58_Y31_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3650 ; LCCOMB_X58_Y38_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3651 ; LCCOMB_X59_Y38_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3652 ; LCCOMB_X62_Y37_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3653 ; LCCOMB_X63_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3654 ; LCCOMB_X64_Y34_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3655 ; LCCOMB_X63_Y34_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3656 ; LCCOMB_X59_Y34_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3657 ; LCCOMB_X58_Y38_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3658 ; LCCOMB_X59_Y34_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3659 ; LCCOMB_X62_Y34_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3660 ; LCCOMB_X61_Y35_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3661 ; LCCOMB_X61_Y35_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3662 ; LCCOMB_X63_Y38_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3663 ; LCCOMB_X63_Y34_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3664 ; LCCOMB_X62_Y37_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3666 ; LCCOMB_X54_Y37_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3667 ; LCCOMB_X51_Y39_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3668 ; LCCOMB_X55_Y38_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3669 ; LCCOMB_X54_Y37_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3670 ; LCCOMB_X52_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3671 ; LCCOMB_X56_Y32_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3672 ; LCCOMB_X57_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3673 ; LCCOMB_X57_Y33_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3674 ; LCCOMB_X54_Y41_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3675 ; LCCOMB_X51_Y34_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3676 ; LCCOMB_X56_Y34_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3677 ; LCCOMB_X51_Y32_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3678 ; LCCOMB_X58_Y35_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3679 ; LCCOMB_X54_Y38_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3680 ; LCCOMB_X55_Y38_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3681 ; LCCOMB_X54_Y38_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3683 ; LCCOMB_X56_Y38_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3684 ; LCCOMB_X56_Y40_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3685 ; LCCOMB_X49_Y38_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3686 ; LCCOMB_X56_Y38_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3687 ; LCCOMB_X50_Y29_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3688 ; LCCOMB_X56_Y32_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3689 ; LCCOMB_X56_Y29_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3690 ; LCCOMB_X56_Y29_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3691 ; LCCOMB_X56_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3692 ; LCCOMB_X56_Y40_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3693 ; LCCOMB_X50_Y33_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3694 ; LCCOMB_X56_Y33_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3695 ; LCCOMB_X50_Y40_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3696 ; LCCOMB_X52_Y29_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3697 ; LCCOMB_X51_Y32_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RAMemory:ram|register~3698 ; LCCOMB_X56_Y41_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Shifter:shft|always1~0     ; LCCOMB_X56_Y35_N14 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Shifter:shft|always1~1     ; LCCOMB_X56_Y35_N4  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Prescaler:pres|count[0]    ; FF_X1_Y31_N7       ; 2115    ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; RAMemory:ram|register~3410 ; LCCOMB_X43_Y36_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3412 ; LCCOMB_X39_Y33_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3414 ; LCCOMB_X40_Y37_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3416 ; LCCOMB_X40_Y37_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3418 ; LCCOMB_X46_Y33_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3419 ; LCCOMB_X45_Y37_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3420 ; LCCOMB_X46_Y33_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3421 ; LCCOMB_X47_Y36_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3423 ; LCCOMB_X45_Y35_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3424 ; LCCOMB_X41_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3425 ; LCCOMB_X41_Y30_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3426 ; LCCOMB_X42_Y33_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3428 ; LCCOMB_X39_Y33_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3429 ; LCCOMB_X47_Y33_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3430 ; LCCOMB_X47_Y33_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3431 ; LCCOMB_X39_Y33_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3433 ; LCCOMB_X46_Y26_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3435 ; LCCOMB_X39_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3437 ; LCCOMB_X42_Y26_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3439 ; LCCOMB_X42_Y26_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3440 ; LCCOMB_X43_Y26_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3441 ; LCCOMB_X49_Y29_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3442 ; LCCOMB_X46_Y27_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3443 ; LCCOMB_X45_Y27_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3444 ; LCCOMB_X45_Y28_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3445 ; LCCOMB_X45_Y26_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3446 ; LCCOMB_X45_Y27_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3447 ; LCCOMB_X45_Y27_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3448 ; LCCOMB_X45_Y26_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3449 ; LCCOMB_X49_Y30_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3450 ; LCCOMB_X44_Y26_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3451 ; LCCOMB_X44_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3453 ; LCCOMB_X45_Y34_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3454 ; LCCOMB_X45_Y25_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3455 ; LCCOMB_X44_Y27_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3456 ; LCCOMB_X45_Y34_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3458 ; LCCOMB_X39_Y31_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3459 ; LCCOMB_X47_Y32_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3460 ; LCCOMB_X44_Y35_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3461 ; LCCOMB_X43_Y35_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3463 ; LCCOMB_X46_Y28_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3464 ; LCCOMB_X46_Y31_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3465 ; LCCOMB_X45_Y30_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3466 ; LCCOMB_X43_Y35_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3468 ; LCCOMB_X47_Y32_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3469 ; LCCOMB_X46_Y28_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3470 ; LCCOMB_X47_Y31_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3471 ; LCCOMB_X42_Y35_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3473 ; LCCOMB_X49_Y32_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3475 ; LCCOMB_X43_Y33_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3477 ; LCCOMB_X45_Y33_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3479 ; LCCOMB_X45_Y32_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3480 ; LCCOMB_X47_Y30_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3481 ; LCCOMB_X43_Y29_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3482 ; LCCOMB_X46_Y30_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3483 ; LCCOMB_X47_Y30_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3484 ; LCCOMB_X44_Y27_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3485 ; LCCOMB_X47_Y31_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3486 ; LCCOMB_X45_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3487 ; LCCOMB_X43_Y33_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3488 ; LCCOMB_X46_Y32_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3489 ; LCCOMB_X44_Y30_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3490 ; LCCOMB_X46_Y30_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3491 ; LCCOMB_X43_Y30_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3493 ; LCCOMB_X37_Y36_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3495 ; LCCOMB_X34_Y36_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3497 ; LCCOMB_X36_Y36_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3499 ; LCCOMB_X39_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3500 ; LCCOMB_X35_Y28_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3501 ; LCCOMB_X35_Y28_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3502 ; LCCOMB_X37_Y32_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3503 ; LCCOMB_X32_Y28_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3504 ; LCCOMB_X31_Y35_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3505 ; LCCOMB_X32_Y32_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3506 ; LCCOMB_X35_Y35_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3507 ; LCCOMB_X34_Y32_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3508 ; LCCOMB_X34_Y31_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3509 ; LCCOMB_X43_Y31_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3510 ; LCCOMB_X35_Y32_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3511 ; LCCOMB_X34_Y32_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3512 ; LCCOMB_X34_Y25_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3513 ; LCCOMB_X38_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3514 ; LCCOMB_X36_Y27_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3515 ; LCCOMB_X34_Y26_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3516 ; LCCOMB_X31_Y34_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3517 ; LCCOMB_X31_Y34_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3518 ; LCCOMB_X31_Y34_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3519 ; LCCOMB_X34_Y34_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3520 ; LCCOMB_X34_Y27_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3521 ; LCCOMB_X32_Y35_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3522 ; LCCOMB_X36_Y34_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3523 ; LCCOMB_X32_Y34_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3524 ; LCCOMB_X31_Y33_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3525 ; LCCOMB_X37_Y27_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3526 ; LCCOMB_X31_Y30_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3527 ; LCCOMB_X32_Y30_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3528 ; LCCOMB_X34_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3529 ; LCCOMB_X34_Y33_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3530 ; LCCOMB_X32_Y33_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3531 ; LCCOMB_X34_Y33_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3532 ; LCCOMB_X38_Y26_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3533 ; LCCOMB_X37_Y25_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3534 ; LCCOMB_X35_Y25_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3535 ; LCCOMB_X38_Y26_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3536 ; LCCOMB_X37_Y27_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3537 ; LCCOMB_X36_Y31_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3538 ; LCCOMB_X39_Y35_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3539 ; LCCOMB_X42_Y35_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3540 ; LCCOMB_X38_Y28_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3541 ; LCCOMB_X41_Y29_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3542 ; LCCOMB_X39_Y35_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3543 ; LCCOMB_X38_Y28_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3544 ; LCCOMB_X36_Y25_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3545 ; LCCOMB_X36_Y28_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3546 ; LCCOMB_X36_Y27_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3547 ; LCCOMB_X36_Y25_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3548 ; LCCOMB_X31_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3549 ; LCCOMB_X38_Y36_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3550 ; LCCOMB_X35_Y35_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3551 ; LCCOMB_X34_Y34_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3552 ; LCCOMB_X35_Y30_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3553 ; LCCOMB_X32_Y35_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3554 ; LCCOMB_X37_Y35_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3555 ; LCCOMB_X36_Y33_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3556 ; LCCOMB_X36_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3557 ; LCCOMB_X36_Y29_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3558 ; LCCOMB_X37_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3559 ; LCCOMB_X42_Y33_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3561 ; LCCOMB_X41_Y29_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3562 ; LCCOMB_X40_Y29_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3563 ; LCCOMB_X41_Y29_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3564 ; LCCOMB_X46_Y29_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3565 ; LCCOMB_X32_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3566 ; LCCOMB_X40_Y26_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3567 ; LCCOMB_X35_Y27_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3568 ; LCCOMB_X35_Y27_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3569 ; LCCOMB_X41_Y27_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3570 ; LCCOMB_X34_Y29_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3571 ; LCCOMB_X37_Y27_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3572 ; LCCOMB_X40_Y27_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3573 ; LCCOMB_X34_Y30_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3574 ; LCCOMB_X40_Y25_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3575 ; LCCOMB_X37_Y27_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3576 ; LCCOMB_X38_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3578 ; LCCOMB_X46_Y36_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3579 ; LCCOMB_X42_Y36_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3580 ; LCCOMB_X45_Y35_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3581 ; LCCOMB_X45_Y36_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3582 ; LCCOMB_X42_Y25_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3583 ; LCCOMB_X46_Y32_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3584 ; LCCOMB_X42_Y27_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3585 ; LCCOMB_X42_Y27_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3586 ; LCCOMB_X44_Y34_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3587 ; LCCOMB_X38_Y35_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3588 ; LCCOMB_X42_Y35_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3589 ; LCCOMB_X44_Y34_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3590 ; LCCOMB_X37_Y35_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3591 ; LCCOMB_X46_Y32_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3592 ; LCCOMB_X44_Y33_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3593 ; LCCOMB_X44_Y33_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3595 ; LCCOMB_X37_Y26_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3596 ; LCCOMB_X32_Y31_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3597 ; LCCOMB_X37_Y30_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3598 ; LCCOMB_X42_Y30_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3599 ; LCCOMB_X39_Y35_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3600 ; LCCOMB_X41_Y28_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3601 ; LCCOMB_X37_Y34_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3602 ; LCCOMB_X40_Y31_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3603 ; LCCOMB_X34_Y31_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3604 ; LCCOMB_X41_Y30_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3605 ; LCCOMB_X42_Y35_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3606 ; LCCOMB_X39_Y31_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3607 ; LCCOMB_X41_Y30_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3608 ; LCCOMB_X38_Y36_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3609 ; LCCOMB_X37_Y34_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3610 ; LCCOMB_X40_Y32_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3612 ; LCCOMB_X41_Y28_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3613 ; LCCOMB_X41_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3614 ; LCCOMB_X42_Y28_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3615 ; LCCOMB_X41_Y30_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3616 ; LCCOMB_X34_Y34_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3617 ; LCCOMB_X40_Y33_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3618 ; LCCOMB_X41_Y30_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3619 ; LCCOMB_X39_Y33_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3620 ; LCCOMB_X36_Y34_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3621 ; LCCOMB_X40_Y33_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3622 ; LCCOMB_X42_Y35_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3623 ; LCCOMB_X42_Y35_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3624 ; LCCOMB_X44_Y32_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3625 ; LCCOMB_X42_Y30_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3626 ; LCCOMB_X42_Y28_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3627 ; LCCOMB_X43_Y30_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3629 ; LCCOMB_X49_Y33_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3630 ; LCCOMB_X43_Y28_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3631 ; LCCOMB_X47_Y29_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3632 ; LCCOMB_X47_Y29_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3633 ; LCCOMB_X42_Y25_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3634 ; LCCOMB_X38_Y37_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3635 ; LCCOMB_X44_Y31_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3636 ; LCCOMB_X37_Y35_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3637 ; LCCOMB_X45_Y35_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3638 ; LCCOMB_X43_Y27_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3639 ; LCCOMB_X46_Y31_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3640 ; LCCOMB_X45_Y31_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3641 ; LCCOMB_X43_Y27_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3642 ; LCCOMB_X45_Y36_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3643 ; LCCOMB_X44_Y31_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3644 ; LCCOMB_X45_Y32_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3646 ; LCCOMB_X40_Y26_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3647 ; LCCOMB_X35_Y26_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3648 ; LCCOMB_X35_Y26_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3649 ; LCCOMB_X38_Y28_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3650 ; LCCOMB_X40_Y29_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3651 ; LCCOMB_X46_Y26_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3652 ; LCCOMB_X38_Y29_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3653 ; LCCOMB_X45_Y29_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3654 ; LCCOMB_X36_Y29_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3655 ; LCCOMB_X46_Y27_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3656 ; LCCOMB_X38_Y29_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3657 ; LCCOMB_X38_Y28_N20 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3658 ; LCCOMB_X43_Y27_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3659 ; LCCOMB_X34_Y30_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3660 ; LCCOMB_X38_Y29_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3661 ; LCCOMB_X38_Y29_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3663 ; LCCOMB_X37_Y28_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3664 ; LCCOMB_X32_Y31_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3665 ; LCCOMB_X36_Y30_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3666 ; LCCOMB_X37_Y28_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3667 ; LCCOMB_X40_Y33_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3668 ; LCCOMB_X43_Y29_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3669 ; LCCOMB_X42_Y29_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3670 ; LCCOMB_X43_Y29_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3671 ; LCCOMB_X34_Y31_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3672 ; LCCOMB_X40_Y27_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3673 ; LCCOMB_X37_Y29_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3674 ; LCCOMB_X39_Y28_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3675 ; LCCOMB_X40_Y27_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3676 ; LCCOMB_X36_Y33_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3677 ; LCCOMB_X36_Y29_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3678 ; LCCOMB_X36_Y29_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3680 ; LCCOMB_X49_Y33_N14 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3681 ; LCCOMB_X35_Y34_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3682 ; LCCOMB_X42_Y33_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3683 ; LCCOMB_X36_Y33_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3684 ; LCCOMB_X41_Y26_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3685 ; LCCOMB_X43_Y28_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3686 ; LCCOMB_X40_Y28_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3687 ; LCCOMB_X40_Y28_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3688 ; LCCOMB_X43_Y32_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3689 ; LCCOMB_X39_Y36_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3690 ; LCCOMB_X42_Y35_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3691 ; LCCOMB_X39_Y36_N16 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3692 ; LCCOMB_X36_Y33_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3693 ; LCCOMB_X44_Y28_N8  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3694 ; LCCOMB_X44_Y28_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RAMemory:ram|register~3695 ; LCCOMB_X37_Y32_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Shifter:shft|always1~0     ; LCCOMB_X52_Y47_N4  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Shifter:shft|always1~1     ; LCCOMB_X52_Y47_N30 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1781,7 +1773,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                    ; Location     ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Prescaler:pres|count[0] ; FF_X1_Y23_N1 ; 2114    ; 29                                   ; Global Clock         ; GCLK2            ; --                        ;
+; Prescaler:pres|count[0] ; FF_X1_Y31_N7 ; 2115    ; 23                                   ; Global Clock         ; GCLK3            ; --                        ;
 +-------------------------+--------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1790,38 +1782,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 5,176 / 148,641 ( 3 % ) ;
-; C16 interconnects     ; 73 / 5,382 ( 1 % )      ;
-; C4 interconnects      ; 3,042 / 106,704 ( 3 % ) ;
-; Direct links          ; 307 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 5,165 / 148,641 ( 3 % ) ;
+; C16 interconnects     ; 79 / 5,382 ( 1 % )      ;
+; C4 interconnects      ; 3,032 / 106,704 ( 3 % ) ;
+; Direct links          ; 303 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 835 / 49,760 ( 2 % )    ;
+; Local interconnects   ; 790 / 49,760 ( 2 % )    ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 85 / 5,406 ( 2 % )      ;
-; R4 interconnects      ; 3,498 / 147,764 ( 2 % ) ;
+; R24 interconnects     ; 97 / 5,406 ( 2 % )      ;
+; R4 interconnects      ; 3,636 / 147,764 ( 2 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 11.33) ; Number of LABs  (Total = 244) ;
+; Number of Logic Elements  (Average = 11.51) ; Number of LABs  (Total = 239) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 12                            ;
-; 2                                           ; 16                            ;
-; 3                                           ; 9                             ;
-; 4                                           ; 13                            ;
-; 5                                           ; 11                            ;
-; 6                                           ; 3                             ;
-; 7                                           ; 5                             ;
-; 8                                           ; 6                             ;
+; 1                                           ; 9                             ;
+; 2                                           ; 21                            ;
+; 3                                           ; 6                             ;
+; 4                                           ; 12                            ;
+; 5                                           ; 9                             ;
+; 6                                           ; 7                             ;
+; 7                                           ; 4                             ;
+; 8                                           ; 2                             ;
 ; 9                                           ; 3                             ;
-; 10                                          ; 8                             ;
-; 11                                          ; 4                             ;
-; 12                                          ; 9                             ;
-; 13                                          ; 13                            ;
-; 14                                          ; 17                            ;
-; 15                                          ; 20                            ;
+; 10                                          ; 6                             ;
+; 11                                          ; 11                            ;
+; 12                                          ; 3                             ;
+; 13                                          ; 6                             ;
+; 14                                          ; 13                            ;
+; 15                                          ; 32                            ;
 ; 16                                          ; 95                            ;
 +---------------------------------------------+-------------------------------+
 
@@ -1829,123 +1821,127 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.60) ; Number of LABs  (Total = 244) ;
+; LAB-wide Signals  (Average = 1.65) ; Number of LABs  (Total = 239) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 238                           ;
-; 1 Clock enable                     ; 73                            ;
-; 2 Clock enables                    ; 79                            ;
+; 1 Clock                            ; 233                           ;
+; 1 Clock enable                     ; 71                            ;
+; 1 Sync. load                       ; 1                             ;
+; 2 Clock enables                    ; 89                            ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 20.03) ; Number of LABs  (Total = 244) ;
+; Number of Signals Sourced  (Average = 20.40) ; Number of LABs  (Total = 239) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 3                             ;
-; 2                                            ; 10                            ;
+; 2                                            ; 6                             ;
 ; 3                                            ; 1                             ;
-; 4                                            ; 14                            ;
-; 5                                            ; 2                             ;
-; 6                                            ; 9                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 9                             ;
-; 9                                            ; 5                             ;
+; 4                                            ; 20                            ;
+; 5                                            ; 1                             ;
+; 6                                            ; 7                             ;
+; 7                                            ; 6                             ;
+; 8                                            ; 7                             ;
+; 9                                            ; 4                             ;
 ; 10                                           ; 7                             ;
 ; 11                                           ; 1                             ;
-; 12                                           ; 2                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 3                             ;
+; 12                                           ; 4                             ;
+; 13                                           ; 2                             ;
+; 14                                           ; 1                             ;
 ; 15                                           ; 2                             ;
-; 16                                           ; 4                             ;
-; 17                                           ; 4                             ;
-; 18                                           ; 8                             ;
+; 16                                           ; 2                             ;
+; 17                                           ; 1                             ;
+; 18                                           ; 10                            ;
 ; 19                                           ; 7                             ;
-; 20                                           ; 6                             ;
-; 21                                           ; 6                             ;
-; 22                                           ; 8                             ;
-; 23                                           ; 11                            ;
+; 20                                           ; 10                            ;
+; 21                                           ; 10                            ;
+; 22                                           ; 5                             ;
+; 23                                           ; 4                             ;
 ; 24                                           ; 6                             ;
-; 25                                           ; 13                            ;
-; 26                                           ; 12                            ;
-; 27                                           ; 8                             ;
-; 28                                           ; 12                            ;
-; 29                                           ; 11                            ;
-; 30                                           ; 20                            ;
-; 31                                           ; 12                            ;
-; 32                                           ; 21                            ;
+; 25                                           ; 4                             ;
+; 26                                           ; 8                             ;
+; 27                                           ; 16                            ;
+; 28                                           ; 16                            ;
+; 29                                           ; 15                            ;
+; 30                                           ; 9                             ;
+; 31                                           ; 22                            ;
+; 32                                           ; 22                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.77) ; Number of LABs  (Total = 244) ;
+; Number of Signals Sourced Out  (Average = 8.97) ; Number of LABs  (Total = 239) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 16                            ;
-; 2                                               ; 20                            ;
+; 1                                               ; 17                            ;
+; 2                                               ; 18                            ;
 ; 3                                               ; 11                            ;
-; 4                                               ; 19                            ;
-; 5                                               ; 11                            ;
-; 6                                               ; 10                            ;
-; 7                                               ; 6                             ;
-; 8                                               ; 12                            ;
-; 9                                               ; 15                            ;
-; 10                                              ; 21                            ;
-; 11                                              ; 10                            ;
-; 12                                              ; 21                            ;
-; 13                                              ; 23                            ;
-; 14                                              ; 25                            ;
-; 15                                              ; 17                            ;
-; 16                                              ; 7                             ;
+; 4                                               ; 18                            ;
+; 5                                               ; 10                            ;
+; 6                                               ; 8                             ;
+; 7                                               ; 11                            ;
+; 8                                               ; 9                             ;
+; 9                                               ; 12                            ;
+; 10                                              ; 17                            ;
+; 11                                              ; 13                            ;
+; 12                                              ; 18                            ;
+; 13                                              ; 18                            ;
+; 14                                              ; 35                            ;
+; 15                                              ; 12                            ;
+; 16                                              ; 9                             ;
+; 17                                              ; 2                             ;
+; 18                                              ; 0                             ;
+; 19                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 20.68) ; Number of LABs  (Total = 244) ;
+; Number of Distinct Inputs  (Average = 20.99) ; Number of LABs  (Total = 239) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 2                             ;
+; 1                                            ; 1                             ;
 ; 2                                            ; 0                             ;
-; 3                                            ; 9                             ;
-; 4                                            ; 6                             ;
-; 5                                            ; 4                             ;
+; 3                                            ; 5                             ;
+; 4                                            ; 10                            ;
+; 5                                            ; 9                             ;
 ; 6                                            ; 8                             ;
-; 7                                            ; 8                             ;
-; 8                                            ; 10                            ;
-; 9                                            ; 8                             ;
-; 10                                           ; 2                             ;
-; 11                                           ; 8                             ;
-; 12                                           ; 5                             ;
+; 7                                            ; 5                             ;
+; 8                                            ; 7                             ;
+; 9                                            ; 5                             ;
+; 10                                           ; 4                             ;
+; 11                                           ; 6                             ;
+; 12                                           ; 4                             ;
 ; 13                                           ; 5                             ;
-; 14                                           ; 3                             ;
-; 15                                           ; 3                             ;
-; 16                                           ; 3                             ;
-; 17                                           ; 5                             ;
-; 18                                           ; 2                             ;
+; 14                                           ; 7                             ;
+; 15                                           ; 4                             ;
+; 16                                           ; 2                             ;
+; 17                                           ; 8                             ;
+; 18                                           ; 5                             ;
 ; 19                                           ; 7                             ;
-; 20                                           ; 11                            ;
-; 21                                           ; 11                            ;
-; 22                                           ; 7                             ;
-; 23                                           ; 10                            ;
-; 24                                           ; 7                             ;
-; 25                                           ; 10                            ;
-; 26                                           ; 8                             ;
-; 27                                           ; 8                             ;
-; 28                                           ; 2                             ;
-; 29                                           ; 5                             ;
-; 30                                           ; 4                             ;
-; 31                                           ; 8                             ;
-; 32                                           ; 13                            ;
-; 33                                           ; 4                             ;
-; 34                                           ; 15                            ;
-; 35                                           ; 7                             ;
-; 36                                           ; 10                            ;
-; 37                                           ; 5                             ;
+; 20                                           ; 4                             ;
+; 21                                           ; 7                             ;
+; 22                                           ; 10                            ;
+; 23                                           ; 6                             ;
+; 24                                           ; 10                            ;
+; 25                                           ; 9                             ;
+; 26                                           ; 7                             ;
+; 27                                           ; 7                             ;
+; 28                                           ; 5                             ;
+; 29                                           ; 4                             ;
+; 30                                           ; 2                             ;
+; 31                                           ; 9                             ;
+; 32                                           ; 9                             ;
+; 33                                           ; 5                             ;
+; 34                                           ; 10                            ;
+; 35                                           ; 8                             ;
+; 36                                           ; 13                            ;
+; 37                                           ; 11                            ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2162,9 +2158,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+-----------------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s)        ; Delay Added in ns ;
 +-----------------+-----------------------------+-------------------+
-; KEY[0]          ; Prescaler:pres|count[0],I/O ; 25.4              ;
-; KEY[0]          ; Prescaler:pres|count[0]     ; 14.7              ;
-; ADC_CLK_10      ; ADC_CLK_10                  ; 2.4               ;
+; KEY[0]          ; Prescaler:pres|count[0]     ; 4.6               ;
+; ADC_CLK_10      ; ADC_CLK_10                  ; 3.2               ;
+; KEY[0]          ; Prescaler:pres|count[0],I/O ; 1.1               ;
 +-----------------+-----------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -2175,15 +2171,15 @@ This will disable optimization of problematic paths and expose them for further 
 +--------------------------+-------------------------+-------------------+
 ; Source Register          ; Destination Register    ; Delay Added in ns ;
 +--------------------------+-------------------------+-------------------+
-; Prescaler:pres|count[0]  ; Prescaler:pres|count[0] ; 2.380             ;
-; Counter:cont|register[4] ; ControlUnit:cuA|ucZ     ; 1.387             ;
-; Counter:cont|register[5] ; ControlUnit:cuA|ucDex   ; 1.345             ;
-; Counter:cont|register[7] ; ControlUnit:cuA|ucRam   ; 1.275             ;
-; Counter:cont|register[1] ; ControlUnit:cuA|ucMuxA  ; 1.234             ;
-; Counter:cont|register[0] ; ControlUnit:cuA|ucMuxA  ; 1.227             ;
-; Counter:cont|register[6] ; ControlUnit:cuA|ucDex   ; 1.203             ;
-; Counter:cont|register[2] ; ControlUnit:cuA|ucMuxA  ; 1.159             ;
-; Counter:cont|register[3] ; ControlUnit:cuA|ucMuxA  ; 1.117             ;
+; Prescaler:pres|count[0]  ; Prescaler:pres|count[0] ; 3.186             ;
+; Counter:cont|register[5] ; data[0]                 ; 0.373             ;
+; Counter:cont|register[4] ; ControlUnit:cuA|ucMuxA  ; 0.349             ;
+; Counter:cont|register[7] ; data[0]                 ; 0.314             ;
+; Counter:cont|register[0] ; ControlUnit:cuA|ucMuxA  ; 0.299             ;
+; Counter:cont|register[2] ; ControlUnit:cuA|ucMuxA  ; 0.299             ;
+; Counter:cont|register[3] ; ControlUnit:cuA|ucMuxA  ; 0.299             ;
+; Counter:cont|register[6] ; ControlUnit:cuA|ucMuxA  ; 0.299             ;
+; Counter:cont|register[1] ; ControlUnit:cuA|ucMuxA  ; 0.299             ;
 +--------------------------+-------------------------+-------------------+
 Note: This table only shows the top 9 path(s) that have the largest delay added for hold.
 
@@ -2231,16 +2227,16 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Prescaler:pres|count[0]  File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
+Info (176353): Automatically promoted node Prescaler:pres|count[0]  File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node Prescaler:pres|count[0]~0 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 12
-        Info (176357): Destination node HEX5[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 76
-        Info (176357): Destination node HEX4[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 73
-        Info (176357): Destination node HEX3[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 70
-        Info (176357): Destination node HEX2[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 67
-        Info (176357): Destination node HEX1[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 64
-        Info (176357): Destination node HEX0[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 61
+        Info (176357): Destination node Prescaler:pres|count[0]~0 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 12
+        Info (176357): Destination node HEX5[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 76
+        Info (176357): Destination node HEX4[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 73
+        Info (176357): Destination node HEX3[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 70
+        Info (176357): Destination node HEX2[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 67
+        Info (176357): Destination node HEX1[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 64
+        Info (176357): Destination node HEX0[7]~output File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 61
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2322,7 +2318,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2331,11 +2327,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 27% of the available device resources in the region that extends from location X45_Y33 to location X55_Y43
+    Info (170196): Router estimated peak interconnect usage is 28% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:08
-Info (11888): Total time spent on timing analysis during the Fitter is 1.12 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:16
+Info (11888): Total time spent on timing analysis during the Fitter is 0.97 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2343,104 +2339,104 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 50 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 37
-    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 81
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin GPIO[0] uses I/O standard 3.3-V LVTTL at V10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[1] uses I/O standard 3.3-V LVTTL at W10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[2] uses I/O standard 3.3-V LVTTL at V9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[3] uses I/O standard 3.3-V LVTTL at W9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[4] uses I/O standard 3.3-V LVTTL at V8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[5] uses I/O standard 3.3-V LVTTL at W8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[6] uses I/O standard 3.3-V LVTTL at V7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[7] uses I/O standard 3.3-V LVTTL at W7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[8] uses I/O standard 3.3-V LVTTL at W6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[9] uses I/O standard 3.3-V LVTTL at V5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[10] uses I/O standard 3.3-V LVTTL at W5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[11] uses I/O standard 3.3-V LVTTL at AA15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[12] uses I/O standard 3.3-V LVTTL at AA14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[13] uses I/O standard 3.3-V LVTTL at W13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[14] uses I/O standard 3.3-V LVTTL at W12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[15] uses I/O standard 3.3-V LVTTL at AB13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[16] uses I/O standard 3.3-V LVTTL at AB12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[17] uses I/O standard 3.3-V LVTTL at Y11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[18] uses I/O standard 3.3-V LVTTL at AB11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[19] uses I/O standard 3.3-V LVTTL at W11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[20] uses I/O standard 3.3-V LVTTL at AB10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[21] uses I/O standard 3.3-V LVTTL at AA10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[22] uses I/O standard 3.3-V LVTTL at AA9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[23] uses I/O standard 3.3-V LVTTL at Y8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[24] uses I/O standard 3.3-V LVTTL at AA8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[25] uses I/O standard 3.3-V LVTTL at Y7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[26] uses I/O standard 3.3-V LVTTL at AA7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[27] uses I/O standard 3.3-V LVTTL at Y6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[28] uses I/O standard 3.3-V LVTTL at AA6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[29] uses I/O standard 3.3-V LVTTL at Y5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[30] uses I/O standard 3.3-V LVTTL at AA5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[31] uses I/O standard 3.3-V LVTTL at Y4 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[32] uses I/O standard 3.3-V LVTTL at AB3 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at Y3 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AB2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AA2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 81
-    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 33
+    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 37
+    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 81
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin GPIO[0] uses I/O standard 3.3-V LVTTL at V10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[1] uses I/O standard 3.3-V LVTTL at W10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[2] uses I/O standard 3.3-V LVTTL at V9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[3] uses I/O standard 3.3-V LVTTL at W9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[4] uses I/O standard 3.3-V LVTTL at V8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[5] uses I/O standard 3.3-V LVTTL at W8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[6] uses I/O standard 3.3-V LVTTL at V7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[7] uses I/O standard 3.3-V LVTTL at W7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[8] uses I/O standard 3.3-V LVTTL at W6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[9] uses I/O standard 3.3-V LVTTL at V5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[10] uses I/O standard 3.3-V LVTTL at W5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[11] uses I/O standard 3.3-V LVTTL at AA15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[12] uses I/O standard 3.3-V LVTTL at AA14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[13] uses I/O standard 3.3-V LVTTL at W13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[14] uses I/O standard 3.3-V LVTTL at W12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[15] uses I/O standard 3.3-V LVTTL at AB13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[16] uses I/O standard 3.3-V LVTTL at AB12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[17] uses I/O standard 3.3-V LVTTL at Y11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[18] uses I/O standard 3.3-V LVTTL at AB11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[19] uses I/O standard 3.3-V LVTTL at W11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[20] uses I/O standard 3.3-V LVTTL at AB10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[21] uses I/O standard 3.3-V LVTTL at AA10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[22] uses I/O standard 3.3-V LVTTL at AA9 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[23] uses I/O standard 3.3-V LVTTL at Y8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[24] uses I/O standard 3.3-V LVTTL at AA8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[25] uses I/O standard 3.3-V LVTTL at Y7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[26] uses I/O standard 3.3-V LVTTL at AA7 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[27] uses I/O standard 3.3-V LVTTL at Y6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[28] uses I/O standard 3.3-V LVTTL at AA6 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[29] uses I/O standard 3.3-V LVTTL at Y5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[30] uses I/O standard 3.3-V LVTTL at AA5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[31] uses I/O standard 3.3-V LVTTL at Y4 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[32] uses I/O standard 3.3-V LVTTL at AB3 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at Y3 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AB2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AA2 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 81
+    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 33
 Warning (169064): Following 36 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-Info (144001): Generated suppressed messages file /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.fit.smsg
+    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+Info (144001): Generated suppressed messages file /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/Simple-8bit-CPU-Verilog.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 85 warnings
-    Info: Peak virtual memory: 2111 megabytes
-    Info: Processing ended: Sat Feb  6 03:02:22 2021
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:49
+    Info: Peak virtual memory: 2112 megabytes
+    Info: Processing ended: Sun Feb  7 20:01:45 2021
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:55
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/Simple-8bit-CPU-Verilog.fit.smsg.
+The suppressed messages can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/Simple-8bit-CPU-Verilog.fit.smsg.
 
 

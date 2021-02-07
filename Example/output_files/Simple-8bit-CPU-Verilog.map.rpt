@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Simple-8bit-CPU-Verilog
-Sat Feb  6 03:02:01 2021
+Sun Feb  7 20:01:17 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -49,15 +49,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb  6 03:02:01 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb  7 20:01:17 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 3,863                                       ;
-;     Total combinational functions  ; 1,793                                       ;
-;     Dedicated logic registers      ; 2,123                                       ;
-; Total registers                    ; 2123                                        ;
+; Total logic elements               ; 3,868                                       ;
+;     Total combinational functions  ; 1,798                                       ;
+;     Dedicated logic registers      ; 2,124                                       ;
+; Total registers                    ; 2124                                        ;
 ; Total pins                         ; 108                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -174,29 +174,29 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 6            ;   0.1%      ;
 ;     Processor 7            ;   0.1%      ;
 ;     Processor 8            ;   0.1%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processors 9-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
-; Demultiplexor.v                  ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Demultiplexor.v        ;         ;
-; Multiplexor.v                    ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Multiplexor.v          ;         ;
-; ROMemory.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v             ;         ;
-; Register.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Register.v             ;         ;
-; RAMemory.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/RAMemory.v             ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/ALU.v                  ;         ;
-; DE10_LITE_Golden_Top.v           ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v ;         ;
-; SevSegController.v               ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/SevSegController.v     ;         ;
-; Prescaler.v                      ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v            ;         ;
-; Counter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Counter.v              ;         ;
-; Shifter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Shifter.v              ;         ;
-; ControlUnit.v                    ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/ControlUnit.v          ;         ;
-; ROM.mem                          ; yes             ; Auto-Found Unspecified File  ; /home/vic/Projects/Simple-8bit-CPU-Verilog/ROM.mem                ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; Demultiplexor.v                  ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Demultiplexor.v        ;         ;
+; Multiplexor.v                    ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Multiplexor.v          ;         ;
+; ROMemory.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v             ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Register.v             ;         ;
+; RAMemory.v                       ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/RAMemory.v             ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ALU.v                  ;         ;
+; DE10_LITE_Golden_Top.v           ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v ;         ;
+; SevSegController.v               ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/SevSegController.v     ;         ;
+; Prescaler.v                      ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v            ;         ;
+; Counter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v              ;         ;
+; Shifter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Shifter.v              ;         ;
+; ControlUnit.v                    ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ControlUnit.v          ;         ;
+; ROM.mem                          ; yes             ; Auto-Found Unspecified File  ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROM.mem                ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -204,20 +204,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 3,863                   ;
+; Estimated Total logic elements              ; 3,868                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 1793                    ;
+; Total combinational functions               ; 1798                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 1462                    ;
+;     -- 4 input functions                    ; 1466                    ;
 ;     -- 3 input functions                    ; 299                     ;
-;     -- <=2 input functions                  ; 32                      ;
+;     -- <=2 input functions                  ; 33                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 1779                    ;
-;     -- arithmetic mode                      ; 14                      ;
+;     -- normal mode                          ; 1783                    ;
+;     -- arithmetic mode                      ; 15                      ;
 ;                                             ;                         ;
-; Total registers                             ; 2123                    ;
-;     -- Dedicated logic registers            ; 2123                    ;
+; Total registers                             ; 2124                    ;
+;     -- Dedicated logic registers            ; 2124                    ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 108                     ;
@@ -225,9 +225,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; Prescaler:pres|count[0] ;
-; Maximum fan-out                             ; 2121                    ;
-; Total fan-out                               ; 13346                   ;
-; Average fan-out                             ; 3.20                    ;
+; Maximum fan-out                             ; 2122                    ;
+; Total fan-out                               ; 13383                   ;
+; Average fan-out                             ; 3.21                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -236,23 +236,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 1793 (0)            ; 2123 (3)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+; |DE10_LITE_Golden_Top      ; 1798 (0)            ; 2124 (3)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
 ;    |ALU:alu|               ; 17 (17)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ALU:alu               ; ALU                  ; work         ;
-;    |ControlUnit:cuA|       ; 11 (11)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
+;    |ControlUnit:cuA|       ; 13 (13)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
 ;    |Counter:cont|          ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Counter:cont          ; Counter              ; work         ;
 ;    |Demultiplexor:Demux|   ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Demultiplexor:Demux   ; Demultiplexor        ; work         ;
-;    |Multiplexor:muxA|      ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
+;    |Multiplexor:muxA|      ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxB|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxB      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxD|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxD      ; Multiplexor          ; work         ;
 ;    |Prescaler:pres|        ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
-;    |RAMemory:ram|          ; 1651 (1651)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
-;    |ROMemory:rom|          ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ROMemory:rom          ; ROMemory             ; work         ;
+;    |RAMemory:ram|          ; 1648 (1648)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
+;    |ROMemory:rom|          ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ROMemory:rom          ; ROMemory             ; work         ;
 ;    |Register:regA|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regA         ; Register             ; work         ;
 ;    |Register:regB|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regB         ; Register             ; work         ;
 ;    |Register:regR|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regR         ; Register             ; work         ;
 ;    |Register:regY|         ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regY         ; Register             ; work         ;
 ;    |Register:regZ|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regZ         ; Register             ; work         ;
-;    |SevSegController:ssc0| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
+;    |SevSegController:ssc0| ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc1| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc1 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc2| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc3| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
@@ -283,9 +283,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2123  ;
+; Total registers                              ; 2124  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 2092  ;
@@ -353,19 +353,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 108                         ;
-; cycloneiii_ff         ; 2123                        ;
+; cycloneiii_ff         ; 2124                        ;
 ;     ENA               ; 2092                        ;
-;     plain             ; 31                          ;
+;     SLD               ; 8                           ;
+;     plain             ; 24                          ;
 ; cycloneiii_io_obuf    ; 36                          ;
-; cycloneiii_lcell_comb ; 1804                        ;
-;     arith             ; 14                          ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 8                           ;
-;     normal            ; 1790                        ;
-;         1 data inputs ; 14                          ;
+; cycloneiii_lcell_comb ; 1809                        ;
+;     arith             ; 15                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 7                           ;
+;     normal            ; 1794                        ;
+;         1 data inputs ; 13                          ;
 ;         2 data inputs ; 23                          ;
-;         3 data inputs ; 291                         ;
-;         4 data inputs ; 1462                        ;
+;         3 data inputs ; 292                         ;
+;         4 data inputs ; 1466                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
 ; Average LUT depth     ; 7.01                        ;
@@ -387,108 +388,108 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Feb  6 03:01:54 2021
+    Info: Processing started: Sun Feb  7 20:01:09 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file Demultiplexor.v
-    Info (12023): Found entity 1: Demultiplexor File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Demultiplexor.v Line: 6
+    Info (12023): Found entity 1: Demultiplexor File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Demultiplexor.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Multiplexor.v
-    Info (12023): Found entity 1: Multiplexor File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Multiplexor.v Line: 6
+    Info (12023): Found entity 1: Multiplexor File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Multiplexor.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file ROMemory.v
-    Info (12023): Found entity 1: ROMemory File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v Line: 6
+    Info (12023): Found entity 1: ROMemory File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Register.v
-    Info (12023): Found entity 1: Register File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Register.v Line: 6
+    Info (12023): Found entity 1: Register File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Register.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file RAMemory.v
-    Info (12023): Found entity 1: RAMemory File: /home/vic/Projects/Simple-8bit-CPU-Verilog/RAMemory.v Line: 6
+    Info (12023): Found entity 1: RAMemory File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/RAMemory.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
-    Info (12023): Found entity 1: ALU File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ALU.v Line: 6
+    Info (12023): Found entity 1: ALU File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ALU.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Golden_Top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 29
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file SevSegController.v
-    Info (12023): Found entity 1: SevSegController File: /home/vic/Projects/Simple-8bit-CPU-Verilog/SevSegController.v Line: 6
+    Info (12023): Found entity 1: SevSegController File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/SevSegController.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Prescaler.v
-    Info (12023): Found entity 1: Prescaler File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 6
+    Info (12023): Found entity 1: Prescaler File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Counter.v
-    Info (12023): Found entity 1: Counter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Counter.v Line: 6
+    Info (12023): Found entity 1: Counter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Shifter.v
-    Info (12023): Found entity 1: Shifter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Shifter.v Line: 6
+    Info (12023): Found entity 1: Shifter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Shifter.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file ControlUnit.v
-    Info (12023): Found entity 1: ControlUnit File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ControlUnit.v Line: 7
+    Info (12023): Found entity 1: ControlUnit File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ControlUnit.v Line: 7
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
-Info (12128): Elaborating entity "Prescaler" for hierarchy "Prescaler:pres" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 143
-Warning (10230): Verilog HDL assignment warning at Prescaler.v(13): truncated value with size 32 to match size of target (1) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Prescaler.v Line: 13
-Info (12128): Elaborating entity "SevSegController" for hierarchy "SevSegController:ssc0" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 145
-Info (12128): Elaborating entity "Register" for hierarchy "Register:regA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 208
-Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:shft" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 214
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 216
-Warning (10230): Verilog HDL assignment warning at Counter.v(13): truncated value with size 32 to match size of target (8) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Counter.v Line: 13
-Info (12128): Elaborating entity "ROMemory" for hierarchy "ROMemory:rom" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 217
-Warning (10030): Net "memory.data_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v Line: 8
-Warning (10030): Net "memory.waddr_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v Line: 8
-Warning (10030): Net "memory.we_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v Line: 8
-Info (12128): Elaborating entity "RAMemory" for hierarchy "RAMemory:ram" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 218
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 220
-Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 222
-Info (12128): Elaborating entity "Demultiplexor" for hierarchy "Demultiplexor:Demux" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 225
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:cuA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 227
+Info (12128): Elaborating entity "Prescaler" for hierarchy "Prescaler:pres" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 143
+Warning (10230): Verilog HDL assignment warning at Prescaler.v(13): truncated value with size 32 to match size of target (1) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 13
+Info (12128): Elaborating entity "SevSegController" for hierarchy "SevSegController:ssc0" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 145
+Info (12128): Elaborating entity "Register" for hierarchy "Register:regA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 210
+Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:shft" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 216
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 218
+Warning (10230): Verilog HDL assignment warning at Counter.v(16): truncated value with size 32 to match size of target (8) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 16
+Info (12128): Elaborating entity "ROMemory" for hierarchy "ROMemory:rom" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 219
+Warning (10030): Net "memory.data_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
+Warning (10030): Net "memory.waddr_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
+Warning (10030): Net "memory.we_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
+Info (12128): Elaborating entity "RAMemory" for hierarchy "RAMemory:ram" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 220
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 222
+Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 224
+Info (12128): Elaborating entity "Demultiplexor" for hierarchy "Demultiplexor:Demux" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 227
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:cuA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 229
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276013): RAM logic "ROMemory:rom|memory" is uninferred because MIF is not supported for the selected family File: /home/vic/Projects/Simple-8bit-CPU-Verilog/ROMemory.v Line: 8
-    Info (276007): RAM logic "RAMemory:ram|register" is uninferred due to asynchronous read logic File: /home/vic/Projects/Simple-8bit-CPU-Verilog/RAMemory.v Line: 8
+    Info (276013): RAM logic "ROMemory:rom|memory" is uninferred because MIF is not supported for the selected family File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
+    Info (276007): RAM logic "RAMemory:ram|register" is uninferred due to asynchronous read logic File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/RAMemory.v Line: 8
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[3]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 37
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 81
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/DE10_LITE_Golden_Top.v Line: 91
-Info (21057): Implemented 3982 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 37
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 81
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
+Info (21057): Implemented 3986 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 58 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 3874 logic cells
+    Info (21061): Implemented 3878 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 48 warnings
-    Info: Peak virtual memory: 511 megabytes
-    Info: Processing ended: Sat Feb  6 03:02:01 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Sun Feb  7 20:01:17 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

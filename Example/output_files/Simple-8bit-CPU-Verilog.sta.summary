@@ -3,27 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Prescaler:pres|count[0]'
-Slack : -6.676
-TNS   : -9816.686
+Slack : -7.203
+TNS   : -9539.450
 
 Type  : Slow 1200mV 85C Model Setup 'KEY[0]'
 Slack : -1.149
-TNS   : -5.780
+TNS   : -7.243
 
 Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
-Slack : -0.722
-TNS   : -0.722
+Slack : -0.720
+TNS   : -0.720
 
 Type  : Slow 1200mV 85C Model Hold 'KEY[0]'
-Slack : 0.393
+Slack : 0.481
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Prescaler:pres|count[0]'
-Slack : 0.593
+Slack : 0.625
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADC_CLK_10'
-Slack : 0.714
+Slack : 0.700
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[0]'
@@ -36,30 +36,30 @@ TNS   : -4.403
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
 Slack : -1.403
-TNS   : -2965.942
+TNS   : -2967.345
 
 Type  : Slow 1200mV 0C Model Setup 'Prescaler:pres|count[0]'
-Slack : -6.093
-TNS   : -8924.111
+Slack : -6.588
+TNS   : -8680.483
 
 Type  : Slow 1200mV 0C Model Setup 'KEY[0]'
-Slack : -0.944
-TNS   : -4.599
+Slack : -0.942
+TNS   : -5.696
 
 Type  : Slow 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -0.543
-TNS   : -0.543
+Slack : -0.519
+TNS   : -0.519
 
 Type  : Slow 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.355
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Prescaler:pres|count[0]'
-Slack : 0.551
+Slack : 0.440
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.559
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Prescaler:pres|count[0]'
+Slack : 0.569
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
@@ -72,42 +72,42 @@ TNS   : -4.403
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
 Slack : -1.403
-TNS   : -2965.942
+TNS   : -2967.345
 
 Type  : Fast 1200mV 0C Model Setup 'Prescaler:pres|count[0]'
-Slack : -2.506
-TNS   : -3404.645
+Slack : -2.660
+TNS   : -3265.249
 
 Type  : Fast 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -0.211
-TNS   : -0.211
+Slack : -0.267
+TNS   : -0.267
 
 Type  : Fast 1200mV 0C Model Setup 'KEY[0]'
-Slack : 0.158
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.170
+Slack : 0.010
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Prescaler:pres|count[0]'
-Slack : 0.201
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'KEY[0]'
+Slack : 0.195
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.475
+Slack : 0.497
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -3.000
-TNS   : -12.800
+TNS   : -13.424
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -4.191
+TNS   : -4.267
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Prescaler:pres|count[0]'
 Slack : -1.000
-TNS   : -2114.000
+TNS   : -2115.000
 
 ------------------------------------------------------------

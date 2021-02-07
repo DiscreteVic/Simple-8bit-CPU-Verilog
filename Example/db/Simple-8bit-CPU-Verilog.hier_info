@@ -769,6 +769,22 @@ cnt[4] <= register[4].DB_MAX_OUTPUT_PORT_TYPE
 cnt[5] <= register[5].DB_MAX_OUTPUT_PORT_TYPE
 cnt[6] <= register[6].DB_MAX_OUTPUT_PORT_TYPE
 cnt[7] <= register[7].DB_MAX_OUTPUT_PORT_TYPE
+jpAddr[0] => register.DATAB
+jpAddr[1] => register.DATAB
+jpAddr[2] => register.DATAB
+jpAddr[3] => register.DATAB
+jpAddr[4] => register.DATAB
+jpAddr[5] => register.DATAB
+jpAddr[6] => register.DATAB
+jpAddr[7] => register.DATAB
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
+jump => register.OUTPUTSELECT
 
 
 |DE10_LITE_Golden_Top|ROMemory:rom
@@ -1027,6 +1043,7 @@ sel => Mult0.IN0
 
 
 |DE10_LITE_Golden_Top|ControlUnit:cuA
+clk => ucJp.CLK
 clk => ucDex.CLK
 clk => ucMuxB.CLK
 clk => ucMuxA.CLK
@@ -1055,6 +1072,7 @@ ctrlSignals[8] <= ucRam.DB_MAX_OUTPUT_PORT_TYPE
 ctrlSignals[9] <= ucMuxA.DB_MAX_OUTPUT_PORT_TYPE
 ctrlSignals[10] <= ucMuxB.DB_MAX_OUTPUT_PORT_TYPE
 ctrlSignals[11] <= ucDex.DB_MAX_OUTPUT_PORT_TYPE
+ctrlSignals[12] <= ucJp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE10_LITE_Golden_Top|Multiplexor:muxD
