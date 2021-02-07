@@ -25,4 +25,4 @@ Verilog implementation of a Simple 8-bit CPU
  
 ### DIAGRAM
  
-![alt text](https://github.com/viCppDev/Simple-8bit-CPU-Verilog/blob/feature/ControlUnit/diagram.jpg?raw=true)
+![alt text](https://github.com/viCppDev/Simple-8bit-CPU-Verilog/blob/main/diagram.png?raw=true)
