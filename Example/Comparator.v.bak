@@ -1,0 +1,21 @@
+// ============================================================================
+//   Ver  :| Author					:| Mod. Date :| Changes Made:
+//   V1.0 :| viCppDev			   :| 08/02/2021:| 8bit Comparator
+// ============================================================================
+
+module Comparator (input clk, output wire res, input wire [7:0] opA, input wire [7:0] opB, input wire [1:0] sel);
+
+	reg result;
+	reg [7:0] A;
+	reg [7:0] B;
+	
+	assign res = result;
+	
+	always @(posedge(clk)) begin
+		if()
+			register = jpAddr;
+		else if ()
+			register = register + 1;
+	end
+
+endmodule

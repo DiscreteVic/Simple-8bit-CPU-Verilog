@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Simple-8bit-CPU-Verilog
-Sun Feb  7 20:01:17 2021
+Mon Feb  8 22:21:43 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -23,6 +23,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  15. Post-Synthesis Netlist Statistics for Top Partition
  16. Elapsed Time Per Partition
  17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,15 +50,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb  7 20:01:17 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb  8 22:21:43 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Simple-8bit-CPU-Verilog                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 3,868                                       ;
-;     Total combinational functions  ; 1,798                                       ;
-;     Dedicated logic registers      ; 2,124                                       ;
-; Total registers                    ; 2124                                        ;
+; Total logic elements               ; 3,885                                       ;
+;     Total combinational functions  ; 1,815                                       ;
+;     Dedicated logic registers      ; 2,128                                       ;
+; Total registers                    ; 2128                                        ;
 ; Total pins                         ; 108                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -174,7 +175,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 6            ;   0.1%      ;
 ;     Processor 7            ;   0.1%      ;
 ;     Processor 8            ;   0.1%      ;
-;     Processors 9-16        ;   0.1%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -195,6 +196,7 @@ https://fpgasoftware.intel.com/eula.
 ; Counter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v              ;         ;
 ; Shifter.v                        ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Shifter.v              ;         ;
 ; ControlUnit.v                    ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ControlUnit.v          ;         ;
+; Comparator.v                     ; yes             ; User Verilog HDL File        ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Comparator.v           ;         ;
 ; ROM.mem                          ; yes             ; Auto-Found Unspecified File  ; /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROM.mem                ;         ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
 
@@ -204,20 +206,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 3,868                   ;
+; Estimated Total logic elements              ; 3,885                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 1798                    ;
+; Total combinational functions               ; 1815                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 1466                    ;
-;     -- 3 input functions                    ; 299                     ;
-;     -- <=2 input functions                  ; 33                      ;
+;     -- 4 input functions                    ; 1471                    ;
+;     -- 3 input functions                    ; 312                     ;
+;     -- <=2 input functions                  ; 32                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 1783                    ;
-;     -- arithmetic mode                      ; 15                      ;
+;     -- normal mode                          ; 1786                    ;
+;     -- arithmetic mode                      ; 29                      ;
 ;                                             ;                         ;
-; Total registers                             ; 2124                    ;
-;     -- Dedicated logic registers            ; 2124                    ;
+; Total registers                             ; 2128                    ;
+;     -- Dedicated logic registers            ; 2128                    ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 108                     ;
@@ -225,9 +227,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; Prescaler:pres|count[0] ;
-; Maximum fan-out                             ; 2122                    ;
-; Total fan-out                               ; 13383                   ;
-; Average fan-out                             ; 3.21                    ;
+; Maximum fan-out                             ; 2126                    ;
+; Total fan-out                               ; 13443                   ;
+; Average fan-out                             ; 3.20                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -236,26 +238,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 1798 (0)            ; 2124 (3)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
+; |DE10_LITE_Golden_Top      ; 1815 (1)            ; 2128 (3)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 108  ; 0            ; 0          ; |DE10_LITE_Golden_Top                       ; DE10_LITE_Golden_Top ; work         ;
 ;    |ALU:alu|               ; 17 (17)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ALU:alu               ; ALU                  ; work         ;
-;    |ControlUnit:cuA|       ; 13 (13)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:cuA       ; ControlUnit          ; work         ;
+;    |Comparator:compA|      ; 23 (23)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Comparator:compA      ; Comparator           ; work         ;
+;    |ControlUnit:ctrlUnitA| ; 15 (15)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ControlUnit:ctrlUnitA ; ControlUnit          ; work         ;
 ;    |Counter:cont|          ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Counter:cont          ; Counter              ; work         ;
 ;    |Demultiplexor:Demux|   ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Demultiplexor:Demux   ; Demultiplexor        ; work         ;
-;    |Multiplexor:muxA|      ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
+;    |Multiplexor:muxA|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxA      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxB|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxB      ; Multiplexor          ; work         ;
 ;    |Multiplexor:muxD|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Multiplexor:muxD      ; Multiplexor          ; work         ;
 ;    |Prescaler:pres|        ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Prescaler:pres        ; Prescaler            ; work         ;
-;    |RAMemory:ram|          ; 1648 (1648)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
+;    |RAMemory:ram|          ; 1649 (1649)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|RAMemory:ram          ; RAMemory             ; work         ;
 ;    |ROMemory:rom|          ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|ROMemory:rom          ; ROMemory             ; work         ;
 ;    |Register:regA|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regA         ; Register             ; work         ;
 ;    |Register:regB|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regB         ; Register             ; work         ;
 ;    |Register:regR|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regR         ; Register             ; work         ;
 ;    |Register:regY|         ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regY         ; Register             ; work         ;
 ;    |Register:regZ|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Register:regZ         ; Register             ; work         ;
-;    |SevSegController:ssc0| ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
+;    |SevSegController:ssc0| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc0 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc1| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc1 ; SevSegController     ; work         ;
-;    |SevSegController:ssc2| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
-;    |SevSegController:ssc3| ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
+;    |SevSegController:ssc2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc2 ; SevSegController     ; work         ;
+;    |SevSegController:ssc3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc3 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc4| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc4 ; SevSegController     ; work         ;
 ;    |SevSegController:ssc5| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|SevSegController:ssc5 ; SevSegController     ; work         ;
 ;    |Shifter:shft|          ; 2 (2)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|Shifter:shft          ; Shifter              ; work         ;
@@ -263,19 +266,19 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; ControlUnit:cuA|ucMuxB                ; Merged with ControlUnit:cuA|ucDex      ;
-; Register:regY|register[1]             ; Merged with Register:regY|register[0]  ;
-; Register:regY|register[5]             ; Merged with Register:regY|register[4]  ;
-; Shifter:shft|nibbleDown[1]            ; Merged with Shifter:shft|nibbleDown[0] ;
-; Shifter:shft|nibbleUP[1]              ; Merged with Shifter:shft|nibbleUP[0]   ;
-; data[1]                               ; Merged with data[0]                    ;
-; Total Number of Removed Registers = 6 ;                                        ;
-+---------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++---------------------------------------+-----------------------------------------+
+; Register name                         ; Reason for Removal                      ;
++---------------------------------------+-----------------------------------------+
+; ControlUnit:ctrlUnitA|cuMuxB          ; Merged with ControlUnit:ctrlUnitA|cuDex ;
+; Shifter:shft|nibbleDown[3]            ; Merged with Shifter:shft|nibbleDown[2]  ;
+; Shifter:shft|nibbleUP[3]              ; Merged with Shifter:shft|nibbleUP[2]    ;
+; data[3]                               ; Merged with data[2]                     ;
+; Register:regY|register[3]             ; Merged with Register:regY|register[2]   ;
+; Register:regY|register[7]             ; Merged with Register:regY|register[6]   ;
+; Total Number of Removed Registers = 6 ;                                         ;
++---------------------------------------+-----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -283,7 +286,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2124  ;
+; Total registers                              ; 2128  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -353,23 +356,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 108                         ;
-; cycloneiii_ff         ; 2124                        ;
+; cycloneiii_ff         ; 2128                        ;
 ;     ENA               ; 2092                        ;
 ;     SLD               ; 8                           ;
-;     plain             ; 24                          ;
+;     plain             ; 28                          ;
 ; cycloneiii_io_obuf    ; 36                          ;
-; cycloneiii_lcell_comb ; 1809                        ;
-;     arith             ; 15                          ;
+; cycloneiii_lcell_comb ; 1826                        ;
+;     arith             ; 29                          ;
 ;         2 data inputs ; 8                           ;
-;         3 data inputs ; 7                           ;
-;     normal            ; 1794                        ;
-;         1 data inputs ; 13                          ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 292                         ;
-;         4 data inputs ; 1466                        ;
+;         3 data inputs ; 21                          ;
+;     normal            ; 1797                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 291                         ;
+;         4 data inputs ; 1471                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 7.01                        ;
+; Average LUT depth     ; 6.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -388,7 +392,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb  7 20:01:09 2021
+    Info: Processing started: Mon Feb  8 22:21:36 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Simple-8bit-CPU-Verilog -c Simple-8bit-CPU-Verilog
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -411,28 +415,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file SevSegC
 Info (12021): Found 1 design units, including 1 entities, in source file Prescaler.v
     Info (12023): Found entity 1: Prescaler File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file Counter.v
-    Info (12023): Found entity 1: Counter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 6
+    Info (12023): Found entity 1: Counter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file Shifter.v
     Info (12023): Found entity 1: Shifter File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Shifter.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file ControlUnit.v
-    Info (12023): Found entity 1: ControlUnit File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ControlUnit.v Line: 7
+    Info (12023): Found entity 1: ControlUnit File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ControlUnit.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file Comparator.v
+    Info (12023): Found entity 1: Comparator File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Comparator.v Line: 6
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
+Warning (10034): Output port "LEDR[4..0]" at DE10_LITE_Golden_Top.v(86) has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
 Info (12128): Elaborating entity "Prescaler" for hierarchy "Prescaler:pres" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 143
 Warning (10230): Verilog HDL assignment warning at Prescaler.v(13): truncated value with size 32 to match size of target (1) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Prescaler.v Line: 13
 Info (12128): Elaborating entity "SevSegController" for hierarchy "SevSegController:ssc0" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 145
-Info (12128): Elaborating entity "Register" for hierarchy "Register:regA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 210
-Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:shft" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 216
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 218
-Warning (10230): Verilog HDL assignment warning at Counter.v(16): truncated value with size 32 to match size of target (8) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 16
-Info (12128): Elaborating entity "ROMemory" for hierarchy "ROMemory:rom" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 219
+Info (12128): Elaborating entity "Register" for hierarchy "Register:regA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 218
+Info (12128): Elaborating entity "Shifter" for hierarchy "Shifter:shft" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 224
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:cont" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 226
+Warning (10230): Verilog HDL assignment warning at Counter.v(17): truncated value with size 32 to match size of target (8) File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/Counter.v Line: 17
+Info (12128): Elaborating entity "ROMemory" for hierarchy "ROMemory:rom" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 227
 Warning (10030): Net "memory.data_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
 Warning (10030): Net "memory.waddr_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
 Warning (10030): Net "memory.we_a" at ROMemory.v(8) has no driver or initial value, using a default initial value '0' File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
-Info (12128): Elaborating entity "RAMemory" for hierarchy "RAMemory:ram" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 220
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 222
-Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 224
-Info (12128): Elaborating entity "Demultiplexor" for hierarchy "Demultiplexor:Demux" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 227
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:cuA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 229
+Info (12128): Elaborating entity "RAMemory" for hierarchy "RAMemory:ram" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 228
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 230
+Info (12128): Elaborating entity "Multiplexor" for hierarchy "Multiplexor:muxA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 232
+Info (12128): Elaborating entity "Demultiplexor" for hierarchy "Demultiplexor:Demux" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 235
+Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:compA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 237
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:ctrlUnitA" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 239
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276013): RAM logic "ROMemory:rom|memory" is uninferred because MIF is not supported for the selected family File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/ROMemory.v Line: 8
     Info (276007): RAM logic "RAMemory:ram|register" is uninferred due to asynchronous read logic File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/RAMemory.v Line: 8
@@ -474,22 +482,35 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO[33]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
     Warning (13040): bidirectional pin "GPIO[34]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
     Warning (13040): bidirectional pin "GPIO[35]" has no driver File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 122
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 86
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/Simple-8bit-CPU-Verilog.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MAX10_CLK1_50" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 37
     Warning (15610): No output dependent on input pin "KEY[1]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 81
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/DE10_LITE_Golden_Top.v Line: 91
-Info (21057): Implemented 3986 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4003 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 58 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 3878 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 48 warnings
+    Info (21061): Implemented 3895 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
     Info: Peak virtual memory: 512 megabytes
-    Info: Processing ended: Sun Feb  7 20:01:17 2021
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Mon Feb  8 22:21:43 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/Simple-8bit-CPU-Verilog.map.smsg.
 
 

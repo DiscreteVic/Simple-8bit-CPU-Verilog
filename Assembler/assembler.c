@@ -3,7 +3,7 @@
 
 #define MAX_MEMORY_SIZE 256
 
-char* opsCmd[] = {"add", "sub", "sta", "stb", "stz", "lsd", "lsu", "sty", "srn", "srr", "lzr", "jpi"};
+char* opsCmd[] = {"add", "sub", "sta", "stb", "stz", "lsd", "lsu", "sty", "srn", "srr", "lzr", "jpi", "jpe", "jpl", "jpm"};
 
 int strCmp(char* strA, char* strB, int len){
     int i;
