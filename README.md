@@ -1,6 +1,7 @@
 # Simple-8bit-CPU-Verilog
 Verilog implementation of a Simple 8-bit CPU
  - It can performe basic arithmetic operations
+ - Binary code generation with assembler (included)
  - Example: Debug version with manual execution (step by step)
  
 ### Instruction set 
@@ -17,11 +18,21 @@ Verilog implementation of a Simple 8-bit CPU
 | srn  | 1000 xxxx  | Store in RAM new value|
 | srr  | 1001 xxxx  | Store in RAM result value|
 | lzr  | 1010 xxxx  | Store register Z from RAM|
-| TBD  | 1011 xxxx  | To be defined|
-| TBD  | 1100 xxxx  | To be defined|
-| TBD  | 1101 xxxx  | To be defined|
-| TBD  | 1110 xxxx  | To be defined|
-| TBD  | 1111 xxxx  | To be defined|
+| jpi  | 1011 xxxx  | Inconditional Jump|
+| jpe  | 1100 xxxx  | Conditional Jump (if equal)|
+| jpl  | 1101 xxxx  | Conditional Jump (less than)|
+| jpm  | 1110 xxxx  | Conditional Jump (more than)|
+| NA   | 1111 xxxx  | Not used|
+
+#### Example assembler code
+```
+1. lsd 13
+2. lsu 12
+3. sta 
+```
+- Decimal parameter (max. 4 bits)
+- No comments allowed
+- Only one space between opcode and parameter, and only one new line between instructions
  
 ### DIAGRAM
  
