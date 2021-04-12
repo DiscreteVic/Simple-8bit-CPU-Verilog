@@ -1,19 +1,20 @@
 // ============================================================================
 //   Ver  :| Author					:| Mod. Date :| Changes Made:
-//   V1.0 :| viCppDev			   :| 28/01/2021:| 8bit Counter
-//   V2.0 :| viCppDev			   :| 07/02/2021:| Added jumps
+//   V1.0 :| viCppDev			   :| 08/02/2021:| 8bit Comparator
 // ============================================================================
 
-module Counter (input clk, output wire [7:0] cnt, input wire [7:0] jpAddr, input wire jump);
+module Comparator (input clk, output wire res, input wire [7:0] opA, input wire [7:0] opB, input wire [1:0] sel);
 
-	reg [7:0] register;
+	reg result;
+	reg [7:0] A;
+	reg [7:0] B;
 	
-	assign cnt = register;	
+	assign res = result;
 	
 	always @(posedge(clk)) begin
-		if(jump)
+		if()
 			register = jpAddr;
-		else
+		else if ()
 			register = register + 1;
 	end
 

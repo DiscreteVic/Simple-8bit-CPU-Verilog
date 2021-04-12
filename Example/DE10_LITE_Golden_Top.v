@@ -171,7 +171,8 @@ module DE10_LITE_Golden_Top(
 	reg [3:0] dataRaw;
 	reg [3:0] data;
 	
-	wire [7:0] cnt;	
+	wire [7:0] cnt;
+	wire [7:0] jpAddr;	
 	
 	wire [7:0] muxAO;
 	wire [7:0] muxAIA;
@@ -185,46 +186,57 @@ module DE10_LITE_Golden_Top(
 	wire [7:0] dexOA;
 	wire [7:0] dexOB;
 	
+	wire compO;
+	wire [7:0] compIA;
+	wire [7:0] compIB;
+	
 	
 	wire [7:0] debugFlagA;
 	wire [7:0] debugFlagB;
 	
-	wire [11:0] cSignals;
+	wire [15:0] cSignals;
 	
-	reg ucA;
-	reg ucB;
-	reg ucZ;
-	reg ucY;
-	reg ucR;
-	reg ucALU;
-	reg ucShfU;
-	reg ucShfD;
-	reg ucRam;
-	reg ucMuxA;
-	reg ucMuxB;
-	reg ucDex;
+	reg cuA;
+	reg cuB;
+	reg cuZ;
+	reg cuY;
+	reg cuR;
+	reg cuALU;
+	reg cuShfU;
+	reg cuShfD;
+	reg cuRam;
+	reg cuMuxA;
+	reg cuMuxB;
+	reg cuDex;
+	reg cuJp;
+	reg cuJpc;
+	reg [1:0] cuComp;
+	
+	reg jump;
 
 	
-	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(ucA));
-	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(ucB));
-	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(Rout), .sel(ucR));
-	Register regZ(.clk(clk), .dataIN(Zin), .dataOUT(ABZ), .sel(ucZ));
-	Register regY(.clk(clk), .dataIN(Yin), .dataOUT(Yout), .sel(ucY));
+	Register regA(.clk(clk), .dataIN(ABZ), .dataOUT(aluA), .sel(cuA));
+	Register regB(.clk(clk), .dataIN(ABZ), .dataOUT(aluB), .sel(cuB));
+	Register regR(.clk(clk), .dataIN(aluR), .dataOUT(Rout), .sel(cuR));
+	Register regZ(.clk(clk), .dataIN(Zin), .dataOUT(ABZ), .sel(cuZ));
+	Register regY(.clk(clk), .dataIN(Yin), .dataOUT(Yout), .sel(cuY));
 	
-	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(ShiftO), .up(ucShfU), .down(ucShfD));
+	Shifter shft(.clk(clk), .dataIN(data),.dataOUT(ShiftO), .up(cuShfU), .down(cuShfD));
 	
-	Counter cont(.clk(KEY[0]), .cnt(cnt));
+	Counter cont(.clk(KEY[0]), .cnt(cnt), .jpAddr(jpAddr), .jump(jump));
 	ROMemory rom(.clk(clk), .data(romO), .addr(cnt));
-	RAMemory ram(.clk(clk), .dataIN(ramI), .dataOUT(ramO), .addr(ramAddr), .sel(ucRam));
+	RAMemory ram(.clk(clk), .dataIN(ramI), .dataOUT(ramO), .addr(ramAddr), .sel(cuRam));
 	
-	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(ucALU), .res(aluR));
+	ALU alu(.clk(clk), .opA(aluA), .opB(aluB), .sel(cuALU), .res(aluR));
 	
-	Multiplexor muxA(.dataINA(muxAIA), .dataINB(muxAIB), .dataOUT(muxAO), .sel(ucMuxA));
-	Multiplexor muxB(.dataINA(muxBIA), .dataINB(muxBIB), .dataOUT(muxBO), .sel(ucMuxB));
+	Multiplexor muxA(.dataINA(muxAIA), .dataINB(muxAIB), .dataOUT(muxAO), .sel(cuMuxA));
+	Multiplexor muxB(.dataINA(muxBIA), .dataINB(muxBIB), .dataOUT(muxBO), .sel(cuMuxB));
 	
-	Demultiplexor Demux(.dataIN(dexI), .dataOUTA(dexOA), .dataOUTB(dexOB), .sel(ucDex));
+	Demultiplexor Demux(.dataIN(dexI), .dataOUTA(dexOA), .dataOUTB(dexOB), .sel(cuDex));
 	
-	ControlUnit cuA(.clk(clk), .opCode(opCmd), .ctrlSignals(cSignals));
+	Comparator compA(.clk(clk), .opA(compIA), .opB(compIB), .sel(cuComp), .res(compO));
+	
+	ControlUnit ctrlUnitA(.clk(clk), .opCode(opCmd), .ctrlSignals(cSignals));
 	
 	//MUX A
 	assign Zin = muxAO;	
@@ -238,20 +250,35 @@ module DE10_LITE_Golden_Top(
 	assign Yin = dexOA;	
 	//assign ramAddr = Yout; DEBUG
 	assign muxBIB = dexOB;
+	//COUNTER	
+	assign jpAddr = ShiftO;
+	//COMPARATOR
+	assign compIA = aluA;
+	assign compIB = aluB;
 	
-	assign cSignals[0] = ucA;     
-	assign cSignals[1] = ucB;
-	assign cSignals[2] = ucZ;
-	assign cSignals[3] = ucY;
-	assign cSignals[4] = ucR;
-	assign cSignals[5] = ucALU;  
-	assign cSignals[6] = ucShfU; 
-	assign cSignals[7] = ucShfD; 
-	assign cSignals[8] = ucRam; 
-	assign cSignals[9] = ucMuxA; 
-	assign cSignals[10] = ucMuxB; 
-	assign cSignals[11] = ucDex; 
+	
+	always jump = (!cuJpc & cuJp) | (cuJpc & compO);
+	
+	
+	//CONTROL UNIT SIGNALS
+	assign cSignals[0] = cuA;     
+	assign cSignals[1] = cuB;
+	assign cSignals[2] = cuZ;
+	assign cSignals[3] = cuY;
+	assign cSignals[4] = cuR;
+	assign cSignals[5] = cuALU;  
+	assign cSignals[6] = cuShfU; 
+	assign cSignals[7] = cuShfD; 
+	assign cSignals[8] = cuRam; 
+	assign cSignals[9] = cuMuxA; 
+	assign cSignals[10] = cuMuxB; 
+	assign cSignals[11] = cuDex; 
+	always cuJp = cSignals[12];
+	always cuJpc = cSignals[13];
+	always cuComp[0] = cSignals[14];
+	always cuComp[1] = cSignals[15];
 
+	//CODE SPLITING
 	always opCmd = romO[7:4];
 	always dataRaw = romO[3:0];
 	
@@ -264,24 +291,24 @@ module DE10_LITE_Golden_Top(
 	
 	Multiplexor muxD(.dataINA(Yout), .dataINB(SW[7:0]), .dataOUT(ramAddr), .sel(SW[9]));
 	
-	always dig4 = ramO[3:0];
-	always dig5 = ramO[7:4];
+	always dig4 = compIA[3:0];
+	always dig5 = compIA[7:4];
 	
-	always dig2 = ramAddr[3:0];
-	always dig3 = ramAddr[7:4];
+	always dig2 = compIB[3:0];
+	always dig3 = compIB[7:4];
 	
-	
-	assign LEDR[0] = ucA;
-	assign LEDR[1] = ucB;
-	assign LEDR[2] = ucY;
-	assign LEDR[3] = ucR;
-	//assign LEDR[4] = ucALU;	
-	assign LEDR[4] = ucShfD;
-	assign LEDR[5] = ucShfU;
-	assign LEDR[6] = ucRam;
-	assign LEDR[7] = ucMuxA;
-	assign LEDR[8] = ucMuxB;
-	assign LEDR[9] = ucDex;
+	/*
+	assign LEDR[0] = cuA;
+	assign LEDR[1] = cuB;
+	assign LEDR[2] = cuY;
+	assign LEDR[3] = cuR;
+	assign LEDR[4] = cuALU;	
+	assign LEDR[4] = cuShfD;*/
+	assign LEDR[5] = compO;
+	assign LEDR[6] = cuJp; 
+	assign LEDR[7] = cuJpc; 
+	assign LEDR[8] = cuComp[0]; 
+	assign LEDR[9] = cuComp[1]; 
 	
 	always opCmd = dig1;
 	always dataRaw = dig0;

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/vic/Projects/Simple-8bit-CPU-Verilog/output_files/") File("Simple-8bit-CPU-Verilog.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("/home/vic/Projects/Simple-8bit-CPU-Verilog/Example/output_files/") File("Simple-8bit-CPU-Verilog.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

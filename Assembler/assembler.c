@@ -1,9 +1,16 @@
+// --------------------- Simple 8-bit CPU Verilog Project ---------------------
+//	ASSEMBLER PROGRAM
+// 	Assembler source code for machine code generating testing the Simple 8-bit CPU
+//
+//	viCppDev - February 2021
+// ----------------------------------------------------------------------------
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #define MAX_MEMORY_SIZE 256
 
-char* opsCmd[] = {"add", "sub", "sta", "stb", "stz", "lsd", "lsu", "sty", "srn", "srr", "lzr"};
+char* opsCmd[] = {"add", "sub", "sta", "stb", "stz", "lsd", "lsu", "sty", "srn", "srr", "lzr", "jpi", "jpe", "jpl", "jpm"};
 
 int strCmp(char* strA, char* strB, int len){
     int i;
@@ -32,6 +39,17 @@ int getParam(char *line){
     else return -1;
 }
 
+int paramNeed(int op){
+    int opsWithParam[] = {0x5,0x6};
+    int i;
+
+    for(i = 0; opsWithParam[i] != '\0'; i++){
+        if(opsWithParam[i] == (int)op){
+            return 1;
+        }            
+    }
+    return -1;
+}
 
 
 
@@ -53,10 +71,12 @@ int main(int argc, char *argv[]){
         fout = fopen("a.mem", "w");
 
     for(i = 0; i < MAX_MEMORY_SIZE; i++){
-        if(fscanf(fin, "%s", buff) == 1){      
+        if(fscanf(fin, "%s", buff) == 1){  
+            //printf( "%s\n", buff); 
+
             op = getOpCmd(buff);
             if(getOpCmd(buff) != -1){
-                if(op == 0x5 || op == 0x6){
+                if(paramNeed(op) == 1){
                     fscanf(fin, "%s", buff);
                     param = getParam(buff);
                     

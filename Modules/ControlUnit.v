@@ -1,13 +1,14 @@
 // ============================================================================
 //   Ver  :| Author					:| Mod. Date :| Changes Made:
 //   V1.0 :| viCppDev			   :| 04/02/2021:| Control Unit
+//   V1.1 :| viCppDev			   :| 07/02/2021:| Added inconditional Jumps
 // ============================================================================
 
 
 module ControlUnit (
 	input clk, 
 	input wire [3:0] opCode, 	
-	output wire [11:0] ctrlSignals
+	output wire [12:0] ctrlSignals
 	);
 	
 	reg [9:0] debR;
@@ -24,6 +25,7 @@ module ControlUnit (
 	reg ucMuxA;
 	reg ucMuxB;
 	reg ucDex;
+	reg ucJp;
 	
 	reg [3:0]cmd;
 	
@@ -39,6 +41,7 @@ module ControlUnit (
 	assign ctrlSignals[9] = ucMuxA; 
 	assign ctrlSignals[10] = ucMuxB; 
 	assign ctrlSignals[11] = ucDex; 
+	assign ctrlSignals[12] = ucJp; 
 	
 	
 	initial begin
@@ -66,7 +69,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 			
 		4'b0001 : begin // SUB
@@ -81,7 +85,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0010 : begin // LOAD A
@@ -96,7 +101,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0011 : begin // LOAD B
@@ -111,7 +117,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0100 : begin // LOAD Z 
@@ -126,7 +133,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0101 : begin // LOAD Shift Down
@@ -141,7 +149,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0110 : begin // LOAD Shift Up
@@ -156,7 +165,8 @@ module ControlUnit (
 						ucShfU = 1;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;
+						ucDex = 0;	
+						ucJp = 0;
 					 end
 					 
 		4'b0111 : begin // LOAD Y(RAM Addr)
@@ -171,7 +181,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 0;
-						ucDex = 0;//must be 0	
+						ucDex = 0;//must be 0		
+						ucJp = 0;
 					 end
 					 
 		4'b1000 : begin // Store RAM new value
@@ -186,7 +197,8 @@ module ControlUnit (
 						ucShfU = 0;
 						ucMuxA = 0;
 						ucMuxB = 1;
-						ucDex = 1;
+						ucDex = 1;	
+						ucJp = 0;
 					 end
 					 
 		4'b1001 : begin // Store RAM result
@@ -202,6 +214,7 @@ module ControlUnit (
 						ucMuxA = 0;
 						ucMuxB = 0;
 						ucDex = 0;	
+						ucJp = 0;	
 					 end
 					 
 		4'b1010 : begin // LOAD Z RAM
@@ -217,7 +230,25 @@ module ControlUnit (
 						ucMuxA = 1;
 						ucMuxB = 0;
 						ucDex = 0;	
+						ucJp = 0;	
 					 end
+					 
+		4'b1011 : begin // JUMP INCONDITIONAL
+						ucRam  = 0;
+						ucA = 0;
+						ucB = 0;
+						ucZ = 0;
+						ucY = 0;
+						ucR = 0;	
+						ucALU = 0;
+						ucShfD = 0;
+						ucShfU = 0;
+						ucMuxA = 0;
+						ucMuxB = 0;
+						ucDex = 0;	
+						ucJp = 1;
+					 end
+				
 					 
 					 
 		default: begin 
